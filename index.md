@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "SiiWay Team Home"
-  text: "SiiWay Team's Official Site"
-  tagline: My great project tagline
+  # text: "SiiWay 官方网站"
+  tagline: SiiWay Team's Official Homepage<br/>欢迎来到 SiiWay 团队的官方主页!
   actions:
     - theme: brand
       text: Markdown Examples
