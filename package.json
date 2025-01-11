@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/siiway/blog/issues"
   },
-  "homepage": "https://github.com/siiway/blog#readme",
+  "homepage": "https://siiway.top",
   "devDependencies": {
     "vitepress": "^1.5.0"
   },
