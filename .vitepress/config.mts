@@ -9,11 +9,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Projects', link: '/projects' },
       { text: 'Member', link: '/member' },
-      { text: 'GitHub', link: 'https://github.com/siiway' }
+      { text: 'About', link: '/about' }
     ],
 
     sidebar: [
+      { text: 'Projects', link: '/projects' },
       {
         text: 'Member',
         items: [
@@ -43,7 +45,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'qq', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
       { icon: 'discord', link: 'https://discord.gg/mdGamAxC7U' },
-      { icon: 'github', link: 'https://github.com/siiway/blog' }
+      { icon: 'github', link: 'https://github.com/siiway' }
     ]
   }
 })
