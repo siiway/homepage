@@ -4,21 +4,22 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SiiWay Team Home",
   description: "SiiWay Team's Official Site",
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'People', link: '/people' },
+      { text: 'Member', link: '/member' },
       { text: 'GitHub', link: 'https://github.com/siiway' }
     ],
 
     sidebar: [
       {
-        text: 'People',
+        text: 'Member',
         items: [
-          { text: 'wyf9', link: '/people/wyf9' },
-          { text: 'xhc861', link: '/people/xhc861' },
-          { text: 'Dobastickrn', link: '/people/Dobastickrn' }
+          { text: 'wyf9', link: '/member/wyf9' },
+          { text: 'xhc861', link: '/member/xhc861' },
+          { text: 'Dobastickrn', link: '/member/Dobastickrn' }
         ]
       },
       {
