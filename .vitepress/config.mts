@@ -17,14 +17,15 @@ export default defineConfig({
       {
         text: 'Member',
         items: [
-          { text: 'wyf9', link: '/member/wyf9' },
           { text: 'xhc861', link: '/member/xhc861' },
+          { text: 'wyf9', link: '/member/wyf9' },
           { text: 'Dobastickrn', link: '/member/Dobastickrn' }
         ]
       },
       {
         text: 'About',
         items: [
+          { text: 'Contact', link: '/about/contact' },
           { text: 'About us', link: '/about/us' },
           { text: 'About website', link: '/about/website' }
         ]
@@ -39,6 +40,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
+      { icon: 'discord', link: 'https://discord.gg/mdGamAxC7U' },
       { icon: 'github', link: 'https://github.com/siiway/blog' }
     ]
   }
