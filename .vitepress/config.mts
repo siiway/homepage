@@ -34,12 +34,14 @@ export default defineConfig({
         text: 'Outlinks', items: [
           { text: 'GitHub', link: 'https://github.com/siiway' },
           { text: 'Discord', link: 'https://discord.gg/mdGamAxC7U' },
+          { text: 'QQ', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
           { text: 'Uptime', link: 'https://uptime.siiway.top' }
         ]
       }
     ],
 
     socialLinks: [
+      { icon: 'qq', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
       { icon: 'discord', link: 'https://discord.gg/mdGamAxC7U' },
       { icon: 'github', link: 'https://github.com/siiway/blog' }
     ]

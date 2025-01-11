@@ -7,3 +7,5 @@
 GitHub: [siiway](https://github.com/siiway)
 
 Discord: [wyf9's Server](https://discord.gg/mdGamAxC7U)
+
+QQ: [Here](https://qm.qq.com/q/HcXaJ87W2O)
