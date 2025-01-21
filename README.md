@@ -1,6 +1,8 @@
 # blog
 
-Official Blog https://siiway.top
+Official Blog / Homepage
+
+Site: https://siiway.top
 
 ## Commands
 
