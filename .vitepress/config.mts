@@ -15,7 +15,12 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'Projects', link: '/projects' },
+      {
+        text: 'Projects',
+        items: [
+          { text: 'Projects', link: '/projects' }
+        ]
+      },
       {
         text: 'Member',
         items: [
@@ -29,7 +34,8 @@ export default defineConfig({
         items: [
           { text: 'Contact', link: '/about/contact' },
           { text: 'About us', link: '/about/us' },
-          { text: 'About website', link: '/about/website' }
+          { text: 'About website', link: '/about/website' },
+          { text: 'Join us', link: '/about/join' }
         ]
       },
       {
