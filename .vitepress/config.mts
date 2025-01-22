@@ -4,7 +4,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SiiWay Team Home",
   description: "SiiWay Team's Official Site",
-  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-sZEG1jYPbp' }] // <meta name="baidu-site-verification" content="codeva-sZEG1jYPbp" />
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
