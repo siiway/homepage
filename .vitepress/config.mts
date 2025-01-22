@@ -56,5 +56,9 @@ export default defineConfig({
       { icon: 'discord', link: 'https://discord.gg/mdGamAxC7U' },
       { icon: 'github', link: 'https://github.com/siiway' }
     ]
+  },
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://www.siiway.top'
   }
 })
