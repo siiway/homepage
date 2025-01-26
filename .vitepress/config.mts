@@ -29,7 +29,8 @@ export default defineConfig({
         items: [
           { text: 'xhc861', link: '/member/xhc861' },
           { text: 'wyf9', link: '/member/wyf9' },
-          { text: 'Dobastickrn', link: '/member/Dobastickrn' }
+          { text: 'Dobastickrn', link: '/member/Dobastickrn' },
+          { text: 'Shattered', link: '/member/Shattered' }
         ]
       },
       {
