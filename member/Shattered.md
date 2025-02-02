@@ -1,4 +1,5 @@
 # Member - Shattered
+
 极客，各方面的科技数码都接触过一些，vps，家庭服务器（UNRAID，PVE），腐竹，影音媒体库，软路由，电脑diy，安卓root，tws耳机，diy音响，音效，文生图，rvc，，，
 
 Java，Python，php都会一点但不多
@@ -9,8 +10,6 @@ Java，Python，php都会一点但不多
 
 GitHub: [Shattered217](https://github.com/Shattered217)
 
-Telegram: 
-[Shattered217](https://t.me/Shattered217)
+Telegram: [Shattered217](https://t.me/Shattered217)
 
-Blog: 
-[click](https://blog.shattered.top)
+Blog: [blog.shattered.top](https://blog.shattered.top)

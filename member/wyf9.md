@@ -14,7 +14,7 @@ SiiWay 团队创始人之一 (?)，兼核心成员
 
 GitHub: [wyf9](https://github.com/wyf9)
 
-Discord: [wyf9](https://discord.com/app)
+Discord: [wyf9](https://discord.com/users/992995849946804304)
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
