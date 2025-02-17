@@ -60,7 +60,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/siiway/blog/edit/main/:path',
-      text: 'Edit on GitHub / 在 GitHub 上编辑'
+      text: 'Edit on GitHub'
     }
   },
   lastUpdated: true,

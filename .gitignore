@@ -1,3 +1,8 @@
+# for Nodejs
 node_modules
+# VitePress build out
 .vitepress/dist
+# VitePress Cache
 .vitepress/cache
+# 就很奇怪 (npm install 生成的)
+'~/
