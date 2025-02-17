@@ -56,7 +56,12 @@ export default defineConfig({
       { icon: 'qq', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
       { icon: 'discord', link: 'https://discord.gg/mdGamAxC7U' },
       { icon: 'github', link: 'https://github.com/siiway' }
-    ]
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/siiway/blog/edit/main/:path',
+      text: 'Edit on GitHub / 在 GitHub 上编辑'
+    }
   },
   lastUpdated: true,
   sitemap: {
