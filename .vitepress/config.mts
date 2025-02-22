@@ -6,7 +6,8 @@ export default defineConfig({
   description: "SiiWay Team's Official Site",
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-sZEG1jYPbp' }] // <meta name="baidu-site-verification" content="codeva-sZEG1jYPbp" />
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-sZEG1jYPbp' }] // baidu verify
+    // ↑ <meta name="baidu-site-verification" content="codeva-sZEG1jYPbp" />
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,18 +15,18 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Projects', link: '/projects' },
       { text: 'Member', link: '/member' },
-      { text: 'About', link: '/about' }
+      { text: 'About', link: '/about/contact' }
     ],
 
     sidebar: [
       {
-        text: 'Projects',
+        text: 'Projects / 项目',
         items: [
-          { text: 'Projects', link: '/projects' }
+          { text: 'Projects / 项目列表', link: '/projects' }
         ]
       },
       {
-        text: 'Member',
+        text: 'Member / 成员',
         items: [
           { text: 'xhc861', link: '/member/xhc861' },
           { text: 'wyf9', link: '/member/wyf9' },
@@ -34,20 +35,20 @@ export default defineConfig({
         ]
       },
       {
-        text: 'About',
+        text: 'About / 关于',
         items: [
-          { text: 'Contact', link: '/about/contact' },
-          { text: 'About us', link: '/about/us' },
-          { text: 'About website', link: '/about/website' },
-          { text: 'Join us', link: '/about/join' }
+          { text: 'Contact / 联系', link: '/about/contact' },
+          { text: 'About us / 关于我们', link: '/about/us' },
+          { text: 'About website / 关于此网站', link: '/about/website' },
+          { text: 'Join us / 招新公告', link: '/about/join' }
         ]
       },
       {
-        text: 'Outlinks', items: [
+        text: 'Outlinks / 外链', items: [
           { text: 'GitHub', link: 'https://github.com/siiway' },
           { text: 'Discord', link: 'https://discord.gg/mdGamAxC7U' },
           { text: 'QQ', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
-          { text: 'Uptime', link: 'https://uptime.siiway.top' }
+          { text: 'Uptime / 状态页', link: 'https://uptime.siiway.top' }
         ]
       }
     ],
@@ -65,6 +66,6 @@ export default defineConfig({
   },
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://www.siiway.top'
+    hostname: 'https://siiway.top'
   }
 })

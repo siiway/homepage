@@ -45,7 +45,7 @@
 
 HayFrp 的非官方 Python SDK
 
-> 未完成
+> 未完成~~，且不想做~~
 
 * [GitHub](https://github.com/wyf9/HayFrpSDK)
 
@@ -56,7 +56,7 @@ HayFrp 的非官方 Python SDK
 :::warning
 因 Cloudflare 条款更新，本仓库不再维护
 
-任何使用造成后果与我 (wyf9) 无关!
+**任何使用造成后果与我 (wyf9) 无关!**
 :::
 
 * [GitHub](https://github.com/wyf9/reverse-proxies)
