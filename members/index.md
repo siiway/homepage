@@ -1,4 +1,4 @@
-# Member
+# Members
 
 SiiWay 团队目前有 4 位成员:
 

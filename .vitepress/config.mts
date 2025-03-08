@@ -14,7 +14,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Projects', link: '/projects' },
-      { text: 'Member', link: '/member' },
+      { text: 'Members', link: '/members' },
       { text: 'About', link: '/about/contact' }
     ],
 
@@ -26,12 +26,12 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Member / 成员',
+        text: 'Members / 成员',
         items: [
-          { text: 'xhc861', link: '/member/xhc861' },
-          { text: 'wyf9', link: '/member/wyf9' },
-          { text: 'Dobastickrn', link: '/member/Dobastickrn' },
-          { text: 'Shattered', link: '/member/Shattered' }
+          { text: 'xhc861', link: '/members/xhc861' },
+          { text: 'wyf9', link: '/members/wyf9' },
+          { text: 'Dobastickrn', link: '/members/Dobastickrn' },
+          { text: 'Shattered', link: '/members/Shattered' }
         ]
       },
       {

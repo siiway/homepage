@@ -13,8 +13,8 @@ hero:
       text: Projects
       link: /projects
     - theme: alt
-      text: Member
-      link: /member
+      text: Members
+      link: /members
     - theme: alt
       text: Contact
       link: /about/contact
