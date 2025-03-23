@@ -29,7 +29,7 @@
 
 一个 Python + Flask 编写的实时视奸网站，支持手动设置状态和显示设备打开应用
 
-* [GItHub](https://github.com/wyf9/sleepy)
+* [GitHub](https://github.com/wyf9/sleepy)
 * Site: https://sleepy.wyf9.top
 * Preview: https://sleepy-preview.wyf9.top
 
