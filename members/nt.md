@@ -2,8 +2,6 @@
 
 Luke Zhang, -3+4^2 , from Shanghai, China
 
-新成员，啥都没干 hhh
-
 名字来源：`NT AUTHORITY/SYSTEM`
 
 <details>
@@ -12,6 +10,28 @@ Luke Zhang, -3+4^2 , from Shanghai, China
 C#; Java; Powershell; HTML; Javascript; CSS; Batch
 </pre>
 </details>
+
+---
+
+## 项目
+
+> [!NOTE]
+> Only [Sleepy](https://github.com/wyf9/sleepy) Windows client are completed now.  
+> 目前写好的都是 [Sleepy](https://github.com/wyf9/sleepy) 的客户端
+
+### [Sleepy.WinForm](https://github.com/siiway/Sleepy.WinForm)
+
+A Windows .NET WiNForm GUI Client for [Sleepy](https://github.com/wyf9/sleepy)
+
+一个 Windows 平台的 C# WinForm 应用程序，作为 [Sleepy](https://github.com/wyf9/sleepy) 的客户端。
+
+> [!CAUTION]
+> C# GUI may cause serious lagging. You can use use [SPS](https://github.com/wyf9/sleepy/blob/main/client/Sleepy.Powershell.ps1) instead.  
+> C# GUI 的 `HttpClient` 似乎会导致严重的系统资源占用。你可以使用 [SPS](https://github.com/wyf9/sleepy/blob/main/client/Sleepy.Powershell.ps1) 替代。
+
+### [Sleepy.Powershell.ps1](https://github.com/wyf9/sleepy/blob/main/client/Sleepy.Powershell.ps1)
+
+用 Powershell 重写了 [win_client.py](https://github.com/wyf9/sleepy/blob/main/client/win_device.py)。
 
 ---
 
