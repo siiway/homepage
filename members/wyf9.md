@@ -18,6 +18,6 @@ Discord: [wyf9](https://discord.com/users/992995849946804304)
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
-Email: [wyf9@siiway.top](mailto:wyf9@siiway.top)
+Email: [wyf9[@]wyf9.top](https://siiway.top/t/m/wyf9/top)
 
 ~~视奸~~状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)

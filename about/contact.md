@@ -4,7 +4,7 @@
 
 官网: [本站](/)
 
-E-mail: [contact@siiway.top](mailto:contact@siiway.top)
+E-mail: [contact[@]siiway.top](https://siiway.top/t/mail)
 
 QQ (群): [Here](https://siiway.top/t/qq)
 

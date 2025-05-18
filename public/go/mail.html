@@ -1,0 +1,31 @@
+<html>
+
+<title>Redirecting...</title>
+<script>
+    window.onload = function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var email = urlParams.get('email');
+        var name = urlParams.get('name');
+        var domain = urlParams.get('domain');
+        if (email) {
+            document.getElementById('target').innerText = `Redirecting to: ${email}`.replace('@', '[@]');
+            window.location.replace(`mailto:${name}@${domain}`);
+        } else if (name && domain) {
+            document.getElementById('target').innerText = `Redirecting to: ${name}[@]${domain}`;
+            window.location.replace(`mailto:${email}`);
+        } else {
+            document.getElementById('target').innerText =
+                `*** Usage ***
+- email: Full Email
+- name: Email Name
+- domain: Email Domain
+*** Example ***
+https://siiway.top/go/mail?name=wyf9&domain=wyf9.top
+https://siiway.top/go/mail?email=wyf9@wyf9.top`
+        }
+    }
+</script>
+<p id="target"></p>
+<noscript>Sorry, but your browser doesn't support JavaScript.</noscript>
+
+</html>

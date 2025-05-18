@@ -1,4 +1,6 @@
 # 社交平台重定向 / Social Platform Redirects
+/t/m/:name/:domain /go/mail.html?name=:name&domain=:domain
+/t/mail /go/mail.html?name=contact&domain=siiway.top
 /t/gh https://github.com/siiway
 /t/dc https://discord.gg/mdGamAxC7U
 /t/qq https://qm.qq.com/q/HcXaJ87W2O
