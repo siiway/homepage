@@ -9,9 +9,6 @@ hero:
     src: /favicon.png
     alt: Logo
   actions:
-    - theme: brand
-      text: Projects
-      link: /projects
     - theme: alt
       text: Members
       link: /members

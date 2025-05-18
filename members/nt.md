@@ -13,7 +13,7 @@ C#; Java; Powershell; HTML; Javascript; CSS; Batch
 
 ---
 
-## 项目
+## Projects
 
 > [!NOTE]
 > Only [Sleepy](https://github.com/wyf9/sleepy) Windows client are completed now.  

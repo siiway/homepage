@@ -13,18 +13,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects' },
       { text: 'Members', link: '/members' },
       { text: 'About', link: '/about/contact' }
     ],
 
     sidebar: [
-      {
-        text: 'Projects / 项目',
-        items: [
-          { text: 'Projects / 项目列表', link: '/projects' }
-        ]
-      },
       {
         text: 'Members / 成员',
         items: [
