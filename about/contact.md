@@ -6,14 +6,14 @@
 
 E-mail: [contact@siiway.top](mailto:contact@siiway.top)
 
-QQ (群): [Here](/t/qq)
+QQ (群): [Here](https://siiway.top/t/qq)
 
-QQ Channel (频道): [siiwayofficial](/t/pd)
+QQ Channel (频道): [siiwayofficial](https://siiway.top/t/pd)
 
-**Discord: [wyf9's Server](/t/dc)**
+**Discord: [wyf9's Server](https://siiway.top/t/dc)**
 
-Telegram Group (群): [siiwayofficial](/t/tg)
+Telegram Group (群): [siiwayofficial](https://siiway.top/t/tg)
 
-Telegram Channel (频道): [siiwaychan](/t/tgc)
+Telegram Channel (频道): [siiwaychan](https://siiway.top/t/tgc)
 
-GitHub: [siiway](/t/gh)
+GitHub: [siiway](https://siiway.top/t/gh)
