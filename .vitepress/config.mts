@@ -46,22 +46,21 @@ export default defineConfig({
       },
       {
         text: 'Outlinks / 外链', items: [
-          { text: 'QQ Group / QQ 群', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
-          { text: 'QQ Channel / QQ 频道', link: 'https://pd.qq.com/s/ap03pjd80' },
-          { text: 'Discord', link: 'https://discord.gg/mdGamAxC7U' },
-          { text: 'Telegram Group / Telegram 群组', link: 'https://t.me/siiwayofficial' },
-          { text: 'Telegram Channel / Telegram 频道', link: 'https://t.me/siiwaychan' },
-          { text: 'GitHub', link: 'https://github.com/siiway' },
-          { text: 'Uptime / 状态页', link: 'https://uptime.siiway.top' }
+          { text: 'QQ Group / 群组', link: '/t/qq' },
+          { text: 'QQ Channel / 频道', link: '/t/pd' },
+          { text: 'Discord', link: '/t/dc' },
+          { text: 'Telegram Group / 群组', link: '/t/tg' },
+          { text: 'Telegram Channel / 频道', link: '/t/tgc' },
+          { text: 'GitHub', link: '/t/gh' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'qq', ariaLabel: 'QQ Group', link: 'https://qm.qq.com/q/HcXaJ87W2O' },
-      { icon: 'discord', ariaLabel: 'Discord', link: 'https://discord.gg/mdGamAxC7U' },
-      { icon: 'telegram', ariaLabel: 'Telegram Group', link: 'https://t.me/siiwayofficial' },
-      { icon: 'github', ariaLabel: 'GitHub', link: 'https://github.com/siiway' }
+      { icon: 'qq', ariaLabel: 'QQ Group', link: '/t/qq' },
+      { icon: 'discord', ariaLabel: 'Discord', link: '/t/dc' },
+      { icon: 'telegram', ariaLabel: 'Telegram Group', link: '/t/tg' },
+      { icon: 'github', ariaLabel: 'GitHub', link: '/t/gh' }
     ],
 
     editLink: {
