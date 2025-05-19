@@ -5,9 +5,7 @@ export default defineConfig({
   title: "SiiWay Team Home",
   description: "SiiWay Team's Official Site",
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }],
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-sZEG1jYPbp' }] // baidu verify
-    // ↑ <meta name="baidu-site-verification" content="codeva-sZEG1jYPbp" />
+    ['link', { rel: 'icon', href: '/favicon.png' }]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -39,21 +37,21 @@ export default defineConfig({
       },
       {
         text: 'Outlinks / 外链', items: [
-          { text: 'QQ Group / 群组', link: '/t/qq' },
-          { text: 'QQ Channel / 频道', link: '/t/pd' },
-          { text: 'Discord', link: '/t/dc' },
-          { text: 'Telegram Group / 群组', link: '/t/tg' },
-          { text: 'Telegram Channel / 频道', link: '/t/tgc' },
-          { text: 'GitHub', link: '/t/gh' }
+          { text: 'QQ Group / 群组', link: 'https://siiway.top/t/qq' },
+          { text: 'QQ Channel / 频道', link: 'https://siiway.top/t/pd' },
+          { text: 'Discord', link: 'https://siiway.top/t/dc' },
+          { text: 'Telegram Group / 群组', link: 'https://siiway.top/t/tg' },
+          { text: 'Telegram Channel / 频道', link: 'https://siiway.top/t/tgc' },
+          { text: 'GitHub', link: 'https://siiway.top/t/gh' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'qq', ariaLabel: 'QQ Group', link: '/t/qq' },
-      { icon: 'discord', ariaLabel: 'Discord', link: '/t/dc' },
-      { icon: 'telegram', ariaLabel: 'Telegram Group', link: '/t/tg' },
-      { icon: 'github', ariaLabel: 'GitHub', link: '/t/gh' }
+      { icon: 'qq', ariaLabel: 'QQ', link: 'https://siiway.top/t/qq' },
+      { icon: 'discord', ariaLabel: 'Discord', link: 'https://siiway.top/t/dc' },
+      { icon: 'telegram', ariaLabel: 'Telegram', link: 'https://siiway.top/t/tg' },
+      { icon: 'github', ariaLabel: 'GitHub', link: 'https://siiway.top/t/gh' }
     ],
 
     editLink: {
