@@ -8,29 +8,40 @@
 
 <script>
     window.onload = function () {
+        // get params
         var urlParams = new URLSearchParams(window.location.search);
         var email = urlParams.get('email');
         var name = urlParams.get('name');
         var domain = urlParams.get('domain');
         if (email) {
-            document.getElementById('target').innerText = `Redirecting to: ${email}`.replace('@', '[@]');
-            window.location.replace(`mailto:${name}@${domain}`);
-        } else if (name && domain) {
-            document.getElementById('target').innerText = `Redirecting to: ${name}[@]${domain}`;
+            // full email
             window.location.replace(`mailto:${email}`);
+        } else if (name) {
+            if (domain) {
+                // email name and domain
+                window.location.replace(`mailto:${name}@${domain}`);
+            } else {
+                // email name @ siiway.top
+                window.location.replace(`mailto:${name}@siiway.top`);
+            }
         } else {
-            document.getElementById('target').innerText =
-                `*** Usage ***
+            // not found
+            alert(`*** Usage ***
 - email: Full Email
+* or *
 - name: Email Name
-- domain: Email Domain
+- domain: Email Domain (default: siiway.top)
 *** Example ***
 https://siiway.top/go/mail?name=wyf9&domain=wyf9.top
-https://siiway.top/go/mail?email=wyf9@wyf9.top`
+https://siiway.top/go/mail?email=wyf9@wyf9.top`)
         }
+
+        // close page
+        var opened = window.open('about:blank', '_self');
+        opened.opener = null;
+        opened.close();
     }
 </script>
-<p id="target"></p>
 <noscript>Sorry, but your browser doesn't support JavaScript.</noscript>
 
 </html>
