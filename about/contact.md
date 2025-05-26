@@ -12,8 +12,4 @@ QQ Channel (频道): [siiwayofficial](https://siiway.top/t/pd)
 
 **Discord: [wyf9's Server](https://siiway.top/t/dc)**
 
-Telegram Group (群): [siiwayofficial](https://siiway.top/t/tg)
-
-Telegram Channel (频道): [siiwaychan](https://siiway.top/t/tgc)
-
 GitHub: [siiway](https://siiway.top/t/gh)

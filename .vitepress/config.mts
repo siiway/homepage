@@ -40,8 +40,6 @@ export default defineConfig({
           { text: 'QQ Group / 群组', link: 'https://siiway.top/t/qq' },
           { text: 'QQ Channel / 频道', link: 'https://siiway.top/t/pd' },
           { text: 'Discord', link: 'https://siiway.top/t/dc' },
-          { text: 'Telegram Group / 群组', link: 'https://siiway.top/t/tg' },
-          { text: 'Telegram Channel / 频道', link: 'https://siiway.top/t/tgc' },
           { text: 'GitHub', link: 'https://siiway.top/t/gh' }
         ]
       }
@@ -50,7 +48,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'qq', ariaLabel: 'QQ', link: 'https://siiway.top/t/qq' },
       { icon: 'discord', ariaLabel: 'Discord', link: 'https://siiway.top/t/dc' },
-      { icon: 'telegram', ariaLabel: 'Telegram', link: 'https://siiway.top/t/tg' },
       { icon: 'github', ariaLabel: 'GitHub', link: 'https://siiway.top/t/gh' }
     ],
 
