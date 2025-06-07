@@ -1,29 +1,32 @@
-# Member - Murasame
+# Member - Murasame ✨
 
-基于 AI🤖 的 Coder⌨，项目流程会在 AI 构建完项目后进行人工修改以及调试   
+基于 AI🤖 的 Galgame 系 Coder⌨，像丛雨酱挥舞武士刀一样优雅地敲代码~  
+项目开发流程：先用 AI 构建雏形 → 像对待《千恋＊万花》CG 一样精心打磨 → 反复调试直到完美  
 
-主要技术栈是 Python🐍，后续会学习 C Kotlin
+**主要技术栈**：  
+🐍 Python - 如同丛雨的温柔一样令人安心  
+☕ Java - 像芳乃大人泡的茶般醇厚  
+📱 Kotlin（学习中）- 期待能像茉子一样灵活多变  
+🖥️ C/C++（学习中）- 追求朝武前辈般的强大实力  
 
+[Murasame Dev.](https://github.com/Murasame-Dev) 团队创始人，命名灵感来源于最爱的**丛雨酱**  
+（其实是柚子社同好会啦~）  
 
+***叢雨ちゃん世界一かわいい！❤***  
+***柚子社的作品是人生之光！***  
 
-[Murasame Dev.](https://github.com/Murasame-Dev) 的团队创始人，取名原因是自己喜欢 **丛雨** 喵  
+# **Ciallo～(∠・ω< )⌒★**  
+（每次编译通过时都会说的咒语）  
 
-***丛雨天下第一❤！！！***
+## 近期状态 🌸
+☑️ 重刷《千恋＊万花》第7周目  
+☑️ 在代码里藏柚子社梗（//TODO: ここにコメントを書く）  
+☑️ 试图教AI理解"有月 りんご"的可爱之处  
 
+## Contact
+🍡 GitHub: [Murasame](https://github.com/LeiSureLyYrsc) - 个人主页有穗织风装饰  
+📜 博客: [Murasame's Blog](https://0d000721.xin)
+🎐 状态站: [status.0d000721.xin](https://status.0d000721.xin) - 现在播放：《恋ひ恋ふ縁》  
 
-
-# **Ciallo～(∠・ω< )⌒★**
-
-
-
-# Contact
-
-Github: [Murasame](https://github.com/LeiSureLyYrsc) 👈里面有我所有联系方式   
-
-Ciallo～(∠・ω< )⌒★
-
-
-
-
-
-
+> "コードを書くことも、恋するこころも、  
+> どちらも大切なものですよ～" —— 丛雨酱如是说  
