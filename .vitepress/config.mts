@@ -23,7 +23,8 @@ export default defineConfig({
           { text: 'wyf9', link: '/members/wyf9' },
           { text: 'Dobastickrn', link: '/members/Dobastickrn' },
           { text: 'Shattered', link: '/members/Shattered' },
-          { text: 'NT-AUTHORITY', link: '/members/nt' }
+          { text: 'NT-AUTHORITY', link: '/members/nt' },
+          { text: 'Murasame', link: '/members/Murasame' }
         ]
       },
       {

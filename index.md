@@ -9,6 +9,9 @@ hero:
     src: /favicon.png
     alt: Logo
   actions:
+    - theme: brand
+      text: GitHub
+      link: https://github.com/siiway
     - theme: alt
       text: Members
       link: /members
