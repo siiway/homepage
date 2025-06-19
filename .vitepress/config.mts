@@ -40,6 +40,7 @@ export default defineConfig({
         text: 'Outlinks / 外链', items: [
           { text: 'QQ Group / 群组', link: 'https://siiway.top/t/qq' },
           { text: 'QQ Channel / 频道', link: 'https://siiway.top/t/pd' },
+          { text: 'Wechat / 微信公众号', link: 'https://siiway.top/t/wx' },
           { text: 'Discord', link: 'https://siiway.top/t/dc' },
           { text: 'GitHub', link: 'https://siiway.top/t/gh' }
         ]
@@ -48,6 +49,8 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'qq', ariaLabel: 'QQ', link: 'https://siiway.top/t/qq' },
+      { icon: { svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768.74 768"><path fill="currentColor" fill-rule="evenodd" d="M0,384.37a384.37,384.37 0 1,0 768.74,0a384.37,384.37 0 1,0 -768.74,0z M577,319.29l5.7-36H507.33L518.47,213h-36l-11.14,70.29H328L339.12,213h-36L292,283.29H216.72l-5.7,36h75.26L267,441.19H191.72l-5.71,36h75.27L249,555h36l12.33-77.81H369L432.42,529l31.88,26,12.32-77.81H552l5.71-36H482.33l19.3-121.9ZM446.33,441.19l-5.71,36L438.12,493l-63.47-51.79H303l19.3-121.9H465.63Z"/></svg>' }, ariaLabel: 'QQChan', link: 'https://siiway.top/t/pd' },
+      { icon: 'wechat', ariaLabel: 'Wechat', link: 'https://siiway.top/t/wx' },
       { icon: 'discord', ariaLabel: 'Discord', link: 'https://siiway.top/t/dc' },
       { icon: 'github', ariaLabel: 'GitHub', link: 'https://siiway.top/t/gh' }
     ],

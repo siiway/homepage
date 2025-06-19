@@ -10,6 +10,8 @@ QQ (群): [Here](https://siiway.top/t/qq)
 
 QQ Channel (频道): [siiwayofficial](https://siiway.top/t/pd)
 
+微信公众号: [siiway](https://siiway.top/t/wx)
+
 **Discord: [wyf9's Server](https://siiway.top/t/dc)**
 
 GitHub: [siiway](https://siiway.top/t/gh)
