@@ -8,7 +8,7 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 
 ---
 
-## Ciallo～(∠・ω< )⌒★👋 这里是 LeiSureLy ~
+# Member - Murasame✨
 
 ### 一名大一学生，柚子厨一枚(∠・ω< )⌒★
 
@@ -38,5 +38,3 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 `🐦` X(Twitter): [@LeisureLy_Yrsc](https://twitter.com/LeisureLy_Yrsc) (不常用)  
 `✈️` Telegram: [@lsrlyrsc](https://t.me/lsrlyrsc) (或许不常用)  
 `👥` TG群组: [LoveMurasame](https://t.me/LoveMurasame) (或许不常用)  
-
-
