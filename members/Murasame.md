@@ -1,40 +1,42 @@
-# Member - Murasame ✨
+![Kawaii Murasame!](./Murasame/kawaii.jpg)
 
-基于 AI🤖 的 Galgame 系 Coder⌨，像丛雨酱挥舞武士刀一样优雅地敲代码~
-项目开发流程：先用 AI 构建雏形 → 像对待《千恋＊万花》CG 一样精心打磨 → 反复调试直到完美
+<p align="center">
+这些可爱的丛雨酱是来自<a href="https://x.com/uoouchan">@uoouchan</a>的！<br>
+これらの可愛いムラサメちゃんは<a href="https://x.com/uoouchan">@uoouchan</a>さんからのものです！<br>
+These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan</a>! 
+</p>
 
-> *wyf9 的补充: **SiiWay 唯一指定吉祥物***
+---
 
-**主要技术栈**：
-- 🐍 **Python** - 如同丛雨的温柔一样令人安心
-- ☕ **Java**（学习中） - 像芳乃大人泡的茶般醇厚
-- 📱 **Kotlin**（学习中）- 期待能像茉子一样灵活多变
-- 🖥️ **C/C++**（学习中）- 追求朝武前辈般的强大实力
+## Ciallo～(∠・ω< )⌒★👋 这里是 LeiSureLy ~
 
-[Murasame Dev.](https://github.com/Murasame-Dev) 团队创始人，命名灵感来源于最爱的**丛雨酱**
-（其实是柚子社同好会啦~）
+### 一名大一学生，柚子厨一枚(∠・ω< )⌒★
 
-***叢雨ちゃん世界一かわいい！❤***
+本命角色：
 
-***柚子社的Gal是世界第一！***
+- 《千恋＊万花》的ムラサメ(丛雨)小天使 ✨   
+- 《天使☆嚣嚣 RE-BOOT!》的白雪乃愛小恶魔 ❤️   
+  对外用名 Murasame Noa (丛雨乃爱) ฅ^•ﻌ•^ฅ
 
-# **Ciallo～(∠・ω< )⌒★**
+🎌 Murasame Dev 组织创始人 | 代码里必藏柚子厨元素(∠・ω< )⌒★   
+🐍 Python开发者 | 实际上是个 AI Coder ฅ^•ﻌ•^ฅ   
+🤖 专注于开发机器人聊天娱乐插件 | 作品:  
 
-（每次编译通过时都会说的咒语）
+- [**QQEssentials**](https://github.com/Murasame-Dev/nonebot-plugin-qqessentials) (一个能够满足你很多需求的QQ基础插件！)
+- [**AreUSleepy**](https://github.com/Murasame-Dev/nonebot-plugin-areusleepy) (让bot来视剑我们！)
 
-## 近期状态 🌸
+💭 敏感体质 | 很在意朋友们的状态和看法 (´• ω •`)ﾉ   
+🗣️ 语言组织苦手 | 但会努力表达清楚！   
+✨ 有消息必回 | 希望能和大家成为好朋友！(≧∇≦)ﾉ
 
-☑️ 在代码里藏柚子社梗
+---
 
-☑️ Ciallo～(∠・ω< )⌒★
+`🌐` 视奸我！: [status.0d000721.xin](https://status.0d000721.xin)  
+`📧` MailTo: [lsrlgod233@gmail.com](mailto:lsrlgod233@gmail.com)  
+`🐱` Github: [LeiSureLyYrsc](https://github.com/LeiSureLyYrsc)   
+`🍊` Murasame Dev: [Murasame-Dev](https://github.com/Murasame-Dev)  
+`🐦` X(Twitter): [@LeisureLy_Yrsc](https://twitter.com/LeisureLy_Yrsc) (不常用)  
+`✈️` Telegram: [@lsrlyrsc](https://t.me/lsrlyrsc) (或许不常用)  
+`👥` TG群组: [LoveMurasame](https://t.me/LoveMurasame) (或许不常用)  
 
-## Contact
 
-🍡 GitHub: [LeiSureLyYrsc](https://github.com/LeiSureLyYrsc) - 个人主页有穗织风装饰
-
-📜 博客: [Murasame's Blog](https://0d000721.xin)
-
-🎐 状态站: [status.0d000721.xin](https://status.0d000721.xin) - 现在播放：《恋ひ恋ふ縁》
-
-> "コードを書くことも、恋するこころも、
-> どちらも大切なものですよ～" —— 丛雨酱如是说
