@@ -1,4 +1,4 @@
-# blog
+# homepage
 
 SiiWay 团队主页
 

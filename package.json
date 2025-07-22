@@ -4,11 +4,11 @@
   "description": "SiiWay Team's Official Site",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siiway/blog.git"
+    "url": "git+https://github.com/siiway/homepage.git"
   },
   "author": "siiway",
   "bugs": {
-    "url": "https://github.com/siiway/blog/issues"
+    "url": "https://github.com/siiway/homepage/issues"
   },
   "homepage": "https://siiway.top",
   "devDependencies": {
