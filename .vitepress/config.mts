@@ -24,7 +24,8 @@ export default defineConfig({
           { text: 'Dobastickrn', link: '/members/Dobastickrn' },
           { text: 'Shattered', link: '/members/Shattered' },
           { text: 'NT-AUTHORITY', link: '/members/nt' },
-          { text: 'Murasame', link: '/members/Murasame' }
+          { text: 'Murasame', link: '/members/Murasame' },
+          { text: 'Zackzheng1121', link: '/members/zackzheng1121' }
         ]
       },
       {

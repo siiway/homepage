@@ -1,6 +1,6 @@
 # Members
 
-SiiWay 团队目前有 6 位成员:
+SiiWay 团队目前有 7 位成员:
 
 - [xhc861](./xhc861)
 - [wyf9](./wyf9)
@@ -8,3 +8,4 @@ SiiWay 团队目前有 6 位成员:
 - [Shattered](./Shattered)
 - [NT_AUTHORITY](./nt)
 - [Murasame](./Murasame)
+- [Zackzheng1121](./zackzheng1121)
