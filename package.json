@@ -11,8 +11,8 @@
     "url": "https://github.com/siiway/homepage/issues"
   },
   "homepage": "https://siiway.top",
-  "devDependencies": {
-    "vitepress": "^1.6.3"
+  "dependencies": {
+    "vitepress": "^1.6.4"
   },
   "scripts": {
     "dev": "vitepress dev --port 5179",
