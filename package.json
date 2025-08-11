@@ -12,7 +12,7 @@
   },
   "homepage": "https://siiway.top",
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.4"
   },
   "scripts": {
     "dev": "vitepress dev --port 5179",
