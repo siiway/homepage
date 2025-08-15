@@ -4,7 +4,7 @@
 
 [Homepage](//www.xiaoyuan151.com)  
 [GitHub](//github.com/XiaoYuan151)  
-[Hugging Face](//huggingface.co/XiaoYuan151)  
+[Hugging Face](//huggingface.co/XiaoYuan151)
 
 ---
 
