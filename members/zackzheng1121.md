@@ -25,6 +25,6 @@ Status: https://zackzhenggggggggggggggggggggggggggggg-sleepy.hf.space/
 
 GitHub: [zackzheng1121](https://github.com/zackzheng1121)
 
-Email: Email: [zackzheng1121[@]siiway.top](https://siiway.top/t/m/zackzheng1121/siiway.top)
+Email: [zackzheng1121[@]siiway.top](https://siiway.top/t/m/zackzheng1121/siiway.top)
 
 > 眼睛有驚喜
