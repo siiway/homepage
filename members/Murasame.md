@@ -32,9 +32,15 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 ---
 
 `🌐` 视奸我！: [status.0d000721.xin](https://status.0d000721.xin)
+
 `📧` MailTo: [baka[@]s****y.top](https://siiway.top/t/m/baka)
+
 `🐱` Github: [LeiSureLyYrsc](https://github.com/LeiSureLyYrsc)
+
 `🍊` Murasame Dev: [Murasame-Dev](https://github.com/Murasame-Dev)
+
 `🐦` X(Twitter): [@LeisureLy_Yrsc](https://twitter.com/LeisureLy_Yrsc) (不常用)
+
 `✈️` Telegram: [@lsrlyrsc](https://t.me/lsrlyrsc) (或许不常用)
+
 `👥` TG群组: [LoveMurasame](https://t.me/LoveMurasame) (或许不常用)

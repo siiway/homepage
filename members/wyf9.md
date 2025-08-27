@@ -29,9 +29,15 @@ SiiWay 团队创始人之一 (?)，兼核心成员
 
 一个 Python + Flask 编写的实时视奸网站
 
-* [GitHub](https://github.com/wyf9/sleepy)
+* [GitHub](https://github.com/sleepy-project/sleepy)
 * 点击直达: https://sleepy.wyf9.top
 * Preview: https://sleepy-preview.wyf9.top
+
+### hayfrp-auto-sign
+
+Cloudflare Workers 编写的 HayFrp 自动签到工具
+
+* [GitHub](https://github.com/wyf9/hayfrp-auto-sign)
 
 ## Contact
 
