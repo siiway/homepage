@@ -43,6 +43,6 @@ Telegram: [wyf9official](https://t.me/wyf9official)
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
-Email: [wyf9[@]wyf9.top](https://siiway.top/t/m/wyf9/wyf9.top)
+Email: [`w***[@]w***.top`](https://siiway.top/t/m/wyf9/wyf9.top)
 
 ~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)

@@ -15,13 +15,16 @@
         var domain = urlParams.get('domain');
         if (email) {
             // full email
+            alert(`Redirecting to mailto:${email}`);
             window.location.replace(`mailto:${email}`);
         } else if (name) {
             if (domain) {
                 // email name and domain
+                alert(`Redirecting to mailto:${name}@${domain}`);
                 window.location.replace(`mailto:${name}@${domain}`);
             } else {
                 // email name @ siiway.top
+                alert(`Redirecting to mailto:${name}@siiway.top`);
                 window.location.replace(`mailto:${name}@siiway.top`);
             }
         } else {
@@ -32,8 +35,13 @@
 - name: Email Name
 - domain: Email Domain (default: siiway.top)
 *** Example ***
-https://siiway.top/go/mail?name=wyf9&domain=wyf9.top
-https://siiway.top/go/mail?email=wyf9@wyf9.top`)
+https://siiway.top/go/mail?name=example -> example @ siiway.top
+https://siiway.top/go/mail?name=example&domain=wyf9.top -> example @ wyf9.top
+https://siiway.top/go/mail?email=example@wyf9.top -> example @ wyf9.top
+* or Shortten Links *
+https://siiway.top/t/m/example -> example @ siiway.top
+https://siiway.top/t/m/example/wyf9.top -> example @ wyf9.top
+`)
         }
 
         // close page
@@ -42,6 +50,5 @@ https://siiway.top/go/mail?email=wyf9@wyf9.top`)
         opened.close();
     }
 </script>
-<noscript>Sorry, but your browser doesn't support JavaScript.</noscript>
-
+<noscript>Sorry, but your browser doesn't support JavaScript, or not enabled.</noscript>
 </html>
