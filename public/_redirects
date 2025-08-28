@@ -8,6 +8,7 @@
 /t/gh https://github.com/siiway
 /t/tg https://t.me/siiway_chat
 /t/tgc https://t.me/siiwayofficial
+/t/yh https://yhfx.jwznb.com/share?key=8g5YE0jTH0ul&ts=1755022883
 
 # 邮箱重定向 / Email Redirects
 /t/m/:name /go/mail.html?name=:name
