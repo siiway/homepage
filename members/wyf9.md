@@ -1,12 +1,12 @@
 # Member - wyf9
 
-原名: ■■■，1+1+1+1+1+1+1+1+1+1+1+1+1+1 y.o, From Guizhou, China
+原名: ■■■，1+1+1+1+1+1+1+1+1+1+1+1+1+1+1 y.o, From Guizhou, China
 
 SiiWay 团队创始人之一 (?)，兼核心成员
 
 名字来源：原名拼音首字母 ***~~(不是还在牢里的那个)~~***
 
-全栈开发者，尤喜 Python，有 **4** 年开发经验（真的，有 GitHub 主页为证 ↓）
+非全栈开发者，尤喜 Python，*有 **4** 年开发经验（真的，有 GitHub 主页为证 ↓）* 其实没什么贡献，当个玩笑就行
 
 ~~不想写了~~
 
@@ -30,7 +30,8 @@ SiiWay 团队创始人之一 (?)，兼核心成员
 一个 Python + Flask 编写的实时视奸网站
 
 * [GitHub](https://github.com/sleepy-project/sleepy)
-* 点击直达: https://sleepy.wyf9.top
+* Website: https://sleepy.siiway.top
+* ~~点击直达: https://sleepy.wyf9.top~~ Not deployed
 * Preview: https://sleepy-preview.wyf9.top
 
 ### hayfrp-auto-sign
