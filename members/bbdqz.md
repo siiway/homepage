@@ -1,4 +1,4 @@
-# 白白的群子(bbdqz)
+# 白白的群子 (bbdqz)
 
 一位来自于广东佛山的神秘(?)开发者, 名字于我很小的时候随便起的
 
@@ -11,6 +11,7 @@
 ---
 
 ## 爱好方面
+
 喜欢用Rust,Python等语言 (虽然Python语法几乎快忘记了)
 
 不会前端 (
@@ -22,10 +23,13 @@
 ## 参与/开发的项目
 
 ### Rust for ClassWidgets2
+
 由Rust重写并添加诸多功能的新版本,致力于做得更好
+
 * 由于项目暂未达到可用程度,故与RinLit的ClassWidgets2一样保持闭源状态
 
 ## 联系我
+
 [GitHub](https://github.com/furinafirefly)
 
 [Discord](https://discord.com/users/1327899724807798867)
