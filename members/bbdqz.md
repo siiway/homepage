@@ -30,11 +30,11 @@
 
 ## 联系我
 
-[GitHub](https://github.com/furinafirefly)
+GitHub: [`furinafirefly`](https://github.com/furinafirefly)
 
-[Discord](https://discord.com/users/1327899724807798867)
+Discord: [`bbdqz`](https://discord.com/users/1327899724807798867)
 
-[Email](https://siiway.top/t/m/bbdqz_114/163.com)
+Email: [`bb**z[@]s****y.top`](https://siiway.top/t/m/bbdqz)
 
 
 
