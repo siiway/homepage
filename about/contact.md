@@ -12,10 +12,12 @@ QQ Channel (频道): [siiwayofficial](https://siiway.top/t/pd)
 
 微信公众号: [siiway](https://siiway.top/t/wx)
 
-**Discord: [wyf9's Server](https://siiway.top/t/dc)**
+Discord: [wyf9's Server](https://siiway.top/t/dc)
 
 GitHub: [siiway](https://siiway.top/t/gh)
 
 Telegram 群组: [siiway_chat](https://siiway.top/t/tg)
 
 Telegram 频道: [siiwayofficial](https://siiway.top/t/tgc)
+
+云湖群组: [145008852](https://siiway.top/t/yh)
