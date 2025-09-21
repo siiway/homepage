@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /members/CR400AFC2214.html
-Disallow: /members/CR400AFC2214/
+Disallow: /assets/
