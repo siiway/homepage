@@ -19,6 +19,7 @@ export default defineConfig({
         items: [
           { text: "xhc861", link: "/members/xhc861" },
           { text: "wyf9", link: "/members/wyf9" },
+          { text: "蜜蜂QWQ", link: "/members/imbee" },
           { text: "Dobastickrn", link: "/members/Dobastickrn" },
           { text: "Shattered", link: "/members/Shattered" },
           { text: "NtKrnl32", link: "/members/nt" },
