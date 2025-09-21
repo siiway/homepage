@@ -24,7 +24,6 @@ export default defineConfig({
           { text: "NtKrnl32", link: "/members/nt" },
           { text: "Murasame", link: "/members/Murasame" },
           { text: "Zackzheng1121", link: "/members/zackzheng1121" },
-          { text: "CR400AFC2214", link: "/members/CR400AFC2214" },
           { text: "XiaoYuan151", link: "/members/XiaoYuan151" },
           { text: "bbdqz", link: "/members/bbdqz" },
         ],
