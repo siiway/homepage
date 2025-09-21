@@ -19,7 +19,6 @@ export default defineConfig({
         items: [
           { text: "xhc861", link: "/members/xhc861" },
           { text: "wyf9", link: "/members/wyf9" },
-          { text: "蜜蜂QWQ", link: "/members/imbee" },
           { text: "Dobastickrn", link: "/members/Dobastickrn" },
           { text: "Shattered", link: "/members/Shattered" },
           { text: "NtKrnl32", link: "/members/nt" },
@@ -27,6 +26,7 @@ export default defineConfig({
           { text: "Zackzheng1121", link: "/members/zackzheng1121" },
           { text: "XiaoYuan151", link: "/members/XiaoYuan151" },
           { text: "bbdqz", link: "/members/bbdqz" },
+          { text: "蜜蜂QWQ", link: "/members/imbee" },
         ],
       },
       {

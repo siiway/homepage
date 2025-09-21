@@ -4,7 +4,6 @@ SiiWay 团队目前有 9 位成员 (按加入时间排序):
 
 - [xhc861](./xhc861)
 - [wyf9](./wyf9)
-- [bee](./imbee)
 - [Dobatickrn](./Dobastickrn)
 - [Shattered](./Shattered)
 - [NtKrnl32](./nt)
