@@ -12,7 +12,7 @@
 
 全栈开发者，有0年开发经验
 
-No Java, No Rust, No Arch, No yellow
+No Java, No Rust, No Ubuntu, No Arch, No yellow
 
 
 
