@@ -26,7 +26,8 @@ export default defineConfig({
           { text: "Zackzheng1121", link: "/members/zackzheng1121" },
           { text: "XiaoYuan151", link: "/members/XiaoYuan151" },
           { text: "bbdqz", link: "/members/bbdqz" },
-          { text: "蜜蜂QWQ", link: "/members/imbee" },
+          { text: "imbee", link: "/members/imbee" },
+          { text: "SenNaiFox", link: "/members/SenNaiFox"}
         ],
       },
       {
