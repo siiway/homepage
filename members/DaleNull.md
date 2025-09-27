@@ -12,16 +12,16 @@ Java (无知时期接触的第一门语言，给现在的我留下了深深的�
 ~~TypeScript~~(练习中)
 
 ## Environment
-Windows 11 + WSL Ububtu + Hyper-V Hackintosh
+Windows 11 + WSL Ubuntu + Hyper-V Hackintosh
 Visual Studio + VSCode
 一堆群聊用来找点子
 一堆廉价单片机板子
 
 ## Hobby
 一堆音游？
-几个二游？
+几个二游？H
 一颗试图白嫖云服务的心？
 ~~有活能整嘛？~~
 
 ## Contact
-Github: [Dt8333](https://github.com/Dt8333) (没啥东西)
+GitHub: [Dt8333](https://github.com/Dt8333) (没啥东西)
