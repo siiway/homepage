@@ -39,3 +39,5 @@ Visual Studio + VSCode
 ## Contact
 
 GitHub: [Dt8333](https://github.com/Dt8333) (没啥东西)
+
+Email: [`dalenull[@]s****y.top`](https://siiway.top/t/m/dalenull)
