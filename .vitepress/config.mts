@@ -28,7 +28,8 @@ export default defineConfig({
           { text: "bbdqz", link: "/members/bbdqz" },
           { text: "imbee", link: "/members/imbee" },
           { text: "SenNaiFox", link: "/members/SenNaiFox" },
-          { text: "DaleNull", link: "/members/DaleNull" }
+          { text: "DaleNull", link: "/members/DaleNull" },
+          { text: "killjsj", link: "/members/killjsj" }
         ],
       },
       {
