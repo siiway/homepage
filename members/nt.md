@@ -1,5 +1,11 @@
 # Member - NtKrnl32
 
+> [!IMPORTANT]
+> **This member left siiway himself.**
+
+<details>
+<summary>I want to see the archive</summary>
+<pre>
 Luke Zhang, -2+4^2 , from Shanghai, China, SiiWay (Core) Member
 
 名字来源：`NT AUTHORITY/SYSTEM`
@@ -45,3 +51,7 @@ Bilibili: [`NtKrnl32`](https://space.bilibili.com/3537109172357757) (UID `353710
 Email: [`nt@lu**zhang.win`](https://static-api.lukezhang.win/decryptEmail/index.html?closeType=1&base64=bHVrZXpAbHVrZXpoYW5nLndpbg==)
 
 Blog: [`lukezhang.win`](https://lukezhang.win)
+
+</pre>
+</details>
+
