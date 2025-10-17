@@ -1,6 +1,10 @@
 # Member - NtKrnl32
 
-Luke Zhang, -2+4^2 , from Shanghai, China, SiiWay (Core) Member
+Luke Zhang, -2+4^2 , from Shanghai, China, SiiWay (**Core**) Member
+
+>看不懂? 👆 SiiWay (**核心**) 成员
+
+<!-- 可见我的加群问题提示之多 -->
 
 名字来源：`NT AUTHORITY/SYSTEM`
 

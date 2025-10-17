@@ -1,10 +1,12 @@
 # Member - wyf9
 
-原名: ■■■，1+1+1+1+1+1+1+1+1+1+1+1+1+1+1 y.o, From Guizhou, China
+原名: wyf，1+1+1+1+1+1+1+1+1+1+1+1+1+1+1 y.o, From Guizhou, China
 
-SiiWay 团队创始人之一 (?)，兼核心成员
+SiiWay 团队创始人之一 (?)，兼**核心成员** <font color=red> -- 我在提醒你注意看这里</font>
 
-名字来源：原名拼音首字母 ***~~(不是还在牢里的那个)~~***
+<!-- 可见我的加群问题提示之多 -->
+
+名字来源：原名拼音首字母 *~~(不是还在牢里的那个)~~*
 
 非全栈开发者，尤喜 Python，*有 **4** 年开发经验（真的，有 GitHub 主页为证 ↓）* 其实没什么贡献，当个玩笑就行
 
@@ -53,3 +55,6 @@ Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 Email: [`w***[@]w***.top`](https://siiway.top/t/m/wyf9/wyf9.top)
 
 ~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
+
+> [!NOTE]
+> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs (然而是个人电脑上运行的，所以不稳定在线)
