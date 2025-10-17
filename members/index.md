@@ -1,6 +1,6 @@
 # Members
 
-SiiWay 团队目前有 12 位成员 (按加入时间排序):
+SiiWay 团队目前有 13 位成员 (按加入时间排序):
 
 - [xhc861](./xhc861)
 - [wyf9](./wyf9)
@@ -14,3 +14,4 @@ SiiWay 团队目前有 12 位成员 (按加入时间排序):
 - [imbee](./imbee)
 - [SenNaiFox](./SenNaiFox)
 - [DaleNull](./DaleNull)
+- [killjsj](./killjsj)
