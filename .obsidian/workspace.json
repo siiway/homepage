@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3a583dd43639258d",
+        "id": "f335b2bc191e2ac7",
         "type": "tabs",
         "children": [
           {
-            "id": "0dc589c43ec8a513",
+            "id": "edea323ef07d6d39",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -183,8 +183,27 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "0dc589c43ec8a513",
+  "active": "d01a062fcb108bd4",
   "lastOpenFiles": [
+    "en_us/members/index.md",
+    "en_us/members/index.html",
+    "en_us/members",
+    "about/website.md",
+    "about/contact.md",
+    "en_us/about/website.md",
+    "en_us/about/contact.md",
+    "en_us/about",
+    "en_us/index.md",
+    "en_us",
+    "en/index.md",
+    "_tmp_135725_797b679bff267b1d3f554fffdedf5358",
+    "node_modules",
+    "_tmp_135582_407e24b51b6c313bd3d78b8d7761afdd",
+    "en",
+    "about/siiway-wechat.png",
+    "index.md",
+    "README.md",
+    "members/killjsj.md",
     "members/zackzheng1121.md",
     "members/XiaoYuan151.md",
     "members/xhc861.md",

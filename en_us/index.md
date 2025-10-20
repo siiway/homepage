@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SiiWay Team Home"
-  tagline: "欢迎来到 SiiWay 团队的官方主页!"
+  tagline: "Welcome to SiiWay Team's Official Homepage!"
   image:
     src: /favicon.png
     alt: Logo
@@ -14,8 +14,8 @@ hero:
       link: https://github.com/siiway
     - theme: alt
       text: Members
-      link: /members
+      link: /en_us/members
     - theme: alt
       text: Contact
-      link: /about/contact
+      link: /en_us/about/contact
 ---
