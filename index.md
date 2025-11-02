@@ -13,9 +13,9 @@ hero:
       text: GitHub
       link: https://github.com/siiway
     - theme: alt
-      text: Members
+      text: 成员
       link: /members
     - theme: alt
-      text: Contact
+      text: 联系
       link: /about/contact
 ---
