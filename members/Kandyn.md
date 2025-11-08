@@ -38,6 +38,6 @@
 
 ## 联系
 
-GitHub: [`Kandyns`](https://github.com/Kandyns)
+GitHub: [`Kandyns`](https://github.com/kandyns)
 
 Email: [`Kandyn[@]s****y.top`](https://siiway.top/t/m/Kandyn)
