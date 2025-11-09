@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/siiway/homepage/issues"
   },
-  "homepage": "https://siiway.top",
+  "homepage": "https://siiway.org",
   "dependencies": {
     "vitepress": "^1.6.4"
   },

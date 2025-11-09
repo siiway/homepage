@@ -1,9 +1,9 @@
 # 社交平台重定向 / Social Platform Redirects
-/t/m /go/mail.html?name=contact&domain=siiway.top
-/t/c https://siiway.top/about/contact
+/t/m /go/mail.html?name=contact&domain=siiway.org
+/t/c https://siiway.org/about/contact
 /t/qq https://qm.qq.com/q/HcXaJ87W2O
 /t/pd https://pd.qq.com/s/ap03pjd80
-/t/wx https://siiway.top/about/wechat
+/t/wx https://siiway.org/about/wechat
 /t/dc https://discord.gg/mdGamAxC7U
 /t/gh https://github.com/siiway
 /t/tg https://t.me/siiway_chat

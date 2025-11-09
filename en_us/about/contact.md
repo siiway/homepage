@@ -4,10 +4,10 @@ Website: [This](/en_us/)
 
 E-mail: [contact[@]siiway.top](https://siiway.top/t/mail)
 
-Discord: [SiiWay Team](https://siiway.top/t/dc)
+Discord: [SiiWay Team](https://siiway.org/t/dc)
 
-GitHub: [siiway](https://siiway.top/t/gh)
+GitHub: [siiway](https://siiway.org/t/gh)
 
-Telegram Group: [siiway_chat](https://siiway.top/t/tg)
+Telegram Group: [siiway_chat](https://siiway.org/t/tg)
 
-Telegram Channel: [siiwayofficial](https://siiway.top/t/tgc)
+Telegram Channel: [siiwayofficial](https://siiway.org/t/tgc)
