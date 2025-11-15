@@ -19,3 +19,4 @@ SiiWay Team now has 14 members (order by joined time):
 - [DaleNull](../../members/DaleNull)
 - [killjsj](../../members/killjsj)
 - [Kandyn](../../members/Kandyn)
+- [Kananosa](../../members/kananosa)
