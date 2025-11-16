@@ -37,4 +37,4 @@ GO 语言也会但是没写过项目....
 
 GitHub: [Kananosa](https://github.com/kananosa)
 
-Email: [`Kananosa[@]s****y.top`](https://siiway.org/t/m/Kananosa)
+Email: [`Kananosa[@]s****y.org`](https://siiway.org/t/m/Kananosa)

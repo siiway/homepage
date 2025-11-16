@@ -40,4 +40,4 @@
 
 GitHub: [`Kandyns`](https://github.com/kandyns)
 
-Email: [`Kandyn[@]s****y.top`](https://siiway.org/t/m/Kandyn)
+Email: [`Kandyn[@]s****y.org`](https://siiway.org/t/m/Kandyn)

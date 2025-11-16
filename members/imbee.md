@@ -65,4 +65,4 @@ Twitter: [cn_mifeng](https://twitter.com/cn_mifeng)
 
 
 
-Email: me@imbee.top / [`bee[@]s****y.top`](https://siiway.org/t/m/bee)
+Email: me@imbee.top / [`bee[@]s****y.org`](https://siiway.org/t/m/bee)

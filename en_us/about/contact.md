@@ -2,7 +2,7 @@
 
 Website: [This](/en_us/)
 
-E-mail: [contact[@]siiway.top](https://siiway.org/t/mail)
+E-mail: [contact[@]siiway.org](https://siiway.org/t/mail)
 
 Discord: [SiiWay Team](https://siiway.org/t/dc)
 
