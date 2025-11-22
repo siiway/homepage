@@ -27,7 +27,7 @@ No Java, No Rust, No Ubuntu, No Arch, No yellow
 
 
 
-[![GitHub](https://socialify.git.ci/FrecklyComb1728/byoip-pages/image?custom_language=Nuxt&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/byoip-pages)
+[![GitHub](https://proxy.mfawa.top/socialify/FrecklyComb1728/byoip-pages/image?custom_language=Nuxt&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/byoip-pages)
 
 
 
@@ -35,7 +35,7 @@ No Java, No Rust, No Ubuntu, No Arch, No yellow
 
 
 
-[![GitHub](https://socialify.git.ci/FrecklyComb1728/Langbot_Weather/image?custom_language=Python&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/Langbot_Weather)
+[![GitHub](https://proxy.mfawa.top/socialify/FrecklyComb1728/Langbot_Weather/image?custom_language=Python&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/Langbot_Weather)
 
 
 
@@ -43,7 +43,7 @@ No Java, No Rust, No Ubuntu, No Arch, No yellow
 
 
 
-[![GitHub](https://socialify.git.ci/FrecklyComb1728/Let-Me-Search-For-You/image?custom_description=%E8%AE%A9%E6%88%91%E4%B8%BA%E4%BD%A0%E6%90%9C%E7%B4%A2&custom_language=HTML&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/Let-Me-Search-For-You)
+[![GitHub](https://proxy.mfawa.top/socialify/FrecklyComb1728/Let-Me-Search-For-You/image?custom_description=%E8%AE%A9%E6%88%91%E4%B8%BA%E4%BD%A0%E6%90%9C%E7%B4%A2&custom_language=HTML&description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/Let-Me-Search-For-You)
 
 
 
@@ -51,7 +51,7 @@ No Java, No Rust, No Ubuntu, No Arch, No yellow
 
 
 
-[![GitHub](https://socialify.git.ci/FrecklyComb1728/home/image?description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/home)
+[![GitHub](https://proxy.mfawa.top/socialify/FrecklyComb1728/home/image?description=1&font=JetBrains+Mono&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)](https://github.com/FrecklyComb1728/home)
 
 ## Contact
 
@@ -65,4 +65,4 @@ Twitter: [cn_mifeng](https://twitter.com/cn_mifeng)
 
 
 
-Email: [`me[@]i***e.top`](https://siiway.top/t/m/me/imbee.top) / [`bee[@]s****y.top`](https://siiway.top/t/m/bee)
+Email: me@imbee.top / [`bee[@]s****y.org`](https://siiway.org/t/m/bee)

@@ -52,9 +52,9 @@ Telegram: [wyf9official](https://t.me/wyf9official)
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
-Email: [`w***[@]w***.top`](https://siiway.top/t/m/wyf9/wyf9.top)
+Email: [`w***[@]w***.top`](https://siiway.org/t/m/wyf9/wyf9.top)
 
 ~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
 
 > [!NOTE]
-> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs (然而是个人电脑上运行的，所以不稳定在线)
+> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs

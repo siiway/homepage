@@ -2,7 +2,7 @@
 
 SiiWay 团队主页
 
-https://siiway.top
+https://siiway.org
 
 ## 常用命令
 

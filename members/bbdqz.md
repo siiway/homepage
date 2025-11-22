@@ -44,7 +44,7 @@ GitHub: [`furinafirefly`](https://github.com/furinafirefly)
 
 Discord: [`bbdqz`](https://discord.com/users/1327899724807798867)
 
-Email: [`bb**z[@]s****y.top`](https://siiway.top/t/m/bbdqz)
+Email: [`bb**z[@]s****y.org`](https://siiway.org/t/m/bbdqz)
 
 
 
