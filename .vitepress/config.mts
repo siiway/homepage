@@ -22,7 +22,7 @@ const members = [
 export default defineConfig({
   title: "SiiWay 团队主页",
   description: "SiiWay 团队的官方网站",
-  head: [["link", { rel: "icon", href: "/favicon.png" }]],
+  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

@@ -6,7 +6,7 @@ hero:
   name: "SiiWay Team Home"
   tagline: "欢迎来到 SiiWay 团队的官方主页!"
   image:
-    src: /favicon.png
+    src: /favicon.svg
     alt: Logo
   actions:
     - theme: brand
