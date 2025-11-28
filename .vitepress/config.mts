@@ -49,6 +49,7 @@ export default defineConfig({
             // { text: "关于我们", link: "/about/us" },
             { text: "关于此网站", link: "/about/website" },
             { text: "招新公告", link: "/about/join" },
+            { text: "规则 (QQ 群)", link: "/about/rules-qq" },
           ],
         },
         {
@@ -79,6 +80,8 @@ export default defineConfig({
           items: [
             { text: "Contact", link: "/en_us/about/contact" },
             { text: "About Website", link: "/en_us/about/website" },
+            { text: "Join us (Chinese only)", link: "/about/join" },
+            { text: "Rules (QQ, Chinese only)", link: "/about/rules-qq" },
           ],
         },
         {
