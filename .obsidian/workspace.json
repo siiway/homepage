@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f335b2bc191e2ac7",
+        "id": "25803b1916a4846f",
         "type": "tabs",
         "children": [
           {
-            "id": "edea323ef07d6d39",
+            "id": "d59befc91d9feaa5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "about/rules-qq.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "rules-qq"
             }
           }
         ]
@@ -150,8 +154,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "history",
-              "title": "History"
+              "icon": "lucide-ghost",
+              "title": "git-history-view"
             }
           },
           {
@@ -173,18 +177,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "edea323ef07d6d39",
+  "active": "d59befc91d9feaa5",
   "lastOpenFiles": [
+    "public/favicon.svg",
+    "index.md",
+    "README.md",
     "about/contact.md",
     "en_us/members/index.md",
     "en_us/members/index.html",
@@ -201,8 +208,6 @@
     "_tmp_135582_407e24b51b6c313bd3d78b8d7761afdd",
     "en",
     "about/siiway-wechat.png",
-    "index.md",
-    "README.md",
     "members/killjsj.md",
     "members/zackzheng1121.md",
     "members/XiaoYuan151.md",
