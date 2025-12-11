@@ -17,3 +17,4 @@ SiiWay 团队目前有 14 位成员 (按加入时间排序):
 - [killjsj](./killjsj)
 - [Kandyn](./Kandyn)
 - [Kananosa](./kananosa)
+- [XieXiLin](./XieXiLin)
