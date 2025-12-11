@@ -18,7 +18,7 @@ Skills: Python (maybe?)
 
 ## Contact
 
-- Mail: [`i[at]xxl.moe`](mailto:i@xxl.moe) / [`support[at]xiexilin.com`](mailto:support@xiexilin.com)
+- Mail: [`i[at]xxl.moe`](https://siiway.org/t/m/i/xxl.moe) / [`support[at]xiexilin.com`](https://siiway.org/t/m/support/xiexilin.com)
 - Telegram: [`XieXiLin`](https://t.me/XieXiLin)
 - QQ: You can find me in SiiWay's QQ group.
-- WeChat: Not for public.
+- WeChat: Not public.
