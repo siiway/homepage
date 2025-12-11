@@ -1,6 +1,6 @@
 # Members
 
-SiiWay 团队目前有 14 位成员 (按加入时间排序):
+SiiWay 团队目前有 16 位成员 (按加入时间排序):
 
 - [xhc861](./xhc861)
 - [wyf9](./wyf9)
@@ -17,3 +17,4 @@ SiiWay 团队目前有 14 位成员 (按加入时间排序):
 - [killjsj](./killjsj)
 - [Kandyn](./Kandyn)
 - [Kananosa](./kananosa)
+- [XieXiLin](./XieXiLin)
