@@ -11,3 +11,7 @@ GitHub: [siiway](https://siiway.org/t/gh)
 Telegram Group: [siiway_chat](https://siiway.org/t/tg)
 
 Telegram Channel: [siiwayofficial](https://siiway.org/t/tgc)
+
+## Report
+
+If you're finding available report methodss, [go to this page](./report).

@@ -35,10 +35,6 @@ export default defineConfig({
     sidebar: {
       ["/"]: [
         {
-          text: "回到主页",
-          link: "/",
-        },
-        {
           text: "成员",
           link: "/members",
           items: members,
@@ -51,6 +47,8 @@ export default defineConfig({
             { text: "关于此网站", link: "/about/website" },
             { text: "招新公告", link: "/about/join" },
             { text: "规则 (QQ 群)", link: "/about/rules-qq" },
+            { text: "SiiWay 行为准则", link: "/about/code-of-conduct" },
+            { text: "举报", link: "/about/report" },
           ],
         },
         {
@@ -68,10 +66,6 @@ export default defineConfig({
       ],
       ["/en_us/"]: [
         {
-          text: "Back to Homepage",
-          link: "/en_us/",
-        },
-        {
           text: "Members (Chinese Only)",
           link: "/en_us/members/",
           items: members,
@@ -83,6 +77,11 @@ export default defineConfig({
             { text: "About Website", link: "/en_us/about/website" },
             { text: "Join us (Chinese only)", link: "/about/join" },
             { text: "Rules (QQ, Chinese only)", link: "/about/rules-qq" },
+            {
+              text: "Code of Conduct",
+              link: "/en_us/about/code-of-conduct",
+            },
+            { text: "Report", link: "/en_us/about/report" },
           ],
         },
         {

@@ -9,7 +9,7 @@ https://siiway.org
 ```shell
 npm install # 安装依赖
 npm run dev # 启动开发服务器
-npm run build # 构建站点 (生成静态 HTMl)
+npm run build # 构建站点 (生成静态 HTML)
 npm run preview # 预览构建后的站点
 ```
 

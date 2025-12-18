@@ -21,3 +21,7 @@ Telegram 群组: [siiway_chat](https://siiway.org/t/tg)
 Telegram 频道: [siiwayofficial](https://siiway.org/t/tgc)
 
 云湖群组: [145008852](https://siiway.org/t/yh)
+
+## 举报
+
+如果你在查找可用的举报方式, 请访问 [此页面](./report).
