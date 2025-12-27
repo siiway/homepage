@@ -11,10 +11,14 @@
             "id": "214704ffea135344",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "about/rules-qq.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "rules-qq"
             }
           }
         ]
@@ -185,6 +189,7 @@
   },
   "active": "214704ffea135344",
   "lastOpenFiles": [
+    "about/report.md",
     "about/rules-qq.md",
     "pnpm-lock.yaml.347698445",
     "_tmp_2027829_3fbc8301aff1ae8b8cc8e1e82f3f3de9",
