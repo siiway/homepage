@@ -1,14 +1,14 @@
 # 社交平台重定向 / Social Platform Redirects
 /t/m /go/mail.html?name=contact&domain=siiway.org
-/t/c https://siiway.org/about/contact
-/t/qq https://qm.qq.com/q/DUzsnaN1Go
-/t/pd https://pd.qq.com/s/ap03pjd80
-/t/wx https://siiway.org/about/wechat
-/t/dc https://discord.gg/mdGamAxC7U
-/t/gh https://github.com/siiway
-/t/tg https://t.me/siiway_chat
-/t/tgc https://t.me/siiwayofficial
-/t/yh https://yhfx.jwznb.com/share?key=8g5YE0jTH0ul&ts=1755022883
+/t/c https://wss.moe/c
+/t/qq https://wss.moe/qq
+/t/pd https://wss.moe/pd
+/t/wx https://wss.moe/wx
+/t/dc https://wss.moe/dc
+/t/gh https://wss.moe/gh
+/t/tg https://wss.moe/tg
+/t/tgc https://wss.moe/tgc
+/t/yh https://wss.moe/yh
 
 # 邮箱重定向 / Email Redirects
 /t/m/:name /go/mail.html?name=:name

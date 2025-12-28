@@ -54,13 +54,13 @@ export default defineConfig({
         {
           text: "外链",
           items: [
-            { text: "QQ 群", link: "https://siiway.org/t/qq" },
-            { text: "QQ 频道", link: "https://siiway.org/t/pd" },
-            { text: "微信公众号", link: "https://siiway.org/t/wx" },
-            { text: "Discord", link: "https://siiway.org/t/dc" },
-            { text: "GitHub", link: "https://siiway.org/t/gh" },
-            { text: "Telegram 群组", link: "https://siiway.org/t/tg" },
-            { text: "Telegram 频道", link: "https://siiway.org/t/tgc" },
+            { text: "QQ 群", link: "https://wss.moe/qq" },
+            { text: "QQ 频道", link: "https://wss.moe/pd" },
+            { text: "微信公众号", link: "https://wss.moe/wx" },
+            { text: "Discord", link: "https://wss.moe/dc" },
+            { text: "GitHub", link: "https://wss.moe/gh" },
+            { text: "Telegram 群组", link: "https://wss.moe/tg" },
+            { text: "Telegram 频道", link: "https://wss.moe/tgc" },
           ],
         },
       ],
@@ -87,35 +87,35 @@ export default defineConfig({
         {
           text: "Outlinks",
           items: [
-            { text: "Discord", link: "https://siiway.org/t/dc" },
-            { text: "GitHub", link: "https://siiway.org/t/gh" },
-            { text: "Telegram Group", link: "https://siiway.org/t/tg" },
-            { text: "Telegram Channel", link: "https://siiway.org/t/tgc" },
+            { text: "Discord", link: "https://wss.moe/dc" },
+            { text: "GitHub", link: "https://wss.moe/gh" },
+            { text: "Telegram Group", link: "https://wss.moe/tg" },
+            { text: "Telegram Channel", link: "https://wss.moe/tgc" },
           ],
         },
       ],
     },
 
     socialLinks: [
-      { icon: "qq", ariaLabel: "QQ 群", link: "https://siiway.org/t/qq" },
+      { icon: "qq", ariaLabel: "QQ 群", link: "https://wss.moe/qq" },
       {
         icon: {
           svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768.74 768"><path fill="currentColor" fill-rule="evenodd" d="M0,384.37a384.37,384.37 0 1,0 768.74,0a384.37,384.37 0 1,0 -768.74,0z M577,319.29l5.7-36H507.33L518.47,213h-36l-11.14,70.29H328L339.12,213h-36L292,283.29H216.72l-5.7,36h75.26L267,441.19H191.72l-5.71,36h75.27L249,555h36l12.33-77.81H369L432.42,529l31.88,26,12.32-77.81H552l5.71-36H482.33l19.3-121.9ZM446.33,441.19l-5.71,36L438.12,493l-63.47-51.79H303l19.3-121.9H465.63Z"/></svg>',
         },
         ariaLabel: "QQ 频道",
-        link: "https://siiway.org/t/pd",
+        link: "https://wss.moe/pd",
       },
-      { icon: "wechat", ariaLabel: "Wechat", link: "https://siiway.org/t/wx" },
+      { icon: "wechat", ariaLabel: "Wechat", link: "https://wss.moe/wx" },
       {
         icon: "discord",
         ariaLabel: "Discord",
-        link: "https://siiway.org/t/dc",
+        link: "https://wss.moe/dc",
       },
-      { icon: "github", ariaLabel: "GitHub", link: "https://siiway.org/t/gh" },
+      { icon: "github", ariaLabel: "GitHub", link: "https://wss.moe/gh" },
       {
         icon: "telegram",
         ariaLabel: "Telegram 频道",
-        link: "https://siiway.org/t/tgc",
+        link: "https://wss.moe/tgc",
       },
     ],
 
@@ -150,17 +150,17 @@ export default defineConfig({
           {
             icon: "discord",
             ariaLabel: "Discord",
-            link: "https://siiway.org/t/dc",
+            link: "https://wss.moe/dc",
           },
           {
             icon: "github",
             ariaLabel: "GitHub",
-            link: "https://siiway.org/t/gh",
+            link: "https://wss.moe/gh",
           },
           {
             icon: "telegram",
             ariaLabel: "Telegram Channel",
-            link: "https://siiway.org/t/tgc",
+            link: "https://wss.moe/tgc",
           },
         ],
         nav: [

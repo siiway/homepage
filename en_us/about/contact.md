@@ -2,15 +2,15 @@
 
 Website: [This](/en_us/)
 
-E-mail: [contact[@]siiway.org](https://siiway.org/t/mail)
+E-mail: [contact[@]siiway.org](https://wss.moe/mail)
 
-Discord: [SiiWay Team](https://siiway.org/t/dc)
+Discord: [SiiWay Team](https://wss.moe/dc)
 
-GitHub: [siiway](https://siiway.org/t/gh)
+GitHub: [siiway](https://wss.moe/gh)
 
-Telegram Group: [siiway_chat](https://siiway.org/t/tg)
+Telegram Group: [siiway_chat](https://wss.moe/tg)
 
-Telegram Channel: [siiwayofficial](https://siiway.org/t/tgc)
+Telegram Channel: [siiwayofficial](https://wss.moe/tgc)
 
 ## Report
 

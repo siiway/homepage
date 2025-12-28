@@ -4,23 +4,23 @@
 
 官网: [本站](/)
 
-E-mail: [contact[@]siiway.org](https://siiway.org/t/mail)
+E-mail: [contact[@]siiway.org](https://wss.moe/mail)
 
-QQ (群): [Here](https://siiway.org/t/qq)
+QQ (群): [Here](https://wss.moe/qq)
 
-QQ Channel (频道): [siiwayofficial](https://siiway.org/t/pd)
+QQ Channel (频道): [siiwayofficial](https://wss.moe/pd)
 
-微信公众号: [siiway](https://siiway.org/t/wx)
+微信公众号: [siiway](https://wss.moe/wx)
 
-Discord: [SiiWay Team](https://siiway.org/t/dc)
+Discord: [SiiWay Team](https://wss.moe/dc)
 
-GitHub: [siiway](https://siiway.org/t/gh)
+GitHub: [siiway](https://wss.moe/gh)
 
-Telegram 群组: [siiway_chat](https://siiway.org/t/tg)
+Telegram 群组: [siiway_chat](https://wss.moe/tg)
 
-Telegram 频道: [siiwayofficial](https://siiway.org/t/tgc)
+Telegram 频道: [siiwayofficial](https://wss.moe/tgc)
 
-云湖群组: [145008852](https://siiway.org/t/yh)
+云湖群组: [145008852](https://wss.moe/yh)
 
 ## 举报
 
