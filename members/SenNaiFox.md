@@ -20,7 +20,7 @@ SenNaifox、Syra Naier均是我的常用名，但我更喜欢别人叫我夏花�
 
 ### [PID-PureWebsite-vue3](https://github.com/Syranaier/PID-PureWebsite-vue3)
 
-因为课设诞生的奇怪项目，利用浏览器内核实现的快速PID控制器设计与仿真验证机构。也提供了PSO自动优化模式。
+因为课设诞生的奇怪项目，利用浏览器内核实现的快速PID控制器设计与仿真验证工具。也提供了PSO自动优化模式。
 “我受够课设了喵！”
 
 ## Contact
