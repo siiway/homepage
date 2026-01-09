@@ -17,6 +17,7 @@ const members = [
   { text: "Kandyn", link: "/members/Kandyn" },
   { text: "Kananosa", link: "/members/kananosa" },
   { text: "XieXiLin", link: "/members/XieXiLin" },
+  { text: "NtKrnl64", link: "/members/nt-copy" },
 ];
 
 // https://vitepress.dev/reference/site-config
