@@ -6,7 +6,7 @@ Luke Zhang, -2+4^2 , from Shanghai, China, SiiWay (**Core**) Member
 
 <!-- 可见我的加群问题提示之多 -->
 
-名字来源：`NT AUTHORITY/SYSTEM`
+名字来源：`Windows NT`
 
 <details>
 <summary>鬼知道什么领域开发者</summary>
@@ -46,6 +46,6 @@ Discord: [`ntkrnl32`](https://discord.com/users/1302138797450067998)
 
 Bilibili: [`NtKrnl32`](https://space.bilibili.com/3537109172357757) (UID `3537109172357757`)
 
-Email: [`nt@lu**zhang.win`](https://static-api.lukezhang.win/decryptEmail/index.html?closeType=1&base64=bHVrZXpAbHVrZXpoYW5nLndpbg==)
+Email: [`nt@k***32.win`](https://email.krnl64.win/base64/bnRAa3JubDMyLndpbg)
 
-Blog: [`lukezhang.win`](https://lukezhang.win)
+Blog: [`blog.krnl32.win`](https://blog.krnl32.win)
