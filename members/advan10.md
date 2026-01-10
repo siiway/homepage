@@ -29,4 +29,4 @@
 
 Bilibili: [advan10](https://space.bilibili.com/645910653)
 
-Github: [advan10](https://github.com/advan10)
+GitHub: [advan10](https://github.com/advan10)

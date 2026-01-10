@@ -21,4 +21,5 @@ SiiWay Team now has 17 members (order by joined time):
 - [Kandyn](../../members/Kandyn)
 - [Kananosa](../../members/kananosa)
 - [XieXiLin](../../members/XieXiLin)
+- *[NtKrnl64](../../members/nt-copy)*
 - [advan10](../../members/advan10)
