@@ -25,7 +25,7 @@
 ## Telegram
 
 - xhc861: [`@xhc9510`](https://t.me/xhc9510)
-- wyf9: [`@wyf9official`](https://t.me/wyf9official) - **请使用频道 [`@wyf9channel`](https://t.me/wyf9channel) 的 Direct Chat 而非直接私聊** (较活跃)
+- wyf9: [`@realwyf9`](https://t.me/realwyf9) - **请使用频道 [`@wyf9channel`](https://t.me/wyf9channel) 的 Direct Chat 而非直接私聊** (较活跃)
 - NtKrnl32: [`@krnl32`](https://t.me/krnl32)
 
 ## QQ

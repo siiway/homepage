@@ -48,13 +48,13 @@ GitHub: [wyf9](https://github.com/wyf9)
 
 Discord: [wyf9](https://discord.com/users/992995849946804304)
 
-Telegram: [wyf9official](https://t.me/wyf9official)
+*Telegram: [realwyf9](https://t.me/realwyf9)* - Use channel [wyf9channel](https://t.me/wyf9channel?direct)'s direct chat pls
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
 Email: [`w***[@]w***.top`](https://siiway.org/t/m/wyf9/wyf9.top)
 
-~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
+<!-- ~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
 
 > [!NOTE]
-> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs
+> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs -->
