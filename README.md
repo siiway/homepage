@@ -80,7 +80,7 @@ npm run preview
 ├── .vitepress/                  # VitePress 核心配置
 │   ├── theme/                   # 自定义主题样式与布局
 │   │   ├── style.css            # 全局样式与响应式调整
-│   │   └── Layout.vue           # 页面布局组件
+│   │   └── Layout.vue           # 页面布局组件 (可选)
 │   └── config.mts               # 站点配置文件 (导航、侧边栏等)
 ├── public/                      # 静态资源 (图片、Favicon)
 ├── index.md                     # 首页内容
@@ -116,4 +116,5 @@ Copyright © 2023-2025 **SiiWay Team**. All Rights Reserved.
 
 惟须遵守下列条件：
 - **署名** — 您必须提供适当的证书，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。
+
 - **相同方式共享** — 如果您再混合、转换或者基于本作品进行创作，您必须基于与原先许可协议相同的许可协议分发您贡献的作品。
