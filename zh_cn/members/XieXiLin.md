@@ -1,0 +1,24 @@
+# Member - XieXiLin
+
+A senior high school student. 一位高中生。
+
+❤️ [Murasame](./Murasame) 的忠实粉丝。
+
+## Introduction
+
+| [Homepage](https://www.xiexilin.com)             | [GitHub](https://github.com/XieXiLin2)   |
+| ------------------------------------------------ | ---------------------------------------- |
+| [BiliBili](https://space.bilibili.com/495468749) | [Twitter](https://twitter.com/XieXiLin3) |
+
+Skills: Python (maybe?)
+
+受 [Murasame](./Murasame) 邀请，希望能在这里多做点事。
+
+易感体质，不希望他人主动离开。有时为了挽回他人，能做出非常多的努力。
+
+## Contact
+
+- Mail: [`i[at]xxl.moe`](https://siiway.org/t/m/i/xxl.moe) / [`support[at]xiexilin.com`](https://siiway.org/t/m/support/xiexilin.com)
+- Telegram: [`XieXiLin`](https://t.me/XieXiLin)
+- QQ: You can find me in SiiWay's QQ group.
+- WeChat: Not public.

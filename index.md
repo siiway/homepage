@@ -1,21 +1,15 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: "SiiWay Team Home"
-  tagline: "欢迎来到 SiiWay 团队的官方主页!"
-  image:
-    src: /favicon.svg
-    alt: Logo
-  actions:
-    - theme: brand
-      text: GitHub
-      link: https://github.com/siiway
-    - theme: alt
-      text: 成员
-      link: /members
-    - theme: alt
-      text: 联系
-      link: /about/contact
+layout: false
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+import { useRouter } from 'vitepress'
+
+const router = useRouter()
+
+onMounted(() => {
+  // 访问根域名时，直接跳到中文版
+  router.go('/zh_cn/')
+})
+</script>
