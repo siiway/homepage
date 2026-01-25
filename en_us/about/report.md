@@ -21,7 +21,7 @@ SiiWay Core Members' e-mails:
 ## Telegram
 
 - xhc861: [`@xhc9510`](https://t.me/xhc9510)
-- wyf9: [`@realwyf9`](https://t.me/realwyf9) - **Please use channel [`@wyf9channel`](https://t.me/wyf9channel)'s Direct Chat instead of PM!** (Active)
+- wyf9: [`@wyf9official`](https://t.me/wyf9official) - **Please use channel [`@wyf9channel`](https://t.me/wyf9channel)'s Direct Chat instead of PM!** (Active)
 - NtKrnl32: [`@krnl32`](https://t.me/krnl32)
 
 ## QQ
