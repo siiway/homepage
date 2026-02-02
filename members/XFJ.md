@@ -34,6 +34,6 @@ ps.我实在想不到我有什么个人介绍（哭
 
 CoolAPK: [Minecraft雪峰君](https://www.coolapk.com/u/2998178)
 
-BiliBili: [Minecraft雪峰君](https://b23.tv/jmFRLI3)
+BiliBili: [Minecraft雪峰君](https://space.bilibili.com/518725775)
 
 GitHub: [XFJ-YYQF](https://github.com/XFJ-YYQF)
