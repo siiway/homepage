@@ -1,4 +1,4 @@
-# Member - XFJ
+# Member - XFJ (Minecraft雪峰君)
 
 > 「初始之音 响彻未来」
 
