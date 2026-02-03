@@ -18,7 +18,7 @@ GitHub: [siiway](https://wss.moe/gh)
 
 Telegram 群组: [siiway_chat](https://wss.moe/tg)
 
-Telegram 频道: [siiwayofficial](https://wss.moe/tgc)
+Telegram 频道: [siiway_chan](https://wss.moe/tgc)
 
 云湖群组: [145008852](https://wss.moe/yh)
 
