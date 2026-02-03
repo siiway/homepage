@@ -52,4 +52,4 @@ GitHub: [killjsj](https://github.com/killjsj)
 
 QQ: 1020120106
 
-Email: killjsj@outlook.com
+Email: [Email Protected](https://wss.moe/m64/a2lsbGpzakBvdXRsb29rLmNvbQ==) / [Email Protected (team)](https://wss.moe/m64/a2lsbGpzakBzaWl3YXkub3Jn)

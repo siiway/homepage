@@ -41,3 +41,4 @@
 QQ 群组：[xylnk.in/qq](//xylnk.in/qq)  
 Discord 群组：[xylnk.in/discord](//xylnk.in/discord)  
 Telegram 群组：[xylnk.in/telegram](//xylnk.in/telegram)
+Email: [Email Protected](https://wss.moe/m64/eGlhb3l1YW4xNTFAc2lpd2F5Lm9yZw==)

@@ -13,6 +13,9 @@
 # 邮箱重定向 / Email Redirects
 /t/m/:name /go/mail.html?name=:name
 /t/m/:name/:domain /go/mail.html?name=:name&domain=:domain
+/m64/:base64 /go/mail.html?base64=:base64
+/mail/:email /go/mail?email=:email
+/email/:email /go/mail?email=:email
 
 # 路径别名 / Path Aliases
 /a/:path /about/:path

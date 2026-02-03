@@ -13,3 +13,5 @@ GitHub: [Shattered217](https://github.com/Shattered217)
 Telegram: [Shattered217](https://t.me/Shattered217)
 
 Blog: [blog.shattered.top](https://blog.shattered.top)
+
+Email: [Email Protected](https://wss.moe/m64/c2hhdHRlcmVkQHNpaXdheS5vcmc=)

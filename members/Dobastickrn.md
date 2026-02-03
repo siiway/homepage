@@ -28,4 +28,4 @@ Bilibili: [Dobastickrn](https://space.bilibili.com/580214161) (UID: `580214161`)
 
 Github: [Dobastickrn](https://github.com/Dobastickrn)
 
-E-mail: [`Doba*****rn[@]s****y.org`](https://siiway.org/t/m/Dobastickrn)
+Email: [Email Protected](https://wss.moe/m64/RG9iYXN0aWNrcm5Ac2lpd2F5Lm9yZwo=)

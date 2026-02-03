@@ -33,7 +33,7 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 
 `🌐` 视奸我！: [status.0d000721.xin](https://status.0d000721.xin)
 
-`📧` MailTo: [baka[@]s****y.org](https://siiway.org/t/m/baka)
+`📧` MailTo: [Email Protected](https://wss.moe/m64/YmFrYUBzaWl3YXkub3Jn)
 
 `🐱` Github: [LeiSureLyYrsc](https://github.com/LeiSureLyYrsc)
 

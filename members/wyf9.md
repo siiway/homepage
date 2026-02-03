@@ -52,7 +52,7 @@ Discord: [wyf9](https://discord.com/users/992995849946804304)
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
-Email: [`w***[@]w***.top`](https://siiway.org/t/m/wyf9/wyf9.top)
+Email: [Email Protected](https://wss.moe/m64/d3lmOUB3eWY5LnRvcA==) / [Email Protected (team)](https://wss.moe/m64/d3lmOUBzaWl3YXkub3Jn)
 
 <!-- ~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
 
