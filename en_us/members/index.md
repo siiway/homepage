@@ -24,3 +24,4 @@ SiiWay Team now has 18 members (order by joined time):
 - *[NtKrnl64](../../members/nt-copy)*
 - [advan10](../../members/advan10)
 - [XFJ](../../members/XFJ)
+- [chun-awa](../../members/chun-awa)
