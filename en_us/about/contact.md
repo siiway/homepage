@@ -10,7 +10,7 @@ GitHub: [siiway](https://wss.moe/gh)
 
 Telegram Group: [siiway_chat](https://wss.moe/tg)
 
-Telegram Channel: [siiwayofficial](https://wss.moe/tgc)
+Telegram Channel: [siiway_chan](https://wss.moe/tgc)
 
 ## Report
 
