@@ -10,6 +10,6 @@ Null stack developer.
 
 ## Contact
 
-Github: [chun-awa](https://github.com/chun-awa)
+GitHub: [chun-awa](https://github.com/chun-awa)
 
 Email: [Email Protected](https://wss.moe/m64/Y2h1bi1hd2FAbGluZ21vLm9yZwo=)
