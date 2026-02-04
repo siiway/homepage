@@ -1,6 +1,6 @@
 # Members
 
-SiiWay Team now has 18 members (order by joined time):
+SiiWay Team now has 20 members (order by joined time):
 
 > [!WARNING]
 > Contents below are only available in Chinese, you may need a translator to view them.
