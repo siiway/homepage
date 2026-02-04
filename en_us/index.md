@@ -4,12 +4,12 @@ layout: home
 
 <script setup>
 // 这里是英文版的时间轴数据，如果需要修改文案请在这里改
-const timelineData = [
-  { year: '2024', title: 'SiiWay Cloud 2.0', content: 'Logged into wrong account...', tag: 'Latest' },
-  { year: '2023', title: 'Open Source', content: '10k followers?', tag: 'Milestone' },
-  { year: '2022', title: 'Incubation', content: 'Just saying something.', tag: 'Origin' },
-  { year: '2021', title: 'Hello World', content: 'Where it all started.', tag: 'Start' }
-]
+// const timelineData = [
+//   { year: '2024', title: 'SiiWay Cloud 2.0', content: 'Logged into wrong account...', tag: 'Latest' },
+//   { year: '2023', title: 'Open Source', content: '10k followers?', tag: 'Milestone' },
+//   { year: '2022', title: 'Incubation', content: 'Just saying something.', tag: 'Origin' },
+//   { year: '2021', title: 'Hello World', content: 'Where it all started.', tag: 'Start' }
+// ]
 </script>
 
 <!-- 装饰色带 -->
@@ -61,3 +61,4 @@ const timelineData = [
   </div>
 
 </div>
+
