@@ -19,7 +19,8 @@ const members = [
   { text: "XieXiLin", link: "/members/XieXiLin" },
   { text: "NtKrnl64", link: "/members/nt-copy" },
   { text: "advan10", link: "/members/advan10" },
-  { text: "XFJ", link: "/members/XFJ" }
+  { text: "XFJ", link: "/members/XFJ" },
+  { text: "chun-awa", link: "/members/chun-awa" }
 ];
 
 // https://vitepress.dev/reference/site-config
