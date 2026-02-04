@@ -3,12 +3,12 @@ layout: home
 ---
 
 <script setup>
-const timelineData = [
-  { year: '2024', title: 'SiiWay Cloud 2.0', content: '登错号了...', tag: 'Latest' },
-  { year: '2023', title: '开源社区成立', content: '10k follow?', tag: 'Milestone' },
-  { year: '2022', title: '项目孵化', content: '随便说点什么。', tag: 'Origin' },
-  { year: '2021', title: 'Hello World', content: '一切的开始', tag: 'Start' }
-]
+//const timelineData = [
+//  { year: '2024', title: 'SiiWay Cloud 2.0', content: '登错号了...', tag: 'Latest' },
+//  { year: '2023', title: '开源社区成立', content: '10k follow?', tag: 'Milestone' },
+//  { year: '2022', title: '项目孵化', content: '随便说点什么。', tag: 'Origin' },
+//  { year: '2021', title: 'Hello World', content: '一切的开始', tag: 'Start' }
+//]
 </script>
 
 <!-- 装饰色带 -->
@@ -59,3 +59,4 @@ const timelineData = [
   </div>
 
 </div>
+
