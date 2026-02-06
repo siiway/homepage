@@ -21,3 +21,6 @@
 /a/:path /about/:path
 /m/:name /members/:name
 /member/:name /members/:name
+
+# 杂项 / Misc
+/stopcode /misc/stopcode
