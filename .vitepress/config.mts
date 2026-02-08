@@ -65,6 +65,7 @@ export default defineConfig({
             { text: "GitHub", link: "https://wss.moe/gh" },
             { text: "Telegram 群组", link: "https://wss.moe/tg" },
             { text: "Telegram 频道", link: "https://wss.moe/tgc" },
+            { text: "飞书群组", link: "https://wss.moe/fs"}
           ],
         },
       ],
