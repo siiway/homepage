@@ -44,4 +44,4 @@ Core 成员 Discord 账号被封禁。
 
 ### `CORE_MEMBER_TELEGRAM_BANNED`
 
-Core 成员 Telegram 被封禁。
+Core 成员 Telegram 账号被封禁。
