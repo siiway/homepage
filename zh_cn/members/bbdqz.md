@@ -46,7 +46,4 @@ GitHub: [`bbdqz`](https://github.com/bbdqz)
 
 Discord: [`bbdqz`](https://discord.com/users/1327899724807798867)
 
-Email: [`bb**z[@]s****y.org`](https://siiway.org/t/m/bbdqz)
-
-
-
+Email: [Email Protected](https://wss.moe/m64/YmJkcXpAc2lpd2F5Lm9yZwo=)

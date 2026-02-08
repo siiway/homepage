@@ -7,13 +7,41 @@
 </head>
 
 <script>
+    USAGE = `*** Usage ***
+- email: Full Email
+* or *
+- name: Email Name
+- domain: Email Domain (default: siiway.org)
+* or *
+- base64: Base64 encoded email string
+*** Example ***
+https://siiway.org/go/mail?name=example -> example @ siiway.org
+https://siiway.org/go/mail?name=example&domain=wyf9.top -> example @ wyf9.top
+https://siiway.org/go/mail?email=example@wyf9.top -> example @ wyf9.top
+https://siiway.org/go/mail?base64=ZXhhbXBsZUB3eWY5LnRvcAo= -> example @ wyf9.top
+* or Shortten Links *
+https://wss.moe/t/m/example -> example @ siiway.org
+https://wss.moe/t/m/example/wyf9.top -> example @ wyf9.top
+https://wss.moe/m/example@wyf9.top -> example @ wyf9.top
+https://wss.moe/m64/ZXhhbXBsZUB3eWY5LnRvcAo= -> example @ wyf9.top
+*** Click Yes to launch link generator, No to close tab ***`;
     window.onload = function () {
         // get params
         var urlParams = new URLSearchParams(window.location.search);
+        var base64 = urlParams.get('base64');
         var email = urlParams.get('email');
         var name = urlParams.get('name');
         var domain = urlParams.get('domain');
-        if (email) {
+        if (base64) {
+            // base64 email
+            try {
+                var decoded = atob(base64)
+                alert(`Redirecting to mailto:${decoded}`);
+                window.location.replace(`mailto:${decoded}`);
+            } catch {
+                alert(`Base64 decode failed!\nOriginal data: ${base64}`);
+            }
+        } else if (email) {
             // full email
             alert(`Redirecting to mailto:${email}`);
             window.location.replace(`mailto:${email}`);
@@ -29,19 +57,44 @@
             }
         } else {
             // not found
-            alert(`*** Usage ***
-- email: Full Email
-* or *
-- name: Email Name
-- domain: Email Domain (default: siiway.org)
-*** Example ***
-https://siiway.org/go/mail?name=example -> example @ siiway.org
-https://siiway.org/go/mail?name=example&domain=wyf9.top -> example @ wyf9.top
-https://siiway.org/go/mail?email=example@wyf9.top -> example @ wyf9.top
-* or Shortten Links *
-https://siiway.org/t/m/example -> example @ siiway.org
-https://siiway.org/t/m/example/wyf9.top -> example @ wyf9.top
-`)
+            if (confirm(USAGE)) {
+                // generator
+                var name, domain, mail, place1, place2, content, splited;
+                while (true) {
+                    name = prompt(`Enter email address or name (default domain: siiway.org)\nLeave blank to exit.`)
+                    if (name) {
+                        if (name.includes('@')) {
+                            mail = name;
+                            splited = mail.split('@');
+                            name = splited[0];
+                            domain = splited[1];
+                        } else {
+                            domain = 'siiway.org';
+                            mail = `${name}@siiway.org`;    
+                        }
+                        if (domain === 'siiway.org') {
+                            place1 = `\nhttps://siiway.org/go/mail?name=${name}`;
+                            place2 = `\nhttps://wss.moe/t/m/${name}`;
+                        } else {
+                            place1 = place2 = '';
+                        }
+                        content = `Email: ${mail}${place1}
+https://siiway.org/go/mail?name=${name}&domain=${domain}
+https://siiway.org/go/mail?email=${mail}
+https://siiway.org/go/mail?base64=${btoa(mail)}
+* or Shortten Links *${place2}
+https://wss.moe/t/m/${name}/${domain}
+https://wss.moe/mail/${mail}
+https://wss.moe/m64/${btoa(mail)}
+                            `;
+                        if (!confirm(content)) {
+                            break;
+                        }
+                    } else {
+                        break;
+                    }
+                }
+            }
         }
 
         // close page
@@ -51,4 +104,5 @@ https://siiway.org/t/m/example/wyf9.top -> example @ wyf9.top
     }
 </script>
 <noscript>Sorry, but your browser doesn't support JavaScript, or not enabled.</noscript>
+
 </html>

@@ -35,6 +35,6 @@ GitHub: [`NtKrnl64`](https://github.com/ntkrnl64)
 
 Bilibili: [`NtKrnl64`](https://space.bilibili.com/3690977730496534) (UID `3690977730496534`)
 
-Email: [`nt@k***64.win`](https://email.krnl64.win/base64/bnRAa3JubDY0Lndpbg)
+Email: [Email Protected](https://email.krnl64.win/base64/bnRAa3JubDY0Lndpbg)
 
 Blog: [`blog.krnl64.win`](https://blog.krnl64.win)

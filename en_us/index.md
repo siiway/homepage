@@ -35,7 +35,7 @@ layout: home
       </div>
     </div>
     <!-- 横向时间轴 -->
-    <div class="horizontal-timeline">
+    <!-- <div class="horizontal-timeline">
       <div class="timeline-track">
         <div v-for="(item, index) in timelineData" :key="index" class="h-timeline-item">
           <div class="h-line"></div>
@@ -50,7 +50,7 @@ layout: home
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- 右侧区域：Logo -->

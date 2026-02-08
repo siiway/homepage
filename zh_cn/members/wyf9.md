@@ -4,7 +4,7 @@
 
 SiiWay 团队创始人之一 (?)，兼**核心成员** <font color=red> -- 我在提醒你注意看这里</font>
 
-<!-- 可见我的加群问题提示之多 -->
+<!-- 可见我的加群问题提示之多...? -->
 
 名字来源：原名拼音首字母 *~~(不是还在牢里的那个)~~*
 
@@ -48,13 +48,13 @@ GitHub: [wyf9](https://github.com/wyf9)
 
 Discord: [wyf9](https://discord.com/users/992995849946804304)
 
-Telegram: [wyf9official](https://t.me/wyf9official)
+*Telegram: [realwyf9](https://t.me/realwyf9)* - Use channel [wyf9channel](https://t.me/wyf9channel?direct)'s direct chat pls
 
 Bilibili: [wyf9_](https://space.bilibili.com/591766561) (UID `591766561`)
 
-Email: [`w***[@]w***.top`](https://siiway.org/t/m/wyf9/wyf9.top)
+Email: [Email Protected](https://wss.moe/m64/d3lmOUB3eWY5LnRvcA==) / [Email Protected (team)](https://wss.moe/m64/d3lmOUBzaWl3YXkub3Jn)
 
-~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
+<!-- ~~视奸~~ 状态站: [sleepy.wyf9.top](https://sleepy.wyf9.top)
 
 > [!NOTE]
-> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs
+> 状态站维护中，会自动跳转到 sleepy-dev.wyf9.top/docs -->

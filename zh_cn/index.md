@@ -33,11 +33,11 @@ layout: home
       </div>
     </div>
     <!-- 下半部分：横向时间轴 -->
-    <div class="horizontal-timeline">
+    <!-- <div class="horizontal-timeline">
       <div class="timeline-track">
         <div v-for="(item, index) in timelineData" :key="index" class="h-timeline-item">
-          <div class="h-line"></div> <!-- 连接线 -->
-          <div class="h-dot"></div>  <!-- 圆点 -->
+          <div class="h-line"></div> <! -- 连接线 -- >
+          <div class="h-dot"></div>  <! -- 圆点 -- >
           <div class="h-content-card">
             <div class="h-meta">
               <span class="h-year">{{ item.year }}</span>
@@ -48,7 +48,7 @@ layout: home
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- 右侧区域：纯净的悬浮 Logo -->

@@ -40,4 +40,4 @@ Visual Studio + VSCode
 
 GitHub: [Dt8333](https://github.com/Dt8333) (没啥东西)
 
-Email: [`dalenull[@]s****y.org`](https://siiway.org/t/m/dalenull)
+Email: [Email Protected](https://wss.moe/m64/ZGFsZW51bGxAc2lpd2F5Lm9yZwo=)

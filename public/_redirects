@@ -1,5 +1,5 @@
 # 社交平台重定向 / Social Platform Redirects
-/t/m /go/mail.html?name=contact&domain=siiway.org
+/t/m /go/mail?name=contact&domain=siiway.org
 /t/c https://wss.moe/c
 /t/qq https://wss.moe/qq
 /t/pd https://wss.moe/pd
@@ -11,10 +11,20 @@
 /t/yh https://wss.moe/yh
 
 # 邮箱重定向 / Email Redirects
-/t/m/:name /go/mail.html?name=:name
-/t/m/:name/:domain /go/mail.html?name=:name&domain=:domain
+/t/m/:name /go/mail?name=:name
+/t/m/:name/:domain /go/mail?name=:name&domain=:domain
+/m64/:base64 /go/mail?base64=:base64
+/mail/:email /go/mail?email=:email
+/email/:email /go/mail?email=:email
 
 # 路径别名 / Path Aliases
 /a/:path /about/:path
 /m/:name /members/:name
 /member/:name /members/:name
+# /zh_cn/:path /zh/:path
+# /en_us/:path /en/:path
+
+# 杂项 / Misc
+/stopcode /misc/stopcode
+/stopcode.zh /zh_cn/misc/stopcode
+/stopcode.en /en_us/misc/stopcode

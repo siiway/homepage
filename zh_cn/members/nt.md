@@ -46,6 +46,6 @@ Discord: [`ntkrnl32`](https://discord.com/users/1302138797450067998)
 
 Bilibili: [`NtKrnl32`](https://space.bilibili.com/3537109172357757) (UID `3537109172357757`)
 
-Email: [`nt@k***32.win`](https://email.krnl64.win/base64/bnRAa3JubDMyLndpbg)
+Email: [Email Protected](https://email.krnl64.win/base64/bnRAa3JubDMyLndpbg)
 
 Blog: [`blog.krnl32.win`](https://blog.krnl32.win)

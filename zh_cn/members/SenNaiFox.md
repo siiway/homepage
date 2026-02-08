@@ -27,4 +27,4 @@ SenNaifox、Syra Naier均是我的常用名，但我更喜欢别人叫我夏花�
 
 GitHub: [Syranaier](https://github.com/Syranaier)
 
-Email: [`senfox[@]s****y.org`](https://siiway.org/t/m/senfox)
+Email: [Email Protected](https://wss.moe/m64/c2VuZm94QHNpaXdheS5vcmc=)
