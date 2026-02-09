@@ -14,7 +14,6 @@ SiiWay Team now has 19 members (order by joined time):
 - [Zackzheng1121](../../members/zackzheng1121)
 - [XiaoYuan151](../../members/XiaoYuan151)
 - [bbdqz](../../members/bbdqz)
-- [imbee](../../members/imbee)
 - [SenNaiFox](../../members/SenNaiFox)
 - [DaleNull](../../members/DaleNull)
 - [killjsj](../../members/killjsj)

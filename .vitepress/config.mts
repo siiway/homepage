@@ -10,7 +10,6 @@ const members = [
   { text: "Zackzheng1121", link: "/members/zackzheng1121" },
   { text: "XiaoYuan151", link: "/members/XiaoYuan151" },
   { text: "bbdqz", link: "/members/bbdqz" },
-  { text: "imbee", link: "/members/imbee" },
   { text: "SenNaiFox", link: "/members/SenNaiFox" },
   { text: "DaleNull", link: "/members/DaleNull" },
   { text: "killjsj", link: "/members/killjsj" },

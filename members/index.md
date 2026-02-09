@@ -11,7 +11,6 @@ SiiWay 团队目前有 18 位成员 (按加入时间排序):
 - [Zackzheng1121](./zackzheng1121)
 - [XiaoYuan151](./XiaoYuan151)
 - [bbdqz](./bbdqz)
-- [imbee](./imbee)
 - [SenNaiFox](./SenNaiFox)
 - [DaleNull](./DaleNull)
 - [killjsj](./killjsj)
