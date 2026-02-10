@@ -17,7 +17,8 @@
 .VPNav { position: fixed !important; top: 0; left: 0; width: 100%; z-index: 100; background-color: transparent !important; }
 
 /* 桌面端顶栏 - 立体玻璃态 */
-.VPNavBar {
+.VPNavBar,
+.VPNavBar .wrapper .container .content .content-body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
   backdrop-filter: blur(24px) saturate(140%) !important;
   border-bottom: 1px solid transparent !important;
@@ -25,7 +26,8 @@
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 10px 15px -3px rgba(65,168,223,0.05), 0 0 0 1px rgba(255,255,255,0.5) inset !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.dark .VPNavBar {
+.dark .VPNavBar,
+.dark .VPNavBar .wrapper .container .content .content-body {
   background: linear-gradient(180deg, rgba(30,30,30,0.8) 0%, rgba(20,20,20,0.7) 100%) !important;
   border-image: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent) 1 !important;
   box-shadow: 0 10px 20px -5px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.05) inset !important;
@@ -84,7 +86,7 @@
 .dark .VPButton.alt { background: rgba(40,40,40,0.8) !important; border-color: rgba(255,255,255,0.1) !important; }
 
 /* 时间轴 */
-.horizontal-timeline { width: 100%; display: flex; justify-content: center; margin-top: 60px !important; }
+/* .horizontal-timeline { width: 100%; display: flex; justify-content: center; margin-top: 60px !important; }
 .timeline-track { display: flex; width: 100%; max-width: 800px; }
 .h-timeline-item { position: relative; flex: 1; min-width: 120px; padding-top: 10px; }
 .h-line { position: absolute; top: 6px; left: 0; right: 0; height: 2px; background: var(--vp-c-divider); }
@@ -98,7 +100,7 @@
 .h-year { font-family: var(--vp-font-family-mono); font-weight: 800; color: var(--vp-c-brand-1); }
 .h-tag { font-size: 10px; padding: 2px 8px; border-radius: 10px; background: var(--vp-c-brand-2); color: #fff; }
 .h-title { font-weight: 700; font-size: 15px; }
-.h-desc { font-size: 13px; color: var(--vp-c-text-2); display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.h-desc { font-size: 13px; color: var(--vp-c-text-2); display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } */
 
 /* =============================================================
    5. 响应式 (Responsive)
