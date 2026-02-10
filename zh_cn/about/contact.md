@@ -8,9 +8,6 @@ E-mail: [contact[@]siiway.org](https://wss.moe/mail)
 
 QQ (群): [Here](https://wss.moe/qq)
 
-> [!TIP]
-> QQ 群已被封禁，请等待解封。
-
 QQ Channel (频道): [siiwayofficial](https://wss.moe/pd)
 
 微信公众号: [siiway](https://wss.moe/wx)
