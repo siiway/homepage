@@ -1,8 +1,7 @@
 # Member - Lokins
 
-Lokins, 17 , from Urumqi, Xinjiang Uygur Autonomous Region, China, SiiWay (**Non-Core**) Member
+Lokins, 17 , from Urumqi, Xinjiang Uygur Autonomous Region, China, SiiWay Member
 
->看不懂? 👆 SiiWay (**非核心**) 成员
 
 名字来源：`某个笨蛋名字的音译`
 
