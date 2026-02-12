@@ -30,7 +30,7 @@ Java; Kotlin; Rust; HTML; JavaScript; TypeScript
 
 
 ## Contact
-GitHub: [`NoClassDefFoundError`](https://github.com/NoClassFoundError)
+GitHub: [`NoClassFoundError`](https://github.com/NoClassFoundError)
 
 GitHub: [`columbiahyperseleneia`](https://github.com/Damselettecolumbiahyperseleneia)
 
