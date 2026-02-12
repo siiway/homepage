@@ -22,6 +22,8 @@ Telegram 频道: [siiway_chan](https://wss.moe/tgc)
 
 云湖群组: [145008852](https://wss.moe/yh)
 
+飞书群组: [SiiWay Externals](https://wss.moe/fs)
+
 ## 举报
 
 如果你在查找可用的举报方式, 请访问 [此页面](./report).
