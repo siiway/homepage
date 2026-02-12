@@ -4,7 +4,7 @@
 
 官网: [本站](/)
 
-E-mail: [contact[@]siiway.org](https://wss.moe/mail)
+E-mail: [Email Protected](https://wss.moe/mail)
 
 QQ (群): [Here](https://wss.moe/qq)
 

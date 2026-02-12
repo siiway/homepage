@@ -2,7 +2,7 @@
 
 Website: [This](/en_us/)
 
-E-mail: [contact[@]siiway.org](https://wss.moe/mail)
+E-mail: [Email Protected](https://wss.moe/mail)
 
 Discord: [SiiWay Team](https://wss.moe/dc)
 
