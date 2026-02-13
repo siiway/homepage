@@ -22,7 +22,7 @@ layout: home
     <!-- 上半部分：文字 & 按钮 -->
     <div class="hero-content">
       <h1 class="hero-name">SiiWay Team</h1>
-      <p class="hero-tagline">链接未来的数字化基础设施</p>
+      <p class="hero-tagline">欢迎来到 SiiWay 团队的官方主页!</p>
       <div class="hero-actions">
         <!-- 按钮1: Github主页 -->
         <a class="VPButton medium brand" href="https://github.com/siiway">GitHub 主页</a>
