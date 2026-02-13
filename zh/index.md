@@ -24,7 +24,7 @@ layout: home
       <h1 class="hero-name">SiiWay Team</h1>
       <p class="hero-tagline">欢迎来到 SiiWay 团队的官方主页!</p>
       <div class="hero-actions">
-        <!-- 按钮1: Github主页 -->
+        <!-- 按钮1: GitHub主页 -->
         <a class="VPButton medium brand" href="https://github.com/siiway">GitHub 主页</a>
         <!-- 按钮2: Members -->
         <a class="VPButton medium alt" href="/zh/members">成员简介</a>

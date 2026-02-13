@@ -32,7 +32,7 @@
 
 ##### llc_newVer_Updater
 
-为一个冷门(存疑)游戏[Limbus company](https://store.steampowered.com/app/1973530/)写的汉化自动更新(通过直接影像劫持实现在游戏启动前启动)
+为一个冷门(存疑)游戏[Limbus company](https://store.steampowered.com/app/1973530/)写的汉化自动更新(通过直接映像劫持实现在游戏启动前启动)
 * [GitHub](https://github.com/killjsj/llc_newVer_Updater)
 
 ##### LLCMod-mod-something- (fork)

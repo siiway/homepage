@@ -24,6 +24,6 @@ SiiWay *前*核心成员 (现已辞职为普通成员, 预计6月底回归?)，�
 
 Bilibili: [Dobastickrn](https://space.bilibili.com/580214161) (UID: `580214161`)
 
-Github: [Dobastickrn](https://github.com/Dobastickrn)
+GitHub: [Dobastickrn](https://github.com/Dobastickrn)
 
 Email: [Email Protected](https://wss.moe/m64/RG9iYXN0aWNrcm5Ac2lpd2F5Lm9yZwo=)

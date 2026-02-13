@@ -35,7 +35,7 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 
 `📧` MailTo: [Email Protected](https://wss.moe/m64/YmFrYUBzaWl3YXkub3Jn)
 
-`🐱` Github: [LeiSureLyYrsc](https://github.com/LeiSureLyYrsc)
+`🐱` GitHub: [LeiSureLyYrsc](https://github.com/LeiSureLyYrsc)
 
 `🍊` Murasame Dev: [Murasame-Dev](https://github.com/Murasame-Dev)
 
