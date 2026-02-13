@@ -18,11 +18,11 @@
 /email/:email /go/mail?email=:email
 
 # 路径别名 / Path Aliases
-/a/:path /about/:path
-/m/:name /members/:name
-/member/:name /members/:name
-/zh_cn/:path /zh/:path 301
-/en_us/:path /en/:path 301
+/a/* /about/:splat
+/m/* /members/:splat
+/member/* /members/:splat 301
+/zh_cn/* /zh/:splat 301
+/en_us/* /en/:splat 301
 
 # 杂项 / Misc
 /stopcode /misc/stopcode
