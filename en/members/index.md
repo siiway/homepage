@@ -1,6 +1,6 @@
 # Members
 
-SiiWay Team now has 21 members (in order of joining):
+SiiWay Team now has 20 members (in order of joining):
 
 > [!WARNING]
 > Contents below are only available in Chinese, you may need a translator to view them.
@@ -17,7 +17,6 @@ SiiWay Team now has 21 members (in order of joining):
 - [imbee](../../zh/members/imbee)
 - [SenNaiFox](../../zh/members/SenNaiFox)
 - [DaleNull](../../zh/members/DaleNull)
-- [killjsj](../../zh/members/killjsj)
 - [Kandyn](../../zh/members/Kandyn)
 - [Kananosa](../../zh/members/kananosa)
 - [XieXiLin](../../zh/members/XieXiLin)
