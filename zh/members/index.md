@@ -22,3 +22,4 @@ SiiWay 团队目前有 19 位成员 (按加入时间排序):
 - [advan10](./advan10)
 - [XFJ](./XFJ)
 - [chun-awa](./chun-awa)
+- [Lokins](./lokins)

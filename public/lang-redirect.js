@@ -3,8 +3,9 @@
     const langPrefix = userLang.startsWith('zh') ? '/zh' : '/en';
 
     // 对应语言跳转
-    const currentPath = window.location.pathname.replace('.html', '');
-    if (!(currentPath.startsWith('/zh') || currentPath.startsWith('/en'))) {
-        window.location.href = langPrefix + currentPath;
+    const { pathname, search, hash } = window.location;
+    const cleanPath = pathname.replace('.html', '');
+    if (!(cleanPath.startsWith('/zh') || cleanPath.startsWith('/en'))) {
+        window.location.href = langPrefix + cleanPath + search + hash;
     }
 })();

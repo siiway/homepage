@@ -7,7 +7,7 @@ SiiWay Team now has 19 members (in order of joining):
 
 - [xhc861](../../zh/members/xhc861)
 - [wyf9](../../zh/members/wyf9)
-- [Dobatickrn](../../zh/members/Dobastickrn)
+- [Dobastickrn](../../zh/members/Dobastickrn)
 - [Shattered](../../zh/members/Shattered)
 - [NtKrnl32](../../zh/members/nt)
 - [Murasame](../../zh/members/Murasame)
@@ -25,3 +25,4 @@ SiiWay Team now has 19 members (in order of joining):
 - [advan10](../../zh/members/advan10)
 - [XFJ](../../zh/members/XFJ)
 - [chun-awa](../../zh/members/chun-awa)
+- [Lokins](../../zh/members/lokins)
