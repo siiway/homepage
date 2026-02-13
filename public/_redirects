@@ -21,10 +21,10 @@
 /a/:path /about/:path
 /m/:name /members/:name
 /member/:name /members/:name
-# /zh_cn/:path /zh/:path
-# /en_us/:path /en/:path
+/zh_cn/:path /zh/:path 301
+/en_us/:path /en/:path 301
 
 # 杂项 / Misc
 /stopcode /misc/stopcode
-/stopcode.zh /zh_cn/misc/stopcode
-/stopcode.en /en_us/misc/stopcode
+/stopcode.zh /zh/misc/stopcode
+/stopcode.en /en/misc/stopcode

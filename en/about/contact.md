@@ -1,6 +1,6 @@
 # Contact
 
-Website: [This](/en_us/)
+Website: [This](/en/)
 
 E-mail: [Email Protected](https://wss.moe/mail)
 

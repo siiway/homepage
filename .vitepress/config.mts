@@ -1,32 +1,20 @@
 import { defineConfig } from "vitepress";
+import rawMembers from './members.json';
 
-const members = [
-  { text: "xhc861", link: "/zh_cn/members/xhc861" },
-  { text: "wyf9", link: "/zh_cn/members/wyf9" },
-  { text: "Dobastickrn", link: "/zh_cn/members/Dobastickrn" },
-  { text: "Shattered", link: "/zh_cn/members/Shattered" },
-  { text: "NtKrnl32", link: "/zh_cn/members/nt" },
-  { text: "Murasame", link: "/zh_cn/members/Murasame" },
-  { text: "Zackzheng1121", link: "/zh_cn/members/zackzheng1121" },
-  { text: "XiaoYuan151", link: "/zh_cn/members/XiaoYuan151" },
-  { text: "bbdqz", link: "/zh_cn/members/bbdqz" },
-  { text: "imbee", link: "/zh_cn/members/imbee" },
-  { text: "SenNaiFox", link: "/zh_cn/members/SenNaiFox" },
-  { text: "DaleNull", link: "/zh_cn/members/DaleNull" },
-  { text: "killjsj", link: "/zh_cn/members/killjsj" },
-  { text: "Kandyn", link: "/zh_cn/members/Kandyn" },
-  { text: "Kananosa", link: "/zh_cn/members/kananosa" },
-  { text: "XieXiLin", link: "/zh_cn/members/XieXiLin" },
-  { text: "NtKrnl64", link: "/zh_cn/members/nt-copy" },
-  { text: "advan10", link: "/zh_cn/members/advan10" },
-  { text: "XFJ", link: "/members/XFJ" },
-  { text: "chun-awa", link: "/members/chun-awa" }
-];
+const members = Object.entries(rawMembers).map(([key, value]) => {
+  return {
+    text: value,
+    link: `/zh/members/${key}`
+  };
+});
 
 export default defineConfig({
   title: "SiiWay 团队主页",
   description: "SiiWay 团队的官方网站",
-  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.svg" }],
+    ["script", { src: "/lang-redirect.js" }]
+  ],
 
   lastUpdated: true,
   sitemap: {
@@ -34,33 +22,33 @@ export default defineConfig({
   },
 
   locales: {
-    // === 中文版 (zh_cn) ===
-    zh_cn: {
+    // === 中文版 (zh) ===
+    zh: {
       label: "简体中文",
       lang: "zh",
-      link: "/zh_cn/",
+      link: "/zh/",
 
       themeConfig: {
         nav: [
-          { text: "主页", link: "/zh_cn/" },
-          { text: "成员", link: "/zh_cn/members/" },
-          { text: "联系", link: "/zh_cn/about/contact" },
+          { text: "主页", link: "/zh/" },
+          { text: "成员", link: "/zh/members/" },
+          { text: "联系", link: "/zh/about/contact" },
         ],
         sidebar: [
           {
             text: "成员",
-            link: "/zh_cn/members/",
+            link: "/zh/members/",
             items: members,
           },
           {
             text: "关于",
             items: [
-              { text: "联系", link: "/zh_cn/about/contact" },
-              { text: "关于此网站", link: "/zh_cn/about/website" },
-              { text: "招新公告", link: "/zh_cn/about/join" },
-              { text: "规则 (QQ 群)", link: "/zh_cn/about/rules-qq" },
-              { text: "SiiWay 行为准则", link: "/zh_cn/about/code-of-conduct" },
-              { text: "举报", link: "/zh_cn/about/report" }
+              { text: "联系", link: "/zh/about/contact" },
+              { text: "关于此网站", link: "/zh/about/website" },
+              { text: "招新公告", link: "/zh/about/join" },
+              { text: "规则 (QQ 群)", link: "/zh/about/rules-qq" },
+              { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
+              { text: "举报", link: "/zh/about/report" }
             ],
           },
           {
@@ -99,42 +87,42 @@ export default defineConfig({
           { icon: "telegram", ariaLabel: "Telegram 频道", link: "https://wss.moe/tgc" },
         ],
         editLink: {
-          pattern: "https://github.com/siiway/homepage/edit/main/zh_cn/:path",
+          pattern: "https://github.com/siiway/homepage/edit/main/:path",
           text: "在 GitHub 上编辑本页",
         },
       }
     },
 
-    // === 英文版 (en_us) ===
-    en_us: {
+    // === 英文版 (en) ===
+    en: {
       label: "English",
       lang: "en",
-      link: "/en_us/",
+      link: "/en/",
 
       title: "SiiWay Team Home",
       description: "SiiWay Team's Official Homepage",
 
       themeConfig: {
         nav: [
-          { text: "Home", link: "/en_us/" },
-          { text: "Members", link: "/en_us/members/" },
-          { text: "Contact", link: "/en_us/about/contact" },
+          { text: "Home", link: "/en/" },
+          { text: "Members", link: "/en/members/" },
+          { text: "Contact", link: "/en/about/contact" },
         ],
         sidebar: [
           {
             text: "Members (CN Only)",
-            link: "/en_us/members/",
+            link: "/en/members/",
             items: members,
           },
           {
             text: "About",
             items: [
-              { text: "Contact", link: "/en_us/about/contact" },
-              { text: "About Website", link: "/en_us/about/website" },
-              // { text: "Join us (Chinese only)", link: "/zh_cn/about/join" }, 
-              // { text: "Rules (QQ, Chinese only)", link: "/zh_cn/about/rules-qq" },
-              { text: "Code of Conduct", link: "/en_us/about/code-of-conduct" },
-              { text: "Report", link: "/en_us/about/report" },
+              { text: "Contact", link: "/en/about/contact" },
+              { text: "About Website", link: "/en/about/website" },
+              // { text: "Join us (Chinese only)", link: "/zh/about/join" }, 
+              // { text: "Rules (QQ, Chinese only)", link: "/zh/about/rules-qq" },
+              { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
+              { text: "Report", link: "/en/about/report" },
             ],
           },
           {
@@ -153,10 +141,11 @@ export default defineConfig({
           { icon: "telegram", ariaLabel: "Telegram Channel", link: "https://wss.moe/tgc" },
         ],
         editLink: {
-          pattern: "https://github.com/siiway/homepage/edit/main/en_us/:path",
+          pattern: "https://github.com/siiway/homepage/edit/main/:path",
           text: "Edit this page on GitHub",
         },
       },
     },
   },
+  metaChunk: true,
 });

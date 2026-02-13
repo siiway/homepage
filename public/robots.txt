@@ -3,5 +3,5 @@ Disallow: /assets/
 Disallow: /README
 Disallow: /README.html
 Disallow: /go/
-Disallow: /zh_cn/misc/
-Disallow: /en_us/misc/
+Disallow: /zh/misc/
+Disallow: /en/misc/

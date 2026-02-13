@@ -29,9 +29,9 @@ layout: home
         <!-- 按钮1: GitHub -->
         <a class="VPButton medium brand" href="https://github.com/siiway" target="_blank" rel="noopener">GitHub</a>
         <!-- 按钮2: Members -->
-        <a class="VPButton medium alt" href="/en_us/members">Members</a>
+        <a class="VPButton medium alt" href="/en/members">Members</a>
         <!-- 按钮3: Contact -->
-        <a class="VPButton medium alt" href="/en_us/about/contact">Contact</a>
+        <a class="VPButton medium alt" href="/en/about/contact">Contact</a>
       </div>
     </div>
     <!-- 横向时间轴 -->

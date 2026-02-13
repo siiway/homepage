@@ -27,9 +27,9 @@ layout: home
         <!-- 按钮1: Github主页 -->
         <a class="VPButton medium brand" href="https://github.com/siiway">GitHub 主页</a>
         <!-- 按钮2: Members -->
-        <a class="VPButton medium alt" href="/zh_cn/members">成员简介</a>
+        <a class="VPButton medium alt" href="/zh/members">成员简介</a>
         <!-- 按钮3: Contact -->
-        <a class="VPButton medium alt" href="/zh_cn/about/contact">联系我们</a>
+        <a class="VPButton medium alt" href="/zh/about/contact">联系我们</a>
       </div>
     </div>
     <!-- 下半部分：横向时间轴 -->

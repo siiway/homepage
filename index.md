@@ -10,6 +10,6 @@ const router = useRouter()
 
 onMounted(() => {
   // 访问根域名时，直接跳到中文版
-  router.go('/zh_cn/')
+  router.go('/zh/')
 })
 </script>
