@@ -1,2 +1,7 @@
 User-agent: *
 Disallow: /assets/
+Disallow: /README
+Disallow: /README.html
+Disallow: /go/
+Disallow: /zh/misc/
+Disallow: /en/misc/
