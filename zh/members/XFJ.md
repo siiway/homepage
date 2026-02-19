@@ -38,4 +38,6 @@ BiliBili: [Minecraft雪峰君](https://space.bilibili.com/518725775)
 
 GitHub: [XFJ-YYQF](https://github.com/XFJ-YYQF)
 
+Telegram: [@MinecraftXFJ](https://t.me/MinecraftXFJ)
+
 Email: [Email Protected](https://wss.moe/m64/eHVuZmVuZ2p1bjY2NkBzaWl3YXkub3Jn)
