@@ -9,8 +9,6 @@ const members = Object.entries(rawMembers).map(([key, value]) => {
 });
 
 export default defineConfig({
-  title: "SiiWay 团队主页",
-  description: "SiiWay 团队的官方网站",
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     ["script", { src: "/lang-redirect.js" }]
@@ -27,6 +25,9 @@ export default defineConfig({
       label: "简体中文",
       lang: "zh",
       link: "/zh/",
+    
+      title: "SiiWay 团队主页",
+      description: "SiiWay 团队的官方网站",
 
       themeConfig: {
         nav: [
@@ -90,6 +91,9 @@ export default defineConfig({
           pattern: "https://github.com/siiway/homepage/edit/main/:path",
           text: "在 GitHub 上编辑本页",
         },
+        lastUpdated: {
+          text: 'Updated at',
+        },
       }
     },
 
@@ -119,8 +123,6 @@ export default defineConfig({
             items: [
               { text: "Contact", link: "/en/about/contact" },
               { text: "About Website", link: "/en/about/website" },
-              // { text: "Join us (Chinese only)", link: "/zh/about/join" }, 
-              // { text: "Rules (QQ, Chinese only)", link: "/zh/about/rules-qq" },
               { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
               { text: "Report", link: "/en/about/report" },
             ],
@@ -143,6 +145,9 @@ export default defineConfig({
         editLink: {
           pattern: "https://github.com/siiway/homepage/edit/main/:path",
           text: "Edit this page on GitHub",
+        },
+        lastUpdated: {
+          text: '本页最后更新于',
         },
       },
     },
