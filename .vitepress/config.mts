@@ -92,7 +92,7 @@ export default defineConfig({
           text: "在 GitHub 上编辑本页",
         },
         lastUpdated: {
-          text: 'Updated at',
+          text: '本页最后更新于',
         },
       }
     },
@@ -147,7 +147,7 @@ export default defineConfig({
           text: "Edit this page on GitHub",
         },
         lastUpdated: {
-          text: '本页最后更新于',
+          text: 'Updated at',
         },
       },
     },
