@@ -2,9 +2,6 @@
 
 Lokins, 17 , from Urumqi, Xinjiang Uygur Autonomous Region, China, SiiWay Member
 
-
-名字来源：`某个笨蛋名字的音译`
-
 <details>
 <summary>Jatlin豪丸喵</summary>
 <pre>
@@ -28,6 +25,9 @@ Java; Kotlin; Rust; HTML; JavaScript; TypeScript
 
 几个不值一提的机器人插件。
 
+### [Sleepy-GUI](https://github.com/sleepy-project/Sleepy-GUI)
+
+Sleepy-GUI 是 [sleepy-project/sleepy](https://github.com/sleepy-project/sleepy) v5.x 版本的图形化配置客户端。
 
 ## Contact
 GitHub: [`NoClassFoundError`](https://github.com/NoClassFoundError)
