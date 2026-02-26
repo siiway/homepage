@@ -27,4 +27,4 @@ From 廣東
 * **GitHub**: [yuhold](https://www.google.com/search?q=https://github.com/yuhold)
 * **Telegram**: [yuholt](https://t.me/yuholt)
 * **Discord**: [yuholt](https://www.google.com/search?q=https://discord.com/users/yuholt)
-* **Email**: [Email Protected](https://wss.moe/m64/eXVob2xkLjA3NTdAcXEuY29t)
+* **Email**: [Email Protected](https://wss.moe/m64/eXVob2xkLjA3NTdAcXEuY29t) / [Email Protected (team)](https://wss.moe/m64/eXVob2x0QHNpaXdheS5vcmc=)

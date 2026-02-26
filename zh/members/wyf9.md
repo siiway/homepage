@@ -25,16 +25,18 @@ SiiWay 团队创始人之一 (?)，兼**核心成员** <font color=red size=1> -
 一个随机二次元 (也有其他) 图片 API, 聚合全网的图片 API 并随机跳转, *(以增加丰富性?)*
 
 * [GitHub](https://github.com/siiway/imgapi)
-* 点击直达: https://imgapi.siiway.top/image
+* 点击直达:
+  - 大陆: https://imgapi.siiway.top/image | https://i.wss.moe/image
+  - 海外: https://imgapi-origin.siiway.top/image | https://i.wss.moe/image
 
 ### sleepy
 
 一个 Python + Flask 编写的实时视奸网站
 
 * [GitHub](https://github.com/sleepy-project/sleepy)
-* Website: https://sleepy.siiway.top
-* ~~点击直达: https://sleepy.wyf9.top~~ Not deployed
+* Website: https://sleepy.wss.moe
 * Preview: https://sleepy-preview.wyf9.top
+<!-- * 点击直达: https://sleepy.wyf9.top -->
 
 ### hayfrp-auto-sign
 
