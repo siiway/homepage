@@ -2,7 +2,7 @@
 
 原名: wyf，1+1+1+1+1+1+1+1+1+1+1+1+1+1+1 y.o, From Guizhou, China
 
-SiiWay 团队创始人之一 (?)，兼**核心成员** <font color=red> -- 我在提醒你注意看这里</font>
+SiiWay 团队创始人之一 (?)，兼**核心成员** <font color=red size=1> -- 我在提醒你注意看这里 (加群问题)</font>
 
 <!-- 可见我的加群问题提示之多...? -->
 
@@ -43,6 +43,8 @@ Cloudflare Workers 编写的 HayFrp 自动签到工具
 * [GitHub](https://github.com/wyf9/hayfrp-auto-sign)
 
 ## Contact
+
+Blog: [wyf9.top](https://wyf9.top)
 
 GitHub: [wyf9](https://github.com/wyf9)
 
