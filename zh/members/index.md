@@ -1,6 +1,6 @@
 # Members
 
-SiiWay 团队目前有 21 位成员 (按加入时间排序):
+SiiWay 团队目前有 22 位成员 (按加入时间排序):
 
 - [xhc861](./xhc861)
 - [wyf9](./wyf9)
@@ -24,3 +24,4 @@ SiiWay 团队目前有 21 位成员 (按加入时间排序):
 - [chun-awa](./chun-awa)
 - [Lokins](./lokins)
 - [yuholt](./yuholt)
+- [RhenCloud](./RhenCloud)

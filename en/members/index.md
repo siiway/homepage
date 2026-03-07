@@ -1,6 +1,6 @@
 # Members
 
-SiiWay Team now has 21 members (in order of joining):
+SiiWay Team now has 22 members (in order of joining):
 
 > [!WARNING]
 > Contents below are only available in Chinese, you may need a translator to view them.
@@ -27,3 +27,4 @@ SiiWay Team now has 21 members (in order of joining):
 - [chun-awa](../../zh/members/chun-awa)
 - [Lokins](../../zh/members/lokins)
 - [yuholt](../../zh/members/yuholt)
+- [RhenCloud](../../zh/members/RhenCloud)
