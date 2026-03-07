@@ -12,11 +12,7 @@
 
 Minecraft 生电玩家。
 
-我的代码时长统计：
-
-<p align="center">
-<img  alt="Wakapi" src="https://img.shields.io/endpoint?url=https://wakapi.rhen.cloud/api/compat/shields/v1/RhenCloud/interval:all_time&label=All%20time&color=blue">
-</p>
+我的代码时长统计： <img alt="Wakapi" src="https://img.shields.io/endpoint?url=https://wakapi.rhen.cloud/api/compat/shields/v1/RhenCloud/interval:all_time&label=All%20time&color=blue">
 
 ### Interesting facts
 
