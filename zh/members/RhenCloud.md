@@ -28,7 +28,7 @@ Minecraft 生电玩家。
 
 ~~从 5 岁时就开始玩电脑了。~~
 
-~~i use NisOS btw.~~
+~~i use NixOS btw.~~
 
 ## Skills
 
@@ -65,13 +65,13 @@ Minecraft 生电玩家。
 
 （暂时停止维护）
 
-[Github](https://github.com/RhenCloud/ILP-Cpp)
+[GitHub](https://github.com/RhenCloud/ILP-Cpp)
 
 ### Cloud-Home
 
 基于 Nuxt.js 的个人主页模板，支持友链、项目展示等
 
-[Github](https://github.com/RhenCloud/Cloud-Home)
+[GitHub](https://github.com/RhenCloud/Cloud-Home)
 
 [Demo](https://rhen.cloud)
 
@@ -79,7 +79,7 @@ Minecraft 生电玩家。
 
 基于 Nuxt.js 的博客模板
 
-[Github](https://github.com/RhenCloud/Cloud-Blog)
+[GitHub](https://github.com/RhenCloud/Cloud-Blog)
 
 [Demo](https://blog.rhen.cloud)
 
@@ -87,7 +87,7 @@ Minecraft 生电玩家。
 
 基于 Xposed 框架的 [sleepy-project/sleepy](https://github.com/sleepy-project/sleepy) 客户端方案。
 
-[Github](https://github.com/RhenCloud/SleepyXposed)
+[GitHub](https://github.com/RhenCloud/SleepyXposed)
 
 ### Cloud-Index
 
@@ -97,7 +97,7 @@ Minecraft 生电玩家。
 
 （在考虑用 Nuxt.js 重写）
 
-[Github](https://github.com/RhenCloud/Cloud-Index)
+[GitHub](https://github.com/RhenCloud/Cloud-Index)
 
 [Demo(R2 backend)](http://r2.demo.cloud-index.rhen.cloud)
 
@@ -105,7 +105,7 @@ Minecraft 生电玩家。
 
 我的 NixOS 配置
 
-[Github](https://github.com/RhenCloud/NixOS-Config)
+[GitHub](https://github.com/RhenCloud/NixOS-Config)
 
 ## Contact
 
@@ -115,7 +115,7 @@ Minecraft 生电玩家。
 
 - Bilibili: [RhenCloud](https://space.bilibili.com/1502883335)
 
-- Github: [RhenCloud](https://github.com/RhenCloud)
+- GitHub: [RhenCloud](https://github.com/RhenCloud)
 
 - Matrix: [@RhenCloud:matrix.org](https://matrix.to/#/@RhenCloud:matrix.org)
 
@@ -123,6 +123,6 @@ Minecraft 生电玩家。
 
 - Email: [Email Protected](https://wss.moe/m64/aUByaGVuLmNsb3Vk)
 
-- Netease Music: [RhenCloud](https://music.163.com/#/user?id=8028363957)
+- NetEase Music: [RhenCloud](https://music.163.com/#/user?id=8028363957)
 
 - Discord: [RhenCloud](https://discord.gg/FUQM7GsY)
