@@ -42,10 +42,11 @@ ruff check . --fix
 
 ## 类型检查（ty）
 
-推荐直接通过 `uvx` 执行：
+推荐通过 `uv tool install ty` 安装和使用：
 
 ```bash
-uvx ty check
+uv tool install ty
+uv ty check
 ```
 
 若已在项目中安装 `ty`，也可使用：
@@ -75,8 +76,18 @@ exclude = [
 ]
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "UP", "N"]
-ignore = ["E501"]
+select = [
+  "E", # Errors
+  "F", # Fixes
+  "I", # Imports
+  "B", # Blank lines
+  "UP", # Uppercase variable names
+  "N", # Naming style
+]
+ignore = [
+  "E741", # Ambiguous variable name: l / O / I
+  "E501", # Line too long (100 > 79 characters)
+]
 
 [tool.ruff.format]
 quote-style = "double"
@@ -84,7 +95,7 @@ indent-style = "space"
 line-ending = "lf"
 
 [tool.ty.environment]
-python-version = "3.11"
+python-version = "3.13"
 
 [tool.ty.src]
 include = ["src", "tests"]
@@ -150,7 +161,7 @@ pytest -k "keyword"
 ```bash
 ruff format .
 ruff check .
-uvx ty check
+ty check
 pytest
 ```
 
@@ -168,7 +179,7 @@ repos:
     hooks:
       - id: ty-check
         name: ty check
-        entry: uvx ty check
+        entry: ty check
         language: system
         pass_filenames: false
 ```
@@ -179,7 +190,7 @@ repos:
 
 1. 安装依赖
 2. `ruff check .`
-3. `uvx ty check`
+3. `ty check`
 4. `pytest`
 
 ## 例外与扩展
