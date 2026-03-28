@@ -12,7 +12,7 @@
 
 - Python: `3.13+`
 - 包管理: `uv`
-- 代码检查与格式化: `ruff`（同时承担 lint + format）
+- 代码检查与格式化: `ruff`
 - 类型检查: `ty`
 - 测试: `pytest`
 - 提交前钩子: `pre-commit`
@@ -31,9 +31,9 @@
 ### 常用命令
 
 ```bash
-ruff format .
-ruff check .
-ruff check . --fix
+ruff format
+ruff check
+ruff check --fix
 ```
 
 - `ruff format` 负责代码格式化。
@@ -46,7 +46,7 @@ ruff check . --fix
 
 ```bash
 uv tool install ty
-uv ty check
+ty check
 ```
 
 若已在项目中安装 `ty`，也可使用：
@@ -159,8 +159,8 @@ pytest -k "keyword"
 建议在本地执行以下顺序：
 
 ```bash
-ruff format .
-ruff check .
+ruff format
+ruff check
 ty check
 pytest
 ```
@@ -189,11 +189,12 @@ repos:
 在 CI 中至少包含以下步骤：
 
 1. 安装依赖
-2. `ruff check .`
+2. `ruff check`
 3. `ty check`
 4. `pytest`
 
 ## 例外与扩展
 
-- 若历史项目改造成本较高，可先启用 `ruff` + `pytest`，再逐步引入 `ty`。
-- 对性能敏感模块可以在评审中放宽部分规则，但必须在代码评审中说明原因。
+- 若历史项目改造成本较高，可先启用 `ruff`，再逐步引入 `ty`。
+- `pytest` 为可选项，小项目或测试成本较高的项目可忽略。
+- 对性能敏感模块可以在评审中放宽部分规则，但必须说明原因。
