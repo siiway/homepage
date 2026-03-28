@@ -77,12 +77,12 @@ exclude = [
 
 [tool.ruff.lint]
 select = [
-  "E", # Errors
-  "F", # Fixes
-  "I", # Imports
-  "B", # Blank lines
-  "UP", # Uppercase variable names
-  "N", # Naming style
+  "E", # pycodestyle (Errors)
+  "F", # Pyflakes
+  "I", # isort (Import sorting)
+  "B", # flake8-bugbear
+  "UP", # pyupgrade
+  "N", # pep8-naming
 ]
 ignore = [
   "E741", # Ambiguous variable name: l / O / I
