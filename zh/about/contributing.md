@@ -33,11 +33,3 @@
 
 - [Python 代码规范](/zh/about/python-style)
 - [SiiWay 行为准则](/zh/about/code-of-conduct)
-
----
-
-该页面为基础版本，后续可继续补充：
-- 分支命名规范
-- Commit 规范
-- PR 模板与评审标准
-- CI 失败排查清单
