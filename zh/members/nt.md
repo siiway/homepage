@@ -16,8 +16,6 @@ C#; Java; Powershell; HTML; Javascript; CSS; Batch
 </pre>
 </details>
 
----
-
 ## Projects
 
 > [!NOTE]
