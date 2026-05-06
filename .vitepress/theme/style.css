@@ -32,6 +32,10 @@
 
 .VPHome {
   overflow-x: hidden;
+  /* VitePress's default 96px/128px bottom margin pushes the footer past
+     the fold on the home page (which only has a hero + footer). Zero it
+     out so .custom-layout's min-height controls the layout fully. */
+  margin-bottom: 0 !important;
 }
 
 /* =============================================================
@@ -195,8 +199,12 @@
   gap: 64px;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 80vh;
-  padding: 120px 24px 80px;
+  /* Fill the viewport minus VitePress's .VPContent padding-top
+     (= --vp-nav-height, only applied at ≥960px) and the footer
+     (~96px = 24*2 padding + ~2 lines of 13px text + border) so the
+     page fits in 100vh exactly without scrolling. */
+  min-height: calc(100vh - var(--vp-nav-height) - 96px);
+  padding: 56px 24px 56px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -370,8 +378,67 @@
 .VPFooter.has-sidebar {
   display: block !important;
   background: transparent !important;
-  border-top: 1px solid var(--vp-c-divider) !important;
+  /* Border lives on the inner container so the divider line aligns
+     with the content area instead of spanning the full viewport. */
+  border-top: none !important;
+  padding: 0 !important;
+}
+
+.VPFooter .container {
+  max-width: 1200px !important;
   padding: 24px !important;
+  border-top: 1px solid var(--vp-c-divider) !important;
+}
+
+/* On sidebar (doc) pages, mirror .VPContent.has-sidebar's horizontal
+   offsets so the footer sits in the doc column rather than the full
+   viewport, and constrain the inner container to .content-container's
+   max-width so its divider line ends where VPDocFooter's does. */
+.VPFooter.has-sidebar {
+  padding-left: var(--vp-sidebar-width) !important;
+}
+
+@media (min-width: 1440px) {
+  .VPFooter.has-sidebar {
+    padding-left: calc(
+      (100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width)
+    ) !important;
+    padding-right: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+}
+
+.VPFooter.has-sidebar .container {
+  /* Mirror .VPDoc > .container's flex-centered (content + aside) layout
+     using a 2-column grid with a 32px gutter. Message + copyright live
+     in the left ("content") column; the right column stays empty as a
+     phantom aside so the divider line left-aligns with .content-container
+     instead of centering over the entire post-sidebar area. */
+  display: grid !important;
+  grid-template-columns: minmax(0, 688px) minmax(0, 256px) !important;
+  column-gap: 32px !important;
+  justify-content: center !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 24px !important;
+  border-top: none !important;
+}
+
+@media (min-width: 768px) {
+  .VPFooter.has-sidebar .container {
+    padding: 0 32px !important;
+  }
+}
+
+.VPFooter.has-sidebar .container > .message {
+  grid-column: 1 !important;
+  border-top: 1px solid var(--vp-c-divider) !important;
+  padding-top: 24px !important;
+  margin: 0 !important;
+}
+
+.VPFooter.has-sidebar .container > .copyright {
+  grid-column: 1 !important;
+  margin: 4px 0 24px !important;
 }
 
 .VPFooter .message,

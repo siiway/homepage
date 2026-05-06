@@ -13,15 +13,17 @@ export default {
       );
     }
 
-    const response = await fetch(
-      "https://raw.githubusercontent.com/siiway/.github/main/CODE_OF_CONDUCT.en.md",
-    );
-
     let raw: string;
-
-    if (response.ok) {
-      raw = await response.text();
-    } else {
+    try {
+      const response = await fetch(
+        "https://raw.githubusercontent.com/siiway/.github/main/CODE_OF_CONDUCT.en.md",
+      );
+      if (response.ok) {
+        raw = await response.text();
+      } else {
+        throw new Error(`HTTP ${response.status}`);
+      }
+    } catch {
       raw =
         'Load Code of Conduct failed, please visit <a href="https://github.com/siiway/.github/blob/main/CODE_OF_CONDUCT.en.md">GitHub Source File</a> to view it.\nAlso, please [Let us know](./contact)!';
     }

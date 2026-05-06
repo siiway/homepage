@@ -13,15 +13,17 @@ export default {
       );
     }
 
-    const response = await fetch(
-      "https://raw.githubusercontent.com/siiway/.github/main/CODE_OF_CONDUCT.md",
-    );
-
     let raw: string;
-
-    if (response.ok) {
-      raw = await response.text();
-    } else {
+    try {
+      const response = await fetch(
+        "https://raw.githubusercontent.com/siiway/.github/main/CODE_OF_CONDUCT.md",
+      );
+      if (response.ok) {
+        raw = await response.text();
+      } else {
+        throw new Error(`HTTP ${response.status}`);
+      }
+    } catch {
       raw =
         '无法加载行为准则，请访问 <a href="https://github.com/siiway/.github/blob/main/CODE_OF_CONDUCT.md">GitHub 原文件</a> 查看.\n以及，请 [让我们知道](./contact)!';
     }
