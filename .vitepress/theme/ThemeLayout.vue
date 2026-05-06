@@ -1,47 +1,48 @@
 <!-- 官方的外观切换组件： https://vitepress.dev/zh/guide/extending-default-theme#on-appearance-toggle -->
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
+import { useData } from "vitepress";
+import DefaultTheme from "vitepress/theme";
+import { nextTick, provide } from "vue";
 
-const { isDark } = useData()
-const { Layout } = DefaultTheme
-const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined'
+const { isDark } = useData();
+const { Layout } = DefaultTheme;
+const isBrowser =
+  typeof window !== "undefined" && typeof document !== "undefined";
 
 const enableTransitions = () =>
   isBrowser &&
-  'startViewTransition' in document &&
-  window.matchMedia('(prefers-reduced-motion: no-preference)').matches
+  "startViewTransition" in document &&
+  window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
 
-provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
+provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   if (!enableTransitions()) {
-    isDark.value = !isDark.value
-    return
+    isDark.value = !isDark.value;
+    return;
   }
 
   const clipPath = [
     `circle(0px at ${x}px ${y}px)`,
     `circle(${Math.hypot(
       Math.max(x, window.innerWidth - x),
-      Math.max(y, window.innerHeight - y)
-    )}px at ${x}px ${y}px)`
-  ]
+      Math.max(y, window.innerHeight - y),
+    )}px at ${x}px ${y}px)`,
+  ];
 
   await document.startViewTransition(async () => {
-    isDark.value = !isDark.value
-    await nextTick()
-  }).ready
+    isDark.value = !isDark.value;
+    await nextTick();
+  }).ready;
 
   document.documentElement.animate(
     { clipPath: isDark.value ? clipPath.reverse() : clipPath },
     {
       duration: 300,
-      easing: 'ease-in',
-      fill: 'forwards',
-      pseudoElement: `::view-transition-${isDark.value ? 'old' : 'new'}(root)`
-    }
-  )
-})
+      easing: "ease-in",
+      fill: "forwards",
+      pseudoElement: `::view-transition-${isDark.value ? "old" : "new"}(root)`,
+    },
+  );
+});
 </script>
 
 <template>

@@ -47,6 +47,13 @@ export default defineConfig({
     // 搜索功能 https://vitepress.dev/zh/reference/default-theme-search
     search: {
       provider: "local",
+      options: {
+        locales: {
+          zh: {
+            translations: zhSearchTranslations,
+          },
+        },
+      },
     },
   },
 
@@ -57,15 +64,15 @@ export default defineConfig({
       lang: "zh",
       link: "/zh/",
 
-      title: "SiiWay 团队主页",
-      description: "SiiWay 团队的官方网站",
+      title: "SiiWay Team",
+      description: "SiiWay Team 主页以及官方网站",
 
       themeConfig: {
         nav: [
           { text: "主页", link: "/zh/" },
           { text: "成员", link: "/zh/members/" },
           { text: "联系", link: "/zh/about/contact" },
-          { text: "开发", link: "/zh/dev" },
+          { text: "开发", link: "/zh/dev/", activeMatch: "^/zh/dev" },
         ],
         sidebar: [
           {
@@ -140,23 +147,20 @@ export default defineConfig({
         lastUpdated: {
           text: "本页最后更新于",
         },
+        footer: {
+          message:
+            '内容采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0</a> 协议授权',
+          copyright:
+            'Copyright © 2024-present <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>',
+        },
         // 将"On this page"改为中文
         outline: {
-          label: '本页目录'
+          label: "本页目录",
         },
         // 汉化了 "Previous page" 与 "Next page"。
         docFooter: {
           prev: "上一篇",
           next: "下一篇",
-        },
-        search: {
-          options: {
-            locales: {
-              zh: {
-                translations: zhSearchTranslations,
-              },
-            },
-          },
         },
       },
     },
@@ -167,8 +171,8 @@ export default defineConfig({
       lang: "en",
       link: "/en/",
 
-      title: "SiiWay Team Home",
-      description: "SiiWay Team's Official Homepage",
+      title: "SiiWay Team",
+      description: "SiiWay Team's Homepage and Official Site",
 
       themeConfig: {
         nav: [
@@ -216,6 +220,12 @@ export default defineConfig({
         },
         lastUpdated: {
           text: "Updated at",
+        },
+        footer: {
+          message:
+            'Released under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
+          copyright:
+            'Copyright © 2024-present <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>',
         },
       },
     },

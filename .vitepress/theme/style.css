@@ -2,15 +2,32 @@
    1. 变量与基础 (Variables & Base)
    ============================================================= */
 :root {
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-blur: blur(20px) saturate(180%);
-  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  /* Single grounded teal — average of the SiiWay logo's four stops.
+     Keeps the brand identity without the bright-mint, multi-stop gradient look. */
+  --siiway-primary: #109595;
+  --siiway-primary-hover: #0c7a7a;
+  --siiway-indigo: #24047b;
+
+  --vp-c-brand-1: #109595;
+  --vp-c-brand-2: #109595;
+  --vp-c-brand-3: #0c7a7a;
+  --vp-c-brand-soft: rgba(16, 149, 149, 0.12);
+
+  --site-nav-bg: rgba(252, 252, 252, 0.88);
+  --site-nav-screen-bg: rgba(252, 252, 252, 0.96);
 }
 
 .dark {
-  --glass-bg: rgba(20, 20, 20, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --siiway-primary: #2db8b8;
+  --siiway-primary-hover: #44d0d0;
+
+  --vp-c-brand-1: #2db8b8;
+  --vp-c-brand-2: #2db8b8;
+  --vp-c-brand-3: #1ea0a0;
+  --vp-c-brand-soft: rgba(45, 184, 184, 0.16);
+
+  --site-nav-bg: rgba(24, 26, 32, 0.84);
+  --site-nav-screen-bg: rgba(20, 22, 28, 0.96);
 }
 
 .VPHome {
@@ -18,9 +35,8 @@
 }
 
 /* =============================================================
-   2. 导航栏 (Navbar & Mobile)
+   2. 导航栏 (Navbar)
    ============================================================= */
-/* 外壳定位 */
 .VPNav {
   position: fixed !important;
   top: 0;
@@ -30,223 +46,158 @@
   background-color: transparent !important;
 }
 
-/* 桌面端顶栏 - 立体玻璃态 */
+/* Fluent acrylic: deep blur, soft inner highlight, subtle elevation */
 .VPNavBar {
-  background: var(--vp-c-bg) !important;
-  /* border-bottom: 1px solid transparent !important; */
-  border-image: linear-gradient(
-      90deg,
-      transparent,
-      rgba(65, 168, 223, 0.3),
-      transparent
-    )
-    1 !important;
+  background: var(--site-nav-bg) !important;
+  backdrop-filter: saturate(180%) blur(30px);
+  -webkit-backdrop-filter: saturate(180%) blur(30px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
   box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.02),
-    0 10px 15px -3px rgba(65, 168, 223, 0.05),
-    0 0 0 1px rgba(255, 255, 255, 0.5) inset !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 1px 0 rgba(0, 0, 0, 0.03),
+    0 8px 24px -18px rgba(0, 0, 0, 0.18);
 }
 
 .dark .VPNavBar {
-  background: var(--vp-c-bg) !important;
-  border-image: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.15),
-      transparent
-    )
-    1 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
   box-shadow:
-    0 10px 20px -5px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(255, 255, 255, 0.05) inset !important;
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    0 8px 24px -18px rgba(0, 0, 0, 0.55);
 }
 
-/* 移动端全屏弹窗 */
+.VPNavBar.has-sidebar .content {
+  background: transparent !important;
+}
+
 .VPNavScreen {
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(20px) !important;
+  background-color: var(--site-nav-screen-bg) !important;
+  backdrop-filter: saturate(180%) blur(30px);
+  -webkit-backdrop-filter: saturate(180%) blur(30px);
   padding-top: var(--vp-nav-height) !important;
 }
 
-.dark .VPNavScreen {
-  background-color: rgba(20, 20, 20, 0.9) !important;
-}
-
-/* 容器限制 & 菜单项特效 */
 .VPNavBar .container {
   max-width: 1320px !important;
   margin: 0 auto !important;
 }
 
-.VPNavBarMenuLink {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+/* Pin the search button to the right side of the navbar (just before the
+   menu) on every page. VitePress sets flex-grow:1 on .VPNavBarSearch which
+   makes its inner button drift left by varying amounts depending on whether
+   the layout has a sidebar. */
+@media (min-width: 768px) {
+  .VPNavBarSearch {
+    flex-grow: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 8px;
+  }
+}
+
+/* Nav menu items: static, no hover transitions, shrink-to-content so the
+   active block sits well inside the bar instead of filling its full height */
+.VPNavBarMenu .VPNavBarMenuLink {
+  height: auto !important;
+  align-self: center !important;
+  line-height: 1.4 !important;
   border-radius: 8px !important;
   padding: 6px 14px !important;
-  margin: 0 4px !important;
-  position: relative;
-  z-index: 1;
+  margin: 0 2px !important;
+  transition: none !important;
 }
 
 .VPNavBarMenuLink:hover {
-  background-color: rgba(65, 168, 223, 0.1) !important;
-  color: #41a8df !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(65, 168, 223, 0.15);
+  background-color: transparent !important;
+  color: var(--vp-c-text-1) !important;
 }
 
-.VPNavBarMenuLink.active {
-  color: #3451b2 !important;
-  background-color: rgba(65, 168, 223, 0.08) !important;
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink.active:hover {
+  background-color: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
   font-weight: 600 !important;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
-}
-
-.dark .VPNavBarMenuLink:hover {
-  background-color: rgba(65, 168, 223, 0.2) !important;
-  color: #63b3ed !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* =============================================================
-   3. 全局装饰 (Decorations)
+   3. 背景装饰 (Background Decoration)
    ============================================================= */
-/* 背景光球 */
 .VPHome::before,
 .VPHome::after {
   content: "";
   position: fixed;
-  width: 800px;
-  height: 800px;
-  filter: blur(100px);
+  width: 520px;
+  height: 520px;
+  filter: blur(60px);
   z-index: -5;
   pointer-events: none;
-  opacity: 0.6;
-  animation: floatOrb 15s ease-in-out infinite alternate;
+  border-radius: 50%;
+  animation: drift 20s ease-in-out infinite alternate;
 }
 
 .VPHome::before {
-  top: -200px;
-  left: -200px;
+  top: -220px;
+  right: -180px;
   background: radial-gradient(
     circle,
-    rgba(58, 123, 213, 0.15) 0%,
+    rgba(16, 149, 149, 0.14) 0%,
     transparent 70%
   );
 }
 
 .VPHome::after {
-  bottom: -200px;
-  right: -200px;
+  bottom: -120px;
+  left: -120px;
   background: radial-gradient(
     circle,
-    rgba(0, 210, 255, 0.15) 0%,
+    rgba(16, 149, 149, 0.1) 0%,
     transparent 70%
   );
-  animation-delay: -5s;
+  animation-direction: alternate-reverse;
+  animation-duration: 24s;
 }
 
-@keyframes floatOrb {
+.dark .VPHome::before {
+  background: radial-gradient(
+    circle,
+    rgba(45, 184, 184, 0.14) 0%,
+    transparent 70%
+  );
+}
+
+.dark .VPHome::after {
+  background: radial-gradient(
+    circle,
+    rgba(45, 184, 184, 0.1) 0%,
+    transparent 70%
+  );
+}
+
+@keyframes drift {
   from {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
   }
-
   to {
-    transform: translate(30px, 30px);
+    transform: translate3d(24px, 24px, 0);
   }
 }
 
-/* 装饰色带 */
+/* 装饰色带：保留 markup，但隐去视觉噪声 */
 .ribbon {
-  position: fixed;
-  width: 600px;
-  height: 80px;
-  z-index: -2;
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    rgba(99, 134, 171, 0.25),
-    rgba(65, 168, 223, 0.25)
-  );
-  border-radius: 50px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px -10px rgba(65, 168, 223, 0.2);
-}
-
-.ribbon::before,
-.ribbon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-image: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 10px,
-    rgba(255, 255, 255, 0.95) 10px,
-    rgba(255, 255, 255, 0.95) 20px
-  );
-  background-size: 200% 100%;
-  opacity: 0.9;
-}
-
-.ribbon::before {
-  top: 6px;
-  animation: dashFlow 6s linear infinite;
-}
-
-.ribbon::after {
-  bottom: 6px;
-  animation: dashFlowReverse 6s linear infinite;
-}
-
-.ribbon-tl {
-  top: 120px;
-  left: -120px;
-  transform: rotate(-35deg);
-}
-
-.ribbon-br {
-  bottom: 80px;
-  right: -120px;
-  transform: rotate(-35deg);
-}
-
-@keyframes dashFlow {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: -200px 0;
-  }
-}
-
-@keyframes dashFlowReverse {
-  0% {
-    background-position: -200px 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
+  display: none;
 }
 
 /* =============================================================
-   4. 主布局 (Layout & Components)
+   4. 主布局 (Hero Layout)
    ============================================================= */
-/* 核心布局 */
 .custom-layout {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 60px;
-  max-width: 1280px;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 64px;
+  max-width: 1200px;
   margin: 0 auto;
-  min-height: 85vh;
-  padding: 120px 24px 80px 24px;
+  min-height: 80vh;
+  padding: 120px 24px 80px;
   align-items: center;
-  position: relative;
   box-sizing: border-box;
 }
 
@@ -265,250 +216,213 @@
 }
 
 .hero-logo {
-  width: 420px;
-  height: 420px;
-  filter: drop-shadow(0 20px 40px rgba(65, 168, 223, 0.25));
-  animation: hoverLogo 6s ease-in-out infinite alternate;
+  width: 380px;
+  height: 380px;
+  filter: drop-shadow(0 12px 28px rgba(16, 149, 149, 0.18));
+  animation: hoverLogo 8s ease-in-out infinite alternate;
 }
 
 @keyframes hoverLogo {
-  0% {
-    transform: translateY(0) rotate(2deg);
+  from {
+    transform: translateY(0);
   }
-
-  100% {
-    transform: translateY(-30px) rotate(-2deg);
+  to {
+    transform: translateY(-16px);
   }
 }
 
-/* 标题 */
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo,
+  .VPHome::before,
+  .VPHome::after {
+    animation: none;
+  }
+}
+
+/* The two clickable words inside the hero title — easter egg targets.
+   Disable text selection so repeated clicks don't drag-select. */
+.hero-name .hero-word-siiway,
+.hero-name .hero-word-team {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* 标题 — 1.1.1.1-style flowing gradient using the full SiiWay logo palette */
 .hero-name {
-  font-size: 60px !important;
-  line-height: 1.4 !important;
-  font-weight: 900;
-  margin-bottom: 20px;
-  background: -webkit-linear-gradient(120deg, #3451b2 0%, #41a8df 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -2px;
-  filter: drop-shadow(0 4px 10px rgba(65, 168, 223, 0.2));
+  font-size: 56px !important;
+  line-height: 1.15 !important;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -1.5px;
+  background-image: linear-gradient(
+    90deg,
+    #0b9496 0%,
+    #05c79d 16%,
+    #0af5a7 33%,
+    #24047b 50%,
+    #0af5a7 67%,
+    #05c79d 84%,
+    #0b9496 100%
+  ) !important;
+  background-size: 200% 100% !important;
+  background-repeat: repeat !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  animation: heroHueShift 8s linear infinite !important;
+}
+
+@keyframes heroHueShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
 }
 
 .hero-tagline {
-  font-size: 24px;
-  opacity: 0.8;
-  margin-bottom: 60px !important;
+  font-size: 22px;
+  color: var(--vp-c-text-2);
+  margin-bottom: 48px !important;
   font-weight: 500;
 }
 
 /* 按钮 */
 .hero-actions {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .VPButton {
-  border-radius: 50px !important;
-  padding: 10px 36px !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  border: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 0 !important;
+  padding: 10px 24px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border: 1px solid transparent !important;
   text-decoration: none !important;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  transition:
+    background-color 0.2s ease,
+    background-image 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease !important;
+  /* Triangle (chamfered) corners */
+  clip-path: polygon(
+    10px 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0 calc(100% - 10px),
+    0 10px
+  );
 }
 
-.VPButton:hover {
-  transform: translateY(-4px) scale(1.05);
+.VPButton svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.VPButton,
+.VPButton:hover,
+.VPButton:focus,
+.VPButton:active {
+  transform: none !important;
   text-decoration: none !important;
 }
 
 .VPButton.brand {
-  background: linear-gradient(135deg, #6386ab 0%, #41a8df 100%) !important;
-  color: white !important;
-  box-shadow: 0 8px 20px -6px rgba(65, 168, 223, 0.6);
+  background: var(--siiway-primary) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.VPButton.brand:hover {
+  background: var(--siiway-primary-hover) !important;
+  color: #fff !important;
 }
 
 .VPButton.alt {
-  background: rgba(255, 255, 255, 0.8) !important;
+  background: var(--vp-c-bg-soft) !important;
   color: var(--vp-c-text-1) !important;
-  border: 2px solid rgba(65, 168, 223, 0.2) !important;
+  border-color: var(--vp-c-divider) !important;
 }
 
-.dark .VPButton.alt {
-  background: rgba(40, 40, 40, 0.8) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+.VPButton.alt:hover {
+  background: var(--vp-c-brand-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1) !important;
 }
-
-/* 时间轴 */
-/* .horizontal-timeline {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 60px !important;
-}
-
-.timeline-track {
-  display: flex;
-  width: 100%;
-  max-width: 800px;
-}
-
-.h-timeline-item {
-  position: relative;
-  flex: 1;
-  min-width: 120px;
-  padding-top: 10px;
-}
-
-.h-line {
-  position: absolute;
-  top: 6px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--vp-c-divider);
-}
-
-.h-timeline-item:first-child .h-line {
-  left: 50%;
-}
-
-.h-timeline-item:last-child .h-line {
-  right: 50%;
-}
-
-.h-dot {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--vp-c-brand-1);
-  border: 3px solid var(--vp-c-bg);
-  z-index: 1;
-  transition: all 0.3s;
-}
-
-.h-content-card {
-  text-align: center;
-  padding: 10px;
-  opacity: 0.7;
-  transition: all 0.3s;
-}
-
-.h-timeline-item:hover .h-content-card {
-  opacity: 1;
-  transform: translateY(-5px);
-}
-
-.h-timeline-item:hover .h-dot {
-  transform: translateX(-50%) scale(1.4);
-  background: #fff;
-  box-shadow: 0 0 0 2px var(--vp-c-brand-1);
-}
-
-.h-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 8px;
-}
-
-.h-year {
-  font-family: var(--vp-font-family-mono);
-  font-weight: 800;
-  color: var(--vp-c-brand-1);
-}
-
-.h-tag {
-  font-size: 10px;
-  padding: 2px 8px;
-  border-radius: 10px;
-  background: var(--vp-c-brand-2);
-  color: #fff;
-}
-
-.h-title {
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.h-desc {
-  font-size: 13px;
-  color: var(--vp-c-text-2);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-} */
 
 /* =============================================================
-   5. 响应式 (Responsive)
+   5. 页脚 (Footer)
    ============================================================= */
-/* 平板/小屏幕 (Max 960px) */
+.VPFooter,
+.VPFooter.has-sidebar {
+  display: block !important;
+  background: transparent !important;
+  border-top: 1px solid var(--vp-c-divider) !important;
+  padding: 24px !important;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  font-size: 13px !important;
+  color: var(--vp-c-text-2);
+}
+
+/* =============================================================
+   6. 响应式 (Responsive)
+   ============================================================= */
 @media (max-width: 960px) {
   .custom-layout {
     grid-template-columns: 1fr;
-    padding: 120px 20px 60px 20px;
-    gap: 40px;
+    padding: 110px 20px 60px;
+    gap: 32px;
     min-height: auto;
   }
 
   .right-visual-section {
     order: -1;
-    margin-bottom: -20px;
+    margin-bottom: -8px;
   }
 
   .hero-logo {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     animation: none;
   }
 
   .hero-name {
-    font-size: 52px;
-  }
-
-  .ribbon {
-    display: none;
-  }
-
-  .horizontal-timeline {
-    overflow-x: auto;
-    padding-bottom: 20px;
-    justify-content: flex-start;
-  }
-
-  .timeline-track {
-    min-width: 600px;
-    padding: 0 20px;
+    font-size: 44px !important;
   }
 }
 
-/* 手机竖屏 (Max 640px) */
 @media (max-width: 640px) {
   .custom-layout {
     display: flex !important;
     flex-direction: column;
-    padding: 90px 20px 40px 20px !important;
-    gap: 30px !important;
+    padding: 90px 20px 40px !important;
+    gap: 24px !important;
   }
 
   .right-visual-section {
     order: -1 !important;
     width: 100%;
-    margin-bottom: 10px !important;
   }
 
   .hero-logo {
-    width: 130px !important;
-    height: 130px !important;
+    width: 140px !important;
+    height: 140px !important;
   }
 
   .left-main-section {
@@ -517,8 +431,8 @@
 
   .hero-name {
     font-size: 36px !important;
-    line-height: 1.2;
-    margin-bottom: 16px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
   }
 
   .hero-tagline {
@@ -529,7 +443,7 @@
   .hero-actions {
     flex-direction: column !important;
     width: 100%;
-    gap: 16px !important;
+    gap: 12px !important;
   }
 
   .VPButton {
@@ -537,69 +451,5 @@
     padding: 12px 0 !important;
     display: flex;
     justify-content: center;
-  }
-
-  /* 竖向时间轴 */
-  .horizontal-timeline {
-    margin-top: 20px;
-    width: 100% !important;
-    padding: 0 !important;
-    overflow: visible !important;
-  }
-
-  .timeline-track {
-    flex-direction: column !important;
-    width: 100% !important;
-    max-width: none !important;
-  }
-
-  .h-timeline-item {
-    width: 100% !important;
-    padding: 0 0 30px 30px !important;
-    text-align: left !important;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .h-line {
-    width: 2px !important;
-    height: 100% !important;
-    top: 5px !important;
-    left: 7px !important;
-    right: auto !important;
-  }
-
-  .h-timeline-item:last-child .h-line {
-    display: none !important;
-  }
-
-  .h-dot {
-    top: 0 !important;
-    left: 0 !important;
-    transform: none !important;
-    margin-top: 4px;
-  }
-
-  .h-content-card {
-    text-align: left !important;
-    padding: 0 !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
-  .h-meta {
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start;
-  }
-
-  .h-year {
-    font-size: 15px !important;
-    margin-right: 8px;
-  }
-
-  .h-desc {
-    -webkit-line-clamp: 3 !important;
-    line-clamp: 3;
   }
 }
