@@ -1,18 +1,8 @@
 # Member - NtKrnl64
 
-<!--
-
 Luke Zhang, -2+4^2 , from Shanghai, China, SiiWay (**Non-Core**) Member
 
 >看不懂? 👆 SiiWay (**非核心**) 成员
-
-名字来源：`Windows NT`
-
--->
-
-Luke Zhang, -2+4^2 , from Shanghai, China, SiiWay (**Core**) Member
-
->看不懂? 👆 SiiWay (**核心**) 成员
 
 名字来源：`Windows NT`
 

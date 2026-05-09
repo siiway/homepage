@@ -15,7 +15,8 @@ export default {
     }
 
     const members = Object.entries(rawMembers).map(([key, value]) => {
-      if (key === "nt-copy" || value === "NtKrnl64") {
+      // members' sub-identities
+      if (key === "nt-copy" || value === "NtKrnl64" || key === "l5z12" || value === "l5z12") {
         return `- *[${value}](../../zh/members/${key})*`;
       }
       return `- [${value}](../../zh/members/${key})`;
