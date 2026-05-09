@@ -1,4 +1,4 @@
-import rawMembers from "../members.json";
+import rawMembers from "./members.json";
 let renderer: any = null;
 
 export default {
@@ -22,7 +22,7 @@ export default {
       return `- [${value}](./${key})`;
     });
     const lst = members.join("\n");
-    const len = members.length - 1;
+    const len = members.length - 2;
 
     return {
       members: renderer.render(lst),

@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import rawMembers from "./members.json";
+import rawMembers from "./data/members.json";
 
 const members = Object.entries(rawMembers).map(([key, value]) => {
   return {
