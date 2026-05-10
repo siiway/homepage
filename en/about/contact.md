@@ -14,4 +14,4 @@ Telegram Channel: [siiway_chan](https://wss.moe/tgc)
 
 ## Report
 
-If you're finding available report methodss, [go to this page](./report).
+If you're finding available report methods, [go to this page](./report).

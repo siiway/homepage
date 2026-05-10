@@ -6,4 +6,4 @@
 - 注明内容的出处（提供链接到 [本站](https://siiway.org) 或本站的 [GitHub 仓库](https://github.com/siiway/homepage)）
 - 使用相同的许可协议
 
-Copyright (c) 2023-2026 SiiWay Team.
+Copyright (c) 2024-2026 SiiWay Team.

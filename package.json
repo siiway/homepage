@@ -12,6 +12,7 @@
   },
   "homepage": "https://siiway.org",
   "dependencies": {
+    "@types/node": "^25.6.2",
     "vitepress": "^1.6.4"
   },
   "scripts": {
