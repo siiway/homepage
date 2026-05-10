@@ -1,3 +1,13 @@
+---
+head:
+  - - meta
+    - name: robots
+      content: noindex, nofollow
+  - - meta
+    - http-equiv: X-Robots-Tag
+      content: none
+---
+
 <!-- @content -->
 
 <script setup lang="ts">
