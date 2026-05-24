@@ -1,147 +1,168 @@
 # Go 代码规范
 
-> 本页面由 AI 生成，并已经过人工修改和审核。
+## 1. 代码组织
+### 1.1 包结构
+- 包内代码应有单一明确职责，避免util/common/misc等杂项包
+- 功能相近的类型和函数放同一包内
+- 避免循环依赖，对内可见类型用internal/隔离
+- 包内文件按职责拆分：service.go, repository.go, handler.go
 
-<!-- Reviewers: RhenCloud, wyf9 -->
+### 1.2 文件组织
+- 每个文件专注一个核心类型及其方法
+- 导出类型放同名文件：user.go含User结构体及其方法
+- 文件内顺序：package声明 → import → 常量 → 变量 → 类型定义 → 构造函数 → 公开方法 → 私有方法
 
-本文档用于统一 Go 项目的代码风格、工具链和提交流程，降低协作成本并提升可维护性。
-
-## 目标
-
-- 可读性优先，遵循 Go 官方惯例。
-- 自动化优先，尽量通过工具而不是人工争论风格问题。
-- 本地与 CI 使用同一套检查标准。
-
-## 推荐工具链
-
-- Go：`1.24+`
-- 格式化：`gofmt`（基准） + `gofumpt`（更严格）
-- import 排序：`gci`
-- 静态检查聚合：`golangci-lint`
-- 重点规则：`staticcheck`、`govet`、`errcheck`、`ineffassign`
-- 漏洞扫描：`govulncheck`
-- 测试：`go test`（可选 `gotestsum` 提升输出可读性）
-- 提交前钩子：`lefthook`
-
-## 目录与命名建议
-
-- 包名使用简短小写单词，例如 `service`、`handler`。
-- 文件名使用小写加下划线，例如 `user_service.go`。
-- 导出符号使用 `PascalCase`，非导出符号使用 `camelCase`。
-- 接口命名优先行为语义，例如 `Reader`、`UserStore`。
-
-## 语言级约束
-
-- 错误必须显式处理，禁止吞错。
-- 优先返回具体错误并用 `fmt.Errorf("...: %w", err)` 包装上下文。
-- 不要滥用 `panic`，仅用于不可恢复的初始化失败。
-- 避免不必要的指针与共享可变状态，默认值语义优先。
-- 上下文传递使用 `context.Context` 且放在参数第一位。
-
-## 格式化与静态检查
-
-统一流程建议为：`gofmt -> gofumpt -> gci -> golangci-lint`。
-
-### 常用命令
-
-```bash
-gofmt -w .
-gofumpt -w .
-gci write .
-golangci-lint run ./...
-go test ./...
-govulncheck ./...
+### 1.3 包文档
+- 每个包必须有包级注释，位于package声明前
+- 以`Package <包名>`开头
+- 示例：
+```go
+// Package user 提供用户相关的业务逻辑与数据访问。
+package user
 ```
 
-- `gofmt` 是格式化基准，不应与其冲突。
-- `gofumpt` 在 `gofmt` 兼容基础上增加更严格约束。
-- `gci` 统一 import 分组与排序。
+## 2. 命名规范
+### 2.1 包命名
+- 全小写，单数，简短无下划线，避免与标准库重名
 
-## go.mod 建议
+### 2.2 接口命名
+- 单方法接口用-er后缀：Reader, Writer, Closer
+- 多方法接口用名词：UserStore, PaymentGateway
+- 接口定义在使用方
 
-- 使用明确 Go 版本，例如 `go 1.24`。
-- 依赖版本固定在可复现状态，升级通过 PR 单独进行。
-- 禁止手工编辑 `go.sum` 中与本次变更无关的大量噪声。
+### 2.3 Getter/Setter
+- Getter不加Get前缀：Name() 而非 GetName()
+- Setter用Set前缀：SetName(name string)
 
-## .golangci.yml 示例
+### 2.4 变量命名
+- 短作用域可用短名(i, ctx, err)，长作用域需描述性名称
+- 避免重复包名：user.User{} 而非 user.UserInfo{}
+- 首字母缩写全大写或全小写：HTTPServer 或 httpServer，禁止 HttpServer
 
-```yaml
-run:
-  timeout: 5m
+## 3. 导入规范
+- 标准库 → 第三方库 → 内部包，组间空行分隔
+- 禁止相对路径导入(./、../)
+- 禁止点导入(.)除非测试文件
+- 禁止导入未使用的包
+- 匿名导入(_)必须加注释说明
 
-linters:
-  enable:
-    - errcheck
-    - govet
-    - ineffassign
-    - staticcheck
-    - unused
-    - revive
+## 4. 错误处理
+### 4.1 基本原则
+- 错误必须显式处理，禁止用_忽略
+- 错误只处理一次：要么传播，要么记录日志后处理，不能两者都做
 
-linters-settings:
-  revive:
-    rules:
-      - name: var-naming
-      - name: exported
-      - name: package-comments
+### 4.2 错误包装
+- 向上传播用 fmt.Errorf("...: %w", err) 包装上下文
+- 调用方用 errors.Is 和 errors.As 判断，禁止字符串比较
 
-issues:
-  max-issues-per-linter: 0
-  max-same-issues: 0
+```go
+func GetUser(id int) (*User, error) {
+    user, err := repo.FindByID(id)
+    if err != nil {
+        return nil, fmt.Errorf("get user %d: %w", id, err)
+    }
+    return user, nil
+}
 ```
 
-## 测试规范
+### 4.3 自定义错误
+- 哨兵错误：var ErrNotFound = errors.New("not found")
+- 复杂错误类型实现 Error() 方法，建议同时实现 Unwrap()
 
-- 测试框架默认使用 Go 标准测试。
-- 测试文件命名：`*_test.go`。
-- 一个测试只验证一个主要行为。
-- 回归修复必须补充测试。
+### 4.4 Panic使用
+- 仅用于不可恢复的初始化失败
+- 禁止在库代码中使用panic
+- recover仅用于程序顶层或明确需要保护的goroutine
 
-常用命令：
+## 5. 并发规范
+### 5.1 Goroutine管理
+- 每个goroutine必须明确退出条件
+- 使用sync.WaitGroup或errgroup等待
+- 禁止在goroutine中直接修改外部循环变量（必须传递副本）
 
-```bash
-go test ./...
-go test -race ./...
-go test -cover ./...
+```go
+for _, item := range items {
+    go func(item Item) {
+        process(item)
+    }(item)
+}
 ```
 
-## 提交前检查流程
+### 5.2 Channel使用
+- Channel所有者负责关闭，消费者不应关闭
+- 优先使用select配合context.Done()实现超时和取消
+- Channel容量必须有明确依据
 
-建议在本地执行以下顺序：
+### 5.3 同步原语
+- 优先sync.Mutex而非channel做简单互斥
+- sync.Map仅在特定场景使用
+- 禁止复制sync.Mutex等同步原语（用指针传递）
 
-```bash
-gofmt -w .
-gofumpt -w .
-gci write .
-golangci-lint run ./...
-go test ./...
-govulncheck ./...
+## 6. Context使用
+### 6.1 传播规则
+- context.Context作函数第一个参数，命名为ctx
+- 禁止存储在结构体中（请求范围中间件除外）
+- 禁止创建全局context变量
+
+### 6.2 取消与超时
+- 每个请求链路必须有超时控制
+- 使用context.WithTimeout或WithDeadline
+- goroutine必须通过context控制生命周期
+
+### 6.3 值传递
+- context仅用于传递请求范围的值(trace ID, user ID)，禁止传业务参数
+- 使用自定义类型作context key，禁止用string
+
+## 7. 接口设计
+- 接口尽可能小，优先1-3个方法
+- 遵循接口隔离原则
+- 接口在使用方定义，返回具体类型，接受接口类型
+
+```go
+func SaveUser(store UserStore, user User) error { ... }
+
+type UserStore interface {
+    Save(User) error
+    FindByID(int) (*User, error)
+}
 ```
 
-## Makefile 示例
+## 8. 测试规范
+- 使用Go标准测试框架
+- 测试文件：*_test.go，同目录
+- 优先表驱动测试(table-driven tests)
+- 测试辅助函数用t.Helper()标记
+- Mock优先使用接口
+- 禁止用time.Sleep等待异步结果
+- 独立测试用例用t.Parallel()
+- 新增代码必须覆盖核心路径
+- 回归修复必须补充测试用例
+- 使用go test -race ./...检测数据竞争
 
-```makefile
-.PHONY: fmt lint test vuln check
+## 9. 依赖管理
+- go.mod使用明确Go版本
+- 依赖版本精确固定
+- 禁止手工编辑go.sum
+- 废弃依赖及时清理
+- 大型项目可用monorepo配合多个go.mod
+- 内部共享代码用internal/
 
-fmt:
-	gofmt -w .
-	gofumpt -w .
-	gci write .
+## 10. 性能规范
+- 已知大小的slice和map用make预分配容量
+- 避免热路径上频繁创建小对象
+- 使用sync.Pool复用临时对象
+- 大量字符串拼接用strings.Builder
+- 格式化避免在循环中使用fmt.Sprintf
+- 性能敏感代码必须附带benchmark
 
-lint:
-	golangci-lint run ./...
-
-test:
-	go test ./...
-
-vuln:
-	govulncheck ./...
-
-check: lint test vuln
-```
-
-## 例外与扩展
-
-- 历史项目可先落地 `gofmt + golangci-lint + go test`，再逐步引入 `gofumpt`、`gci` 与 `govulncheck`。
-- 对自动生成代码目录（如 `generated`）可在 lint 中排除，但必须在配置中明确声明。
-- 对性能敏感模块可放宽个别规则，但必须在 PR 中说明理由与影响范围。
+## 11. 禁止事项
+- 禁止panic替代错误返回
+- 禁止忽略错误（_吞错）
+- 禁止goroutine中捕获循环变量
+- 禁止相对路径和点导入
+- 禁止导出不需要对外暴露的类型和函数
+- 禁止硬编码密钥/凭证
+- 禁止init()做除注册外的副作用
+- 禁止context传递业务参数
+- 禁止拷贝含sync.Mutex的结构体
+- 禁止生产代码中使用reflect和unsafe（明确优化且评审通过除外）
