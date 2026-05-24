@@ -123,6 +123,14 @@ strong, b, th,
   font-weight: 600 !important;
 }
 
+.VPSidebarItem.level-0.is-active > .item .link > .text {
+  color: var(--vp-c-text-1) !important;
+}
+
+.VPSidebarItem.level-0.is-active > .item .link:hover > .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
 /* ===== 背景装饰 ===== */
 
 .VPHome::before,
@@ -323,7 +331,7 @@ a.home-btn-secondary:hover {
   padding: 12px 16px;
   background: var(--vp-c-bg-soft);
   border-radius: 12px;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #000;
   transition: background 0.3s, color 0.3s;
   overflow: hidden;
