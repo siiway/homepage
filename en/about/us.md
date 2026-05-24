@@ -1,6 +1,6 @@
 # About Us
 
-SiiWay Team was founded in October 2020 as a **pure tech-interest-driven open-source team**. We currently have 26 members, active across Discord, QQ, WeChat, Feishu, and Telegram.
+SiiWay Team was founded in October 2020 as a **pure tech-interest-driven open-source team**, active across Discord, QQ, WeChat, Feishu, and Telegram.
 
 We focus on building high-quality open-source projects spanning chat bots, identity platforms, developer tools, and documentation systems.
 
