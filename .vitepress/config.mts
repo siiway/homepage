@@ -78,7 +78,7 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: "成员",
+            text: "成员列表",
             link: "/zh/members/",
             collapsible: true,
             collapsed: true,
@@ -184,6 +184,7 @@ export default defineConfig({
           { text: "Home", link: "/en/" },
           { text: "Members", link: "/en/members/" },
           { text: "Contact", link: "/en/about/contact" },
+          { text: "Dev", link: "/en/dev/", activeMatch: "^/en/dev" },
         ],
         sidebar: [
           {
@@ -194,12 +195,39 @@ export default defineConfig({
             items: members,
           },
           {
-            text: "About",
+            text: "关于",
             items: [
-              { text: "Contact", link: "/en/about/contact" },
-              { text: "About Website", link: "/en/about/website" },
-              { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
-              { text: "Report", link: "/en/about/report" },
+              { text: "关于我们", link: "/zh/about/us" },
+              { text: "联系", link: "/zh/about/contact" },
+              { text: "关于此网站", link: "/zh/about/website" },
+              { text: "招新公告", link: "/zh/about/join" },
+              { text: "规则 (QQ 群)", link: "/zh/about/rules-qq" },
+              { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
+              { text: "举报", link: "/zh/about/report" },
+            ],
+          },
+          {
+            text: "开发",
+            link: "/zh/dev/",
+            items: [
+              { text: "Git 提交规范", link: "/zh/dev/git" },
+              { text: "命名规范", link: "/zh/dev/naming" },
+              { text: "Python 代码规范", link: "/zh/dev/python-style" },
+              { text: "TypeScript 代码规范", link: "/zh/dev/ts-style" },
+              { text: "Go 代码规范", link: "/zh/dev/go-style" },
+              { text: "贡献指南", link: "/zh/dev/contributing" },
+            ],
+          },
+          {
+            text: "Dev",
+            link: "/en/dev/",
+            items: [
+              { text: "Git Commit Convention", link: "/en/dev/git" },
+              { text: "Naming Convention", link: "/en/dev/naming" },
+              { text: "Python Style Guide", link: "/en/dev/python-style" },
+              { text: "TypeScript Style Guide", link: "/en/dev/ts-style" },
+              { text: "Go Style Guide", link: "/en/dev/go-style" },
+              { text: "Contributing", link: "/en/dev/contributing" },
             ],
           },
           {
