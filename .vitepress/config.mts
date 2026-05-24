@@ -4,8 +4,9 @@ import rawMembers from "./data/members.json";
 const currentYear = new Date().getFullYear();
 
 const members = Object.entries(rawMembers).map(([key, value]) => {
+  const name = typeof value === 'string' ? value : value.name;
   return {
-    text: value,
+    text: name,
     link: `/zh/members/${key}`,
   };
 });
@@ -87,12 +88,12 @@ export default defineConfig({
           {
             text: "关于",
             items: [
-
               { text: "举报", link: "/zh/about/report" },
+              { text: "关于我们", link: "/zh/about/us" },
               { text: "联系我们", link: "/zh/about/contact" },
               { text: "招新公告", link: "/zh/about/join" },
+              { text: "QQ 群规则", link: "/zh/about/rules-qq" },
               { text: "关于此网站", link: "/zh/about/website" },
-              { text: "规则 (QQ 群)", link: "/zh/about/rules-qq" },
               { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
             ],
           },
@@ -100,10 +101,12 @@ export default defineConfig({
             text: "开发",
             link: "/zh/dev/",
             items: [
+              { text: "命名规范", link: "/zh/dev/naming" },
+              { text: "贡献指南", link: "/zh/dev/contributing" },
+              { text: "Go 代码规范", link: "/zh/dev/go-style" },
+              { text: "Git 提交规范", link: "/zh/dev/git" },
               { text: "Python 代码规范", link: "/zh/dev/python-style" },
               { text: "TypeScript 代码规范", link: "/zh/dev/ts-style" },
-              { text: "Go 代码规范", link: "/zh/dev/go-style" },
-              { text: "贡献指南", link: "/zh/dev/contributing" },
             ],
           },
           {
@@ -195,27 +198,14 @@ export default defineConfig({
             items: members,
           },
           {
-            text: "关于",
+            text: "About",
             items: [
-              { text: "关于我们", link: "/zh/about/us" },
-              { text: "联系", link: "/zh/about/contact" },
-              { text: "关于此网站", link: "/zh/about/website" },
-              { text: "招新公告", link: "/zh/about/join" },
-              { text: "规则 (QQ 群)", link: "/zh/about/rules-qq" },
-              { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
-              { text: "举报", link: "/zh/about/report" },
-            ],
-          },
-          {
-            text: "开发",
-            link: "/zh/dev/",
-            items: [
-              { text: "Git 提交规范", link: "/zh/dev/git" },
-              { text: "命名规范", link: "/zh/dev/naming" },
-              { text: "Python 代码规范", link: "/zh/dev/python-style" },
-              { text: "TypeScript 代码规范", link: "/zh/dev/ts-style" },
-              { text: "Go 代码规范", link: "/zh/dev/go-style" },
-              { text: "贡献指南", link: "/zh/dev/contributing" },
+              { text: "About Us", link: "/en/about/us" },
+              { text: "Contact", link: "/en/about/contact" },
+              { text: "About Website", link: "/en/about/website" },
+              { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
+              { text: "Report", link: "/en/about/report" },
+              { text: "Join", link: "/en/about/join" },
             ],
           },
           {
