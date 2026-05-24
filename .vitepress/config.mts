@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
 import rawMembers from "./data/members.json";
 
+const currentYear = new Date().getFullYear();
+
 const members = Object.entries(rawMembers).map(([key, value]) => {
   return {
     text: value,
@@ -78,17 +80,20 @@ export default defineConfig({
           {
             text: "成员",
             link: "/zh/members/",
+            collapsible: true,
+            collapsed: true,
             items: members,
           },
           {
             text: "关于",
             items: [
-              { text: "联系", link: "/zh/about/contact" },
-              { text: "关于此网站", link: "/zh/about/website" },
+
+              { text: "举报", link: "/zh/about/report" },
+              { text: "联系我们", link: "/zh/about/contact" },
               { text: "招新公告", link: "/zh/about/join" },
+              { text: "关于此网站", link: "/zh/about/website" },
               { text: "规则 (QQ 群)", link: "/zh/about/rules-qq" },
               { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
-              { text: "举报", link: "/zh/about/report" },
             ],
           },
           {
@@ -151,7 +156,7 @@ export default defineConfig({
           message:
             '内容采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0</a> 协议授权',
           copyright:
-            'Copyright © 2024-present <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>',
+            `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>`,
         },
         // 将"On this page"改为中文
         outline: {
@@ -184,6 +189,8 @@ export default defineConfig({
           {
             text: "Members (CN Only)",
             link: "/en/members/",
+            collapsible: true,
+            collapsed: true,
             items: members,
           },
           {
@@ -225,7 +232,7 @@ export default defineConfig({
           message:
             'Released under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
           copyright:
-            'Copyright © 2024-present <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>',
+            `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>`,
         },
       },
     },
