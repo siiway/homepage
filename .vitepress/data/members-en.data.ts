@@ -1,32 +1,33 @@
+// 成员卡片 HTML 生成器
+// 卡片样式参考 https://github.com/imsyy/vitepress-theme-curve 的友链卡片
 import rawMembers from "./members.json";
-let renderer: any = null;
+
+const subIdentities = new Set(["nt-copy", "l5z12"]);
 
 export default {
-  async load() {
-    if (!renderer) {
-      const { createMarkdownRenderer } = await import("vitepress");
-      const config = (globalThis as any).VITEPRESS_CONFIG;
-      renderer = await createMarkdownRenderer(
-        config.srcDir,
-        config.markdown,
-        config.site.base,
-        config.logger,
-      );
-    }
+  load() {
+    const entries = Object.entries(rawMembers);
+    const cards = entries
+      .map(([key, value]) => {
+        const isSub = subIdentities.has(key);
+        return `
+          <a class="member-card${isSub ? " sub" : ""}" href="../../zh/members/${key}">
+            <div class="member-avatar">
+              <img src="/favicon.svg" alt="${value}" />
+            </div>
+            <div class="member-info">
+              <span class="member-name">${value}</span>
+              <span class="member-motto">暂无座右铭</span>
+            </div>
+          </a>`;
+      })
+      .join("");
 
-    const members = Object.entries(rawMembers).map(([key, value]) => {
-      // members' sub-identities
-      if (key === "nt-copy" || value === "NtKrnl64" || key === "l5z12" || value === "l5z12") {
-        return `- *[${value}](../../zh/members/${key})*`;
-      }
-      return `- [${value}](../../zh/members/${key})`;
-    });
-    const lst = members.join("\n");
-    const len = members.length - 2;
+    const count = entries.filter(([key]) => !subIdentities.has(key)).length;
 
     return {
-      members: renderer.render(lst),
-      count: len,
+      members: cards,
+      count,
     };
   },
 };
