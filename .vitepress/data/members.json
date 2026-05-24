@@ -1,29 +1,137 @@
 {
-  "xhc861": "xhc861",
-  "wyf9": "wyf9",
-  "Dobastickrn": "Dobastickrn",
-  "Shattered": "Shattered",
-  "nt": "NtKrnl32",
-  "Murasame": "Murasame",
-  "zackzheng1121": "Zackzheng1121",
-  "XiaoYuan151": "XiaoYuan151",
-  "bbdqz": "bbdqz",
-  "imbee": "imbee",
-  "SenNaiFox": "SenNaiFox",
-  "DaleNull": "DaleNull",
-  "killjsj": "killjsj",
-  "Kandyn": "Kandyn",
-  "kananosa": "Kananosa",
-  "XieXiLin": "XieXiLin",
-  "nt-copy": "NtKrnl64",
-  "advan10": "advan10",
-  "XFJ": "XFJ",
-  "chun-awa": "chun-awa",
-  "lokins": "lokins",
-  "yuholt": "yuholt",
-  "RhenCloud": "RhenCloud",
-  "JosephLi": "JosephLi",
-  "VanillaNahida": "VanillaNahida",
-  "Tamako": "Tamako",
-  "l5z12": "l5z12"
+  "xhc861": {
+    "name": "xhc861",
+    "avatar": "https://xhc861.top/_astro/avatar.CtVMX734_ZS71ll.webp",
+    "motto": "Let us create infinitely!"
+  },
+  "wyf9": {
+    "name": "wyf9",
+    "avatar": "https://wyf9.top/favicon.png",
+    "motto": "ignore the pfp here is wyf9."
+  },
+  "Dobastickrn": {
+    "name": "Dobastickrn",
+    "avatar": "https://avatars.githubusercontent.com/u/120301954",
+    "motto": "艺 术 就 是 爆 炸 !"
+  },
+  "Shattered": {
+    "name": "Shattered",
+    "avatar": "https://avatars.githubusercontent.com/u/102911315",
+    "motto": "一个有趣的白日梦想家"
+  },
+  "nt": {
+    "name": "NtKrnl32",
+    "avatar": "https://avatars.githubusercontent.com/u/197464182",
+    "motto": "Trying to commit everyday :)"
+  },
+  "Murasame": {
+    "name": "Murasame",
+    "avatar": "https://avatars.githubusercontent.com/u/162931251",
+    "motto": "Ciallo～(∠・ω< )⌒★_"
+  },
+  "zackzheng1121": {
+    "name": "Zackzheng1121",
+    "avatar": "https://avatars.githubusercontent.com/u/86220968",
+    "motto": "一個寫一些python/c#/一點C++的dev/wmc....總之成分複雜"
+  },
+  "XiaoYuan151": {
+    "name": "XiaoYuan151",
+    "avatar": "https://avatars.githubusercontent.com/u/68885447",
+    "motto": "Neuro-sama is my only oshi."
+  },
+  "bbdqz": {
+    "name": "bbdqz",
+    "avatar": "https://avatars.githubusercontent.com/u/177072461",
+    "motto": "Even if you are pricked by life today, wish for a beautiful tomorrow."
+  },
+  "imbee": {
+    "name": "imbee",
+    "avatar": "https://avatars.githubusercontent.com/u/158593086",
+    "motto": "路漫漫其修远兮，吾将上下而求索。"
+  },
+  "SenNaiFox": {
+    "name": "SenNaiFox",
+    "avatar": "https://avatars.githubusercontent.com/u/101548755",
+    "motto": "追求轻简直观的算法设计和云端环境！"
+  },
+  "DaleNull": {
+    "name": "DaleNull",
+    "avatar": "https://avatars.githubusercontent.com/u/25431943",
+    "motto": "试图混入Siiway的外来人士一枚。"
+  },
+  "killjsj": {
+    "name": "killjsj",
+    "avatar": "https://avatars.githubusercontent.com/u/185368808",
+    "motto": "Sorry about deleting account:("
+  },
+  "Kandyn": {
+    "name": "Kandyn",
+    "avatar": "https://avatars.githubusercontent.com/u/242789063",
+    "motto": "一名ACG爱好者以及天然呆"
+  },
+  "kananosa": {
+    "name": "Kananosa",
+    "avatar": "https://avatars.githubusercontent.com/u/195466120",
+    "motto": "我也是混入 SiiWay 的外来人士一枚。"
+  },
+  "XieXiLin": {
+    "name": "XieXiLin",
+    "avatar": "https://avatars.githubusercontent.com/u/133548383",
+    "motto": "A senior high school student."
+  },
+  "nt-copy": {
+    "name": "NtKrnl64",
+    "avatar": "https://avatars.githubusercontent.com/u/246062950",
+    "motto": "from __future__ import innovations"
+  },
+  "advan10": {
+    "name": "advan10",
+    "avatar": "https://avatars.githubusercontent.com/u/197021455",
+    "motto": "A developer and operator who is learning now."
+  },
+  "XFJ": {
+    "name": "XFJ",
+    "avatar": "https://avatars.githubusercontent.com/u/244301385",
+    "motto": "艺术千秋，人生朝露"
+  },
+  "chun-awa": {
+    "name": "chun-awa",
+    "avatar": "https://avatars.githubusercontent.com/u/110163919",
+    "motto": "Null stack developer."
+  },
+  "lokins": {
+    "name": "lokins",
+    "avatar": "https://avatars.githubusercontent.com/u/215296226",
+    "motto": "HMCL汉医堂坐堂大夫"
+  },
+  "yuholt": {
+    "name": "yuholt",
+    "avatar": "https://avatars.githubusercontent.com/u/173268014",
+    "motto": ""
+  },
+  "RhenCloud": {
+    "name": "RhenCloud",
+    "avatar": "https://avatars.githubusercontent.com/u/111980217",
+    "motto": "趁世界还未重启之前 约一次爱恋"
+  },
+  "JosephLi": {
+    "name": "JosephLi",
+    "avatar": "https://avatars.githubusercontent.com/u/210581030",
+    "motto": "你已经被失忆的魔法影响了，所以这是你唯一能记住的句子"
+  },
+  "VanillaNahida": {
+    "name": "VanillaNahida",
+    "avatar": "https://avatars.githubusercontent.com/u/151599587",
+    "motto": "与你的日常，便是奇迹！"
+  },
+  "Tamako": {
+    "name": "Tamako",
+    "avatar": "https://tamakosan.top/_astro/Chiyuki_cat.BTbl4Hly_1tSWBI.webp",
+    "motto": "白い雪が花のように、静かに夜空で咲く"
+  },
+  "l5z12": {
+    "name": "l5z12",
+    "avatar": "https://avatars.githubusercontent.com/u/277065161",
+    "motto": "Universal Infinity."
+  }
 }
