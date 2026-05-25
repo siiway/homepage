@@ -34,6 +34,7 @@ const zhSearchTranslations = {
 };
 
 export default defineConfig({
+  cleanUrls: true,
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     ["script", { src: "/lang-redirect.js" }],
