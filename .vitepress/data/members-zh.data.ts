@@ -16,7 +16,12 @@ export default {
 
     const members = Object.entries(rawMembers).map(([key, value]) => {
       // members' sub-identities
-      if (key === "nt-copy" || value === "NtKrnl64" || key === "l5z12" || value === "l5z12") {
+      if (
+        key === "nt-copy" ||
+        value === "NtKrnl64" ||
+        key === "l5z12" ||
+        value === "l5z12"
+      ) {
         return `- *[${value}](./${key})*`;
       }
       return `- [${value}](./${key})`;

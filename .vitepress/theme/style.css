@@ -393,9 +393,46 @@
 /* On sidebar (doc) pages, mirror .VPContent.has-sidebar's horizontal
    offsets so the footer sits in the doc column rather than the full
    viewport, and constrain the inner container to .content-container's
-   max-width so its divider line ends where VPDocFooter's does. */
-.VPFooter.has-sidebar {
-  padding-left: var(--vp-sidebar-width) !important;
+   max-width so its divider line ends where VPDocFooter's does.
+
+   These rules MUST stay gated behind the 960px sidebar breakpoint:
+   VitePress's hasSidebar is viewport-independent (it stays true on
+   mobile, where the sidebar collapses into the hamburger menu), so the
+   .has-sidebar class is present on phones too. Applying the sidebar-width
+   padding-left + the two-column grid unconditionally squeezes the footer
+   message column to ~one character wide on narrow screens. */
+@media (min-width: 960px) {
+  .VPFooter.has-sidebar {
+    padding-left: var(--vp-sidebar-width) !important;
+  }
+
+  .VPFooter.has-sidebar .container {
+    /* Mirror .VPDoc > .container's flex-centered (content + aside) layout
+       using a 2-column grid with a 32px gutter. Message + copyright live
+       in the left ("content") column; the right column stays empty as a
+       phantom aside so the divider line left-aligns with .content-container
+       instead of centering over the entire post-sidebar area. */
+    display: grid !important;
+    grid-template-columns: minmax(0, 688px) minmax(0, 256px) !important;
+    column-gap: 32px !important;
+    justify-content: center !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 32px !important;
+    border-top: none !important;
+  }
+
+  .VPFooter.has-sidebar .container > .message {
+    grid-column: 1 !important;
+    border-top: 1px solid var(--vp-c-divider) !important;
+    padding-top: 24px !important;
+    margin: 0 !important;
+  }
+
+  .VPFooter.has-sidebar .container > .copyright {
+    grid-column: 1 !important;
+    margin: 4px 0 24px !important;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -405,40 +442,6 @@
     ) !important;
     padding-right: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
   }
-}
-
-.VPFooter.has-sidebar .container {
-  /* Mirror .VPDoc > .container's flex-centered (content + aside) layout
-     using a 2-column grid with a 32px gutter. Message + copyright live
-     in the left ("content") column; the right column stays empty as a
-     phantom aside so the divider line left-aligns with .content-container
-     instead of centering over the entire post-sidebar area. */
-  display: grid !important;
-  grid-template-columns: minmax(0, 688px) minmax(0, 256px) !important;
-  column-gap: 32px !important;
-  justify-content: center !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 24px !important;
-  border-top: none !important;
-}
-
-@media (min-width: 768px) {
-  .VPFooter.has-sidebar .container {
-    padding: 0 32px !important;
-  }
-}
-
-.VPFooter.has-sidebar .container > .message {
-  grid-column: 1 !important;
-  border-top: 1px solid var(--vp-c-divider) !important;
-  padding-top: 24px !important;
-  margin: 0 !important;
-}
-
-.VPFooter.has-sidebar .container > .copyright {
-  grid-column: 1 !important;
-  margin: 4px 0 24px !important;
 }
 
 .VPFooter .message,

@@ -4,6 +4,8 @@ import { onMounted, onUnmounted, ref } from "vue";
 const siiwayCount = ref(0);
 const teamCount = ref(0);
 const show = ref(false);
+// Which trigger opened the window — switches the headline/message below.
+const variant = ref<"sixseven" | "konami" | "wyf9">("sixseven");
 
 const onDocClick = (e: MouseEvent) => {
   const el = (e.target as HTMLElement | null)?.closest?.(
@@ -14,14 +16,53 @@ const onDocClick = (e: MouseEvent) => {
   else if (el.classList.contains("hero-word-team")) teamCount.value++;
 
   if (siiwayCount.value >= 6 && teamCount.value >= 7) {
+    variant.value = "sixseven";
     show.value = true;
     siiwayCount.value = 0;
     teamCount.value = 0;
   }
 };
 
+// Hidden Konami code: ↑ ↑ ↓ ↓ ← → ← → B A
+const KONAMI = [
+  "ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a",
+];
+let konamiProgress = 0;
+
+// Hidden: type "wyf9" anywhere.
+const WYF9 = "wyf9";
+let wyf9Progress = 0;
+
 const onKey = (e: KeyboardEvent) => {
-  if (show.value && (e.key === "Escape" || e.key === "Enter")) close();
+  if (show.value && (e.key === "Escape" || e.key === "Enter")) {
+    close();
+    return;
+  }
+
+  const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+
+  konamiProgress = key === KONAMI[konamiProgress] ? konamiProgress + 1 : 0;
+  if (konamiProgress === KONAMI.length) {
+    konamiProgress = 0;
+    variant.value = "konami";
+    show.value = true;
+  }
+
+  wyf9Progress = key === WYF9[wyf9Progress] ? wyf9Progress + 1 : 0;
+  if (wyf9Progress === WYF9.length) {
+    wyf9Progress = 0;
+    variant.value = "wyf9";
+    show.value = true;
+  }
 };
 
 const close = () => {
@@ -62,8 +103,18 @@ onUnmounted(() => {
           </div>
           <div class="ee-body">
             <img src="/favicon.svg" class="ee-icon" alt="" />
-            <div class="ee-headline">six seven!</div>
-            <div class="ee-message">6 7</div>
+            <template v-if="variant === 'konami'">
+              <div class="ee-headline">30 lives unlocked</div>
+              <div class="ee-message">↑ ↑ ↓ ↓ ← → ← → B A</div>
+            </template>
+            <template v-else-if="variant === 'wyf9'">
+              <div class="ee-headline">wyf9 is a cute little catgirl!!!</div>
+              <div class="ee-message">ฅ^•ﻌ•^ฅ nya~</div>
+            </template>
+            <template v-else>
+              <div class="ee-headline">six seven!</div>
+              <div class="ee-message">6 7</div>
+            </template>
           </div>
         </div>
       </div>
