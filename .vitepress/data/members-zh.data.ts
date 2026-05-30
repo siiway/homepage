@@ -7,11 +7,15 @@ export default {
     const entries = Object.entries(rawMembers);
     const cards = entries
       .map(([key, value]) => {
-        const name = typeof value === 'string' ? value : value.name;
+        const name = typeof value === "string" ? value : value.name;
         const avatar =
-          typeof value === 'string' ? '/favicon.svg' : (value.avatar || '/favicon.svg');
+          typeof value === "string"
+            ? "/favicon.svg"
+            : value.avatar || "/favicon.svg";
         const motto =
-          typeof value === 'string' ? '暂无座右铭' : (value.motto || '暂无座右铭');
+          typeof value === "string"
+            ? "暂无座右铭"
+            : value.motto || "暂无座右铭";
         const isSub = subIdentities.has(key);
         return `
           <a class="member-card${isSub ? " sub" : ""}" href="./${key}">

@@ -4,7 +4,7 @@ import rawMembers from "./data/members.json";
 const currentYear = new Date().getFullYear();
 
 const members = Object.entries(rawMembers).map(([key, value]) => {
-  const name = typeof value === 'string' ? value : value.name;
+  const name = typeof value === "string" ? value : value.name;
   return {
     text: name,
     link: `/zh/members/${key}`,
@@ -38,6 +38,13 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     ["script", { src: "/lang-redirect.js" }],
+    // Apply the user's saved font before first paint to avoid a flash of the
+    // default font. Mirrors FontSwitcher.vue's STORAGE_KEY / data-font scheme.
+    [
+      "script",
+      {},
+      "try{var f=localStorage.getItem('siiway-font');if(f)document.documentElement.dataset.font=f;}catch(e){}",
+    ],
   ],
 
   lastUpdated: true,
@@ -159,8 +166,7 @@ export default defineConfig({
         footer: {
           message:
             '内容采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0</a> 协议授权',
-          copyright:
-            `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>`,
+          copyright: `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>`,
         },
         // 将"On this page"改为中文
         outline: {
@@ -250,8 +256,7 @@ export default defineConfig({
         footer: {
           message:
             'Released under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
-          copyright:
-            `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>`,
+          copyright: `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>`,
         },
       },
     },
