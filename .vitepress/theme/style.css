@@ -1,20 +1,49 @@
-/* =============================================================
-   1. 变量与基础 (Variables & Base)
-   ============================================================= */
+@import "lxgw-wenkai-screen-web/lxgwwenkaiscreen/result.css";
+@import "noto-sans-sc/noto_sans_sc_regular/css.css";
+@import "noto-sans-sc/noto_sans_sc_medium/css.css";
+@import "noto-sans-sc/noto_sans_sc_bold/css.css";
+
 :root {
-  /* Single grounded teal — average of the SiiWay logo's four stops.
-     Keeps the brand identity without the bright-mint, multi-stop gradient look. */
+  --vp-font-family-base:
+    "LXGW WenKai Screen", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+
   --siiway-primary: #109595;
   --siiway-primary-hover: #0c7a7a;
   --siiway-indigo: #24047b;
 
   --vp-c-brand-1: #109595;
-  --vp-c-brand-2: #109595;
+  --vp-c-brand-2: #0c7a7a;
   --vp-c-brand-3: #0c7a7a;
   --vp-c-brand-soft: rgba(16, 149, 149, 0.12);
 
-  --site-nav-bg: rgba(252, 252, 252, 0.88);
-  --site-nav-screen-bg: rgba(252, 252, 252, 0.96);
+  --site-nav-bg: #fcfcfc;
+  --site-nav-screen-bg: #fcfcfc;
+}
+
+body {
+  font-synthesis: none;
+  -webkit-font-synthesis: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+th,
+.VPNavBarMenuLink.active,
+.hero-name,
+.hero-tagline,
+.VPButton {
+  font-family:
+    "Noto Sans SC",
+    "LXGW WenKai Screen",
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
 
 .dark {
@@ -22,25 +51,23 @@
   --siiway-primary-hover: #44d0d0;
 
   --vp-c-brand-1: #2db8b8;
-  --vp-c-brand-2: #2db8b8;
+  --vp-c-brand-2: #1ea0a0;
   --vp-c-brand-3: #1ea0a0;
   --vp-c-brand-soft: rgba(45, 184, 184, 0.16);
 
-  --site-nav-bg: rgba(24, 26, 32, 0.84);
-  --site-nav-screen-bg: rgba(20, 22, 28, 0.96);
+  --site-nav-bg: #181a20;
+  --site-nav-screen-bg: #14161c;
 }
 
 .VPHome {
   overflow-x: hidden;
-  /* VitePress's default 96px/128px bottom margin pushes the footer past
-     the fold on the home page (which only has a hero + footer). Zero it
-     out so .custom-layout's min-height controls the layout fully. */
+  /* The home page is only a hero + footer; zero VitePress's large bottom
+     margin so .custom-layout's min-height controls the fold exactly. */
   margin-bottom: 0 !important;
 }
 
-/* =============================================================
-   2. 导航栏 (Navbar)
-   ============================================================= */
+/* ===== 导航栏 ===== */
+
 .VPNav {
   position: fixed !important;
   top: 0;
@@ -50,11 +77,8 @@
   background-color: transparent !important;
 }
 
-/* Fluent acrylic: deep blur, soft inner highlight, subtle elevation */
 .VPNavBar {
   background: var(--site-nav-bg) !important;
-  backdrop-filter: saturate(180%) blur(30px);
-  -webkit-backdrop-filter: saturate(180%) blur(30px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.55),
@@ -76,8 +100,6 @@
 
 .VPNavScreen {
   background-color: var(--site-nav-screen-bg) !important;
-  backdrop-filter: saturate(180%) blur(30px);
-  -webkit-backdrop-filter: saturate(180%) blur(30px);
   padding-top: var(--vp-nav-height) !important;
 }
 
@@ -86,10 +108,7 @@
   margin: 0 auto !important;
 }
 
-/* Pin the search button to the right side of the navbar (just before the
-   menu) on every page. VitePress sets flex-grow:1 on .VPNavBarSearch which
-   makes its inner button drift left by varying amounts depending on whether
-   the layout has a sidebar. */
+/* 修复搜索按钮在有/无侧边栏页面间位置漂移 */
 @media (min-width: 768px) {
   .VPNavBarSearch {
     flex-grow: 0 !important;
@@ -98,8 +117,6 @@
   }
 }
 
-/* Nav menu items: static, no hover transitions, shrink-to-content so the
-   active block sits well inside the bar instead of filling its full height */
 .VPNavBarMenu .VPNavBarMenuLink {
   height: auto !important;
   align-self: center !important;
@@ -122,9 +139,16 @@
   font-weight: 600 !important;
 }
 
-/* =============================================================
-   3. 背景装饰 (Background Decoration)
-   ============================================================= */
+.VPSidebarItem.level-0.is-active > .item .link > .text {
+  color: var(--vp-c-text-1) !important;
+}
+
+.VPSidebarItem.level-0.is-active > .item .link:hover > .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ===== 背景装饰 ===== */
+
 .VPHome::before,
 .VPHome::after {
   content: "";
@@ -190,9 +214,8 @@
   display: none;
 }
 
-/* =============================================================
-   4. 主布局 (Hero Layout)
-   ============================================================= */
+/* ===== 首页 Hero ===== */
+
 .custom-layout {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -247,18 +270,20 @@
   }
 }
 
-/* The two clickable words inside the hero title — easter egg targets.
-   Disable text selection so repeated clicks don't drag-select. */
+/* 彩蛋交互：标题中的 SiiWay / Team 需要禁用选中以避免连续点击时拖蓝 */
 .hero-name .hero-word-siiway,
 .hero-name .hero-word-team {
   user-select: none;
   -webkit-user-select: none;
 }
 
-/* 标题 — 1.1.1.1-style flowing gradient using the full SiiWay logo palette */
+/* 标题 — 使用 SiiWay logo 配色的流动渐变 */
 .hero-name {
   font-size: 56px !important;
-  line-height: 1.15 !important;
+  /* Roomier line box + bottom padding so background-clip:text doesn't
+     crop descenders (e.g. the "y" in SiiWay). */
+  line-height: 1.3 !important;
+  padding-bottom: 0.12em;
   font-weight: 800;
   margin-bottom: 16px;
   letter-spacing: -1.5px;
@@ -310,8 +335,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 0 !important;
-  padding: 10px 24px !important;
+  border-radius: 9999px !important;
+  padding: 10px 26px !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   border: 1px solid transparent !important;
@@ -321,17 +346,6 @@
     background-image 0.2s ease,
     color 0.2s ease,
     border-color 0.2s ease !important;
-  /* Triangle (chamfered) corners */
-  clip-path: polygon(
-    10px 0,
-    calc(100% - 10px) 0,
-    100% 10px,
-    100% calc(100% - 10px),
-    calc(100% - 10px) 100%,
-    10px 100%,
-    0 calc(100% - 10px),
-    0 10px
-  );
 }
 
 .VPButton svg {
@@ -371,15 +385,151 @@
   border-color: var(--vp-c-brand-1) !important;
 }
 
-/* =============================================================
-   5. 页脚 (Footer)
-   ============================================================= */
+/* ===== 成员卡片 ===== */
+/* 卡片样式参考 https://github.com/imsyy/vitepress-theme-curve 的友链卡片 */
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  padding: 12px 16px;
+  background: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: #000;
+  transition:
+    background 0.3s,
+    color 0.3s;
+  overflow: hidden;
+}
+
+.member-card:hover {
+  background: #e2f2f2;
+}
+
+.member-card:hover .member-avatar {
+  width: 0;
+  height: 0;
+  min-width: 0;
+  margin-right: 0;
+  opacity: 0;
+}
+
+.member-card:hover .member-motto {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.dark .member-card {
+  color: #fff;
+}
+
+.dark .member-card:hover {
+  background: rgba(45, 184, 184, 0.08);
+}
+
+.dark .member-card:hover .member-motto {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.member-avatar {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+  background: var(--vp-c-divider);
+  transition:
+    width 0.3s,
+    height 0.3s,
+    min-width 0.3s,
+    margin-right 0.3s,
+    opacity 0.3s;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Noto Sans SC", "LXGW WenKai Screen", system-ui, sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.member-motto {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.member-card.sub .member-name {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.member-card.sub:hover .member-name {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member-card,
+  .member-avatar,
+  .member-motto {
+    transition: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member-card,
+  .member-avatar,
+  .member-motto {
+    transition: none !important;
+  }
+}
+
+/* ===== 页脚 ===== */
+
 .VPFooter,
 .VPFooter.has-sidebar {
   display: block !important;
   background: transparent !important;
-  /* Border lives on the inner container so the divider line aligns
-     with the content area instead of spanning the full viewport. */
   border-top: none !important;
   padding: 0 !important;
 }
@@ -450,11 +600,8 @@
   color: var(--vp-c-text-2);
 }
 
-/* =============================================================
-   6. 加载指示 (Loading Indicators)
-   ============================================================= */
+/* ===== 路由过渡 ===== */
 
-/* 顶部进度条 — 路由切换时显示 */
 .route-progress {
   position: fixed;
   top: 0;
@@ -477,7 +624,6 @@
   opacity: 1;
 }
 
-/* 路由切换淡入 */
 .VPContent.route-fade-in {
   animation: routeFadeIn 0.32s ease-out;
 }
@@ -493,7 +639,6 @@
   }
 }
 
-/* 图片骨架屏 — 加载中显示流光，加载后淡入 */
 .VPDoc img.img-loading {
   background: linear-gradient(
     90deg,
@@ -540,9 +685,8 @@
   }
 }
 
-/* =============================================================
-   7. 响应式 (Responsive)
-   ============================================================= */
+/* ===== 响应式 ===== */
+
 @media (max-width: 960px) {
   .custom-layout {
     grid-template-columns: 1fr;
@@ -612,4 +756,66 @@
     display: flex;
     justify-content: center;
   }
+}
+
+/* ===== 字体切换（用户可选，FontSwitcher.vue） ===== */
+/* 'default'：站点设计（正文霞鹜文楷 + 标题思源黑体），无需覆盖。
+   下列规则按 <html data-font="..."> 属性生效，特异性高于上方的 :root
+   与标题字体声明，故无需 !important。 */
+
+/* 全部使用霞鹜文楷 */
+html[data-font="kai"] {
+  --vp-font-family-base:
+    "LXGW WenKai Screen", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+html[data-font="kai"]
+  :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b,
+    th,
+    .VPNavBarMenuLink.active,
+    .hero-name,
+    .hero-tagline,
+    .VPButton
+  ) {
+  font-family:
+    "LXGW WenKai Screen",
+    "Noto Sans SC",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+/* 全部使用思源黑体（标题已默认为思源黑体，只需改正文） */
+html[data-font="sans"] {
+  --vp-font-family-base: "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+
+/* 浏览器默认字体：revert 回退到浏览器/用户代理样式 */
+html[data-font="system"] {
+  --vp-font-family-base: revert;
+}
+html[data-font="system"]
+  :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b,
+    th,
+    .VPNavBarMenuLink.active,
+    .hero-name,
+    .hero-tagline,
+    .VPButton
+  ) {
+  font-family: revert;
 }

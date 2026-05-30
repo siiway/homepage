@@ -9,7 +9,8 @@ import { useRouter } from 'vitepress'
 const router = useRouter()
 
 onMounted(() => {
-  // 访问根域名时，直接跳到中文版
-  router.go('/zh/')
+  // 访问根域名时，按浏览器语言跳转到对应语言版本
+  const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase()
+  router.go(lang.startsWith('zh') ? '/zh/' : '/en/')
 })
 </script>

@@ -1,9 +1,12 @@
 import { defineConfig } from "vitepress";
 import rawMembers from "./data/members.json";
 
+const currentYear = new Date().getFullYear();
+
 const members = Object.entries(rawMembers).map(([key, value]) => {
+  const name = typeof value === "string" ? value : value.name;
   return {
-    text: value,
+    text: name,
     link: `/zh/members/${key}`,
   };
 });
@@ -31,9 +34,17 @@ const zhSearchTranslations = {
 };
 
 export default defineConfig({
+  cleanUrls: true,
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     ["script", { src: "/lang-redirect.js" }],
+    // Apply the user's saved font before first paint to avoid a flash of the
+    // default font. Mirrors FontSwitcher.vue's STORAGE_KEY / data-font scheme.
+    [
+      "script",
+      {},
+      "try{var f=localStorage.getItem('siiway-font');if(f)document.documentElement.dataset.font=f;}catch(e){}",
+    ],
   ],
 
   lastUpdated: true,
@@ -76,29 +87,34 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: "成员",
+            text: "成员列表",
             link: "/zh/members/",
+            collapsible: true,
+            collapsed: true,
             items: members,
           },
           {
             text: "关于",
             items: [
-              { text: "联系", link: "/zh/about/contact" },
-              { text: "关于此网站", link: "/zh/about/website" },
-              { text: "招新公告", link: "/zh/about/join" },
-              { text: "规则 (QQ 群)", link: "/zh/about/rules-qq" },
-              { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
               { text: "举报", link: "/zh/about/report" },
+              { text: "关于我们", link: "/zh/about/us" },
+              { text: "联系我们", link: "/zh/about/contact" },
+              { text: "招新公告", link: "/zh/about/join" },
+              { text: "QQ 群规则", link: "/zh/about/rules-qq" },
+              { text: "关于此网站", link: "/zh/about/website" },
+              { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
             ],
           },
           {
             text: "开发",
             link: "/zh/dev/",
             items: [
+              { text: "命名规范", link: "/zh/dev/naming" },
+              { text: "贡献指南", link: "/zh/dev/contributing" },
+              { text: "Go 代码规范", link: "/zh/dev/go-style" },
+              { text: "Git 提交规范", link: "/zh/dev/git" },
               { text: "Python 代码规范", link: "/zh/dev/python-style" },
               { text: "TypeScript 代码规范", link: "/zh/dev/ts-style" },
-              { text: "Go 代码规范", link: "/zh/dev/go-style" },
-              { text: "贡献指南", link: "/zh/dev/contributing" },
             ],
           },
           {
@@ -150,8 +166,7 @@ export default defineConfig({
         footer: {
           message:
             '内容采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0</a> 协议授权',
-          copyright:
-            'Copyright © 2024-present <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>',
+          copyright: `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay 团队</a>`,
         },
         // 将"On this page"改为中文
         outline: {
@@ -179,20 +194,37 @@ export default defineConfig({
           { text: "Home", link: "/en/" },
           { text: "Members", link: "/en/members/" },
           { text: "Contact", link: "/en/about/contact" },
+          { text: "Dev", link: "/en/dev/", activeMatch: "^/en/dev" },
         ],
         sidebar: [
           {
             text: "Members (CN Only)",
             link: "/en/members/",
+            collapsible: true,
+            collapsed: true,
             items: members,
           },
           {
             text: "About",
             items: [
+              { text: "About Us", link: "/en/about/us" },
               { text: "Contact", link: "/en/about/contact" },
               { text: "About Website", link: "/en/about/website" },
               { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
               { text: "Report", link: "/en/about/report" },
+              { text: "Join", link: "/en/about/join" },
+            ],
+          },
+          {
+            text: "Dev",
+            link: "/en/dev/",
+            items: [
+              { text: "Git Commit Convention", link: "/en/dev/git" },
+              { text: "Naming Convention", link: "/en/dev/naming" },
+              { text: "Python Style Guide", link: "/en/dev/python-style" },
+              { text: "TypeScript Style Guide", link: "/en/dev/ts-style" },
+              { text: "Go Style Guide", link: "/en/dev/go-style" },
+              { text: "Contributing", link: "/en/dev/contributing" },
             ],
           },
           {
@@ -224,8 +256,7 @@ export default defineConfig({
         footer: {
           message:
             'Released under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
-          copyright:
-            'Copyright © 2024-present <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>',
+          copyright: `Copyright © 2024-${currentYear} <a href="https://github.com/siiway" target="_blank" rel="noopener">SiiWay Team</a>`,
         },
       },
     },

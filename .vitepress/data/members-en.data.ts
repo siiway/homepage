@@ -1,37 +1,40 @@
 import rawMembers from "./members.json";
-let renderer: any = null;
+
+const subIdentities = new Set(["nt-copy", "l5z12"]);
 
 export default {
-  async load() {
-    if (!renderer) {
-      const { createMarkdownRenderer } = await import("vitepress");
-      const config = (globalThis as any).VITEPRESS_CONFIG;
-      renderer = await createMarkdownRenderer(
-        config.srcDir,
-        config.markdown,
-        config.site.base,
-        config.logger,
-      );
-    }
+  load() {
+    const entries = Object.entries(rawMembers);
+    const cards = entries
+      .map(([key, value]) => {
+        const name = typeof value === "string" ? value : value.name;
+        const avatar =
+          typeof value === "string"
+            ? "/favicon.svg"
+            : value.avatar || "/favicon.svg";
+        const motto =
+          typeof value === "string"
+            ? "暂无座右铭"
+            : value.motto || "暂无座右铭";
+        const isSub = subIdentities.has(key);
+        return `
+          <a class="member-card${isSub ? " sub" : ""}" href="../../zh/members/${key}">
+            <div class="member-avatar">
+              <img src="${avatar}" alt="${name}" />
+            </div>
+            <div class="member-info">
+              <span class="member-name">${name}</span>
+              <span class="member-motto">${motto}</span>
+            </div>
+          </a>`;
+      })
+      .join("");
 
-    const members = Object.entries(rawMembers).map(([key, value]) => {
-      // members' sub-identities
-      if (
-        key === "nt-copy" ||
-        value === "NtKrnl64" ||
-        key === "l5z12" ||
-        value === "l5z12"
-      ) {
-        return `- *[${value}](../../zh/members/${key})*`;
-      }
-      return `- [${value}](../../zh/members/${key})`;
-    });
-    const lst = members.join("\n");
-    const len = members.length - 2;
+    const count = entries.filter(([key]) => !subIdentities.has(key)).length;
 
     return {
-      members: renderer.render(lst),
-      count: len,
+      members: cards,
+      count,
     };
   },
 };
