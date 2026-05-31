@@ -390,7 +390,7 @@ th,
 
 .members-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin-top: 24px;
 }
@@ -540,48 +540,52 @@ th,
   border-top: 1px solid var(--vp-c-divider) !important;
 }
 
-/* On sidebar (doc) pages, mirror .VPContent.has-sidebar's horizontal
-   offsets so the footer sits in the doc column rather than the full
-   viewport, and constrain the inner container to .content-container's
-   max-width so its divider line ends where VPDocFooter's does.
+/* On sidebar (doc) pages, mirror .VPDoc > .container's flex layout
+   (content flex item + aside flex item) so the footer text sits in the
+   same horizontal position as VPDocFooter (which lives inside
+   .content-container, max-width 688px, auto-centered within .content).
 
-   These rules MUST stay gated behind the 960px sidebar breakpoint:
+   These rules MUST stay gated behind the 1280px sidebar breakpoint:
    VitePress's hasSidebar is viewport-independent (it stays true on
    mobile, where the sidebar collapses into the hamburger menu), so the
    .has-sidebar class is present on phones too. Applying the sidebar-width
-   padding-left + the two-column grid unconditionally squeezes the footer
+   padding-left + the flex layout unconditionally squeezes the footer
    message column to ~one character wide on narrow screens. */
-@media (min-width: 960px) {
+@media (min-width: 1280px) {
   .VPFooter.has-sidebar {
+    display: flex !important;
+    justify-content: center !important;
     padding-left: var(--vp-sidebar-width) !important;
   }
 
   .VPFooter.has-sidebar .container {
-    /* Mirror .VPDoc > .container's flex-centered (content + aside) layout
-       using a 2-column grid with a 32px gutter. Message + copyright live
-       in the left ("content") column; the right column stays empty as a
-       phantom aside so the divider line left-aligns with .content-container
-       instead of centering over the entire post-sidebar area. */
-    display: grid !important;
-    grid-template-columns: minmax(0, 688px) minmax(0, 256px) !important;
-    column-gap: 32px !important;
-    justify-content: center !important;
+    flex: 1 !important;
+    min-width: 640px !important;
+    padding: 0 32px !important;
     max-width: none !important;
     margin: 0 !important;
-    padding: 0 32px !important;
     border-top: none !important;
   }
 
   .VPFooter.has-sidebar .container > .message {
-    grid-column: 1 !important;
+    max-width: 688px !important;
+    margin: 0 auto !important;
     border-top: 1px solid var(--vp-c-divider) !important;
     padding-top: 24px !important;
-    margin: 0 !important;
   }
 
   .VPFooter.has-sidebar .container > .copyright {
-    grid-column: 1 !important;
-    margin: 4px 0 24px !important;
+    max-width: 688px !important;
+    margin: 4px auto 24px !important;
+  }
+
+  /* Phantom aside column to keep the flex centering identical to VPDoc */
+  .VPFooter.has-sidebar::after {
+    content: "" !important;
+    display: block !important;
+    max-width: 256px !important;
+    flex-grow: 1 !important;
+    padding-left: 32px !important;
   }
 }
 

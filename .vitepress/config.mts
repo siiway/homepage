@@ -34,6 +34,10 @@ const zhSearchTranslations = {
 };
 
 export default defineConfig({
+  // title and desc here will be used when the page isn't properly loaded (e.g. lang redirecting)
+  title: "SiiWay Team",
+  description: "SiiWay Team's Homepage and Official Site",
+
   cleanUrls: true,
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
@@ -95,6 +99,8 @@ export default defineConfig({
           },
           {
             text: "关于",
+            collapsible: true,
+            collapsed: false,
             items: [
               { text: "举报", link: "/zh/about/report" },
               { text: "关于我们", link: "/zh/about/us" },
@@ -108,6 +114,8 @@ export default defineConfig({
           {
             text: "开发",
             link: "/zh/dev/",
+            collapsible: true,
+            collapsed: false,
             items: [
               { text: "命名规范", link: "/zh/dev/naming" },
               { text: "贡献指南", link: "/zh/dev/contributing" },
@@ -119,6 +127,8 @@ export default defineConfig({
           },
           {
             text: "外链",
+            collapsible: true,
+            collapsed: false,
             items: [
               { text: "QQ 群", link: "https://wss.moe/qq" },
               { text: "QQ 频道", link: "https://wss.moe/pd" },
@@ -177,6 +187,9 @@ export default defineConfig({
           prev: "上一篇",
           next: "下一篇",
         },
+        returnToTopLabel: "返回顶部",
+        darkModeSwitchLabel: "外观",
+        sidebarMenuLabel: "菜单",
       },
     },
 
@@ -206,6 +219,8 @@ export default defineConfig({
           },
           {
             text: "About",
+            collapsible: true,
+            collapsed: false,
             items: [
               { text: "About Us", link: "/en/about/us" },
               { text: "Contact", link: "/en/about/contact" },
@@ -218,6 +233,8 @@ export default defineConfig({
           {
             text: "Dev",
             link: "/en/dev/",
+            collapsible: true,
+            collapsed: false,
             items: [
               { text: "Git Commit Convention", link: "/en/dev/git" },
               { text: "Naming Convention", link: "/en/dev/naming" },
@@ -229,6 +246,8 @@ export default defineConfig({
           },
           {
             text: "Outlinks",
+            collapsible: true,
+            collapsed: false,
             items: [
               { text: "Discord", link: "https://wss.moe/dc" },
               { text: "GitHub", link: "https://wss.moe/gh" },
