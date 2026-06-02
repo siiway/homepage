@@ -61,9 +61,6 @@ th,
 
 .VPHome {
   overflow-x: hidden;
-  /* The home page is only a hero + footer; zero VitePress's large bottom
-     margin so .custom-layout's min-height controls the fold exactly. */
-  margin-bottom: 0 !important;
 }
 
 /* ===== 导航栏 ===== */
@@ -222,11 +219,6 @@ th,
   gap: 64px;
   max-width: 1200px;
   margin: 0 auto;
-  /* Fill the viewport minus VitePress's .VPContent padding-top
-     (= --vp-nav-height, only applied at ≥960px) and the footer
-     (~96px = 24*2 padding + ~2 lines of 13px text + border) so the
-     page fits in 100vh exactly without scrolling. */
-  min-height: calc(100vh - var(--vp-nav-height) - 96px);
   padding: 56px 24px 56px;
   align-items: center;
   box-sizing: border-box;
@@ -696,7 +688,6 @@ th,
     grid-template-columns: 1fr;
     padding: 110px 20px 60px;
     gap: 32px;
-    min-height: auto;
   }
 
   .right-visual-section {
