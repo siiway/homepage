@@ -1,12 +1,4 @@
-@import "lxgw-wenkai-screen-web/lxgwwenkaiscreen/result.css";
-@import "noto-sans-sc/noto_sans_sc_regular/css.css";
-@import "noto-sans-sc/noto_sans_sc_medium/css.css";
-@import "noto-sans-sc/noto_sans_sc_bold/css.css";
-
 :root {
-  --vp-font-family-base:
-    "LXGW WenKai Screen", "Noto Sans SC", system-ui, -apple-system, sans-serif;
-
   --siiway-primary: #109595;
   --siiway-primary-hover: #0c7a7a;
   --siiway-indigo: #24047b;
@@ -23,27 +15,6 @@
 body {
   font-synthesis: none;
   -webkit-font-synthesis: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b,
-th,
-.VPNavBarMenuLink.active,
-.hero-name,
-.hero-tagline,
-.VPButton {
-  font-family:
-    "Noto Sans SC",
-    "LXGW WenKai Screen",
-    system-ui,
-    -apple-system,
-    sans-serif;
 }
 
 .dark {
@@ -463,7 +434,6 @@ th,
 .member-name {
   font-weight: 600;
   font-size: 16px;
-  font-family: "Noto Sans SC", "LXGW WenKai Screen", system-ui, sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -753,64 +723,4 @@ th,
   }
 }
 
-/* ===== 字体切换（用户可选，FontSwitcher.vue） ===== */
-/* 'default'：站点设计（正文霞鹜文楷 + 标题思源黑体），无需覆盖。
-   下列规则按 <html data-font="..."> 属性生效，特异性高于上方的 :root
-   与标题字体声明，故无需 !important。 */
 
-/* 全部使用霞鹜文楷 */
-html[data-font="kai"] {
-  --vp-font-family-base:
-    "LXGW WenKai Screen", "Noto Sans SC", system-ui, -apple-system, sans-serif;
-}
-html[data-font="kai"]
-  :is(
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b,
-    th,
-    .VPNavBarMenuLink.active,
-    .hero-name,
-    .hero-tagline,
-    .VPButton
-  ) {
-  font-family:
-    "LXGW WenKai Screen",
-    "Noto Sans SC",
-    system-ui,
-    -apple-system,
-    sans-serif;
-}
-
-/* 全部使用思源黑体（标题已默认为思源黑体，只需改正文） */
-html[data-font="sans"] {
-  --vp-font-family-base: "Noto Sans SC", system-ui, -apple-system, sans-serif;
-}
-
-/* 浏览器默认字体：revert 回退到浏览器/用户代理样式 */
-html[data-font="system"] {
-  --vp-font-family-base: revert;
-}
-html[data-font="system"]
-  :is(
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b,
-    th,
-    .VPNavBarMenuLink.active,
-    .hero-name,
-    .hero-tagline,
-    .VPButton
-  ) {
-  font-family: revert;
-}

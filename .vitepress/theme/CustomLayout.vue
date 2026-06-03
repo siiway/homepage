@@ -2,7 +2,6 @@
 import DefaultTheme from "vitepress/theme";
 import AprilFools from "./AprilFools.vue";
 import EasterEgg from "./EasterEgg.vue";
-import FontSwitcher from "./FontSwitcher.vue";
 import RouteEnhancements from "./RouteEnhancements.vue";
 import SidebarToggle from "./SidebarToggle.vue";
 import ThemeLayout from "./ThemeLayout.vue";
@@ -15,12 +14,8 @@ const { Layout } = DefaultTheme;
     <template #nav-bar-title-before>
       <SidebarToggle />
     </template>
-    <template #nav-bar-content-after>
-      <FontSwitcher />
-    </template>
-    <template #nav-screen-content-after>
-      <FontSwitcher />
-    </template>
+    <template #nav-bar-content-after />
+    <template #nav-screen-content-after />
     <template #layout-bottom>
       <RouteEnhancements />
       <AprilFools />

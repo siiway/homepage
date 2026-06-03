@@ -42,13 +42,6 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     ["script", { src: "/lang-redirect.js" }],
-    // Apply the user's saved font before first paint to avoid a flash of the
-    // default font. Mirrors FontSwitcher.vue's STORAGE_KEY / data-font scheme.
-    [
-      "script",
-      {},
-      "try{var f=localStorage.getItem('siiway-font');if(f)document.documentElement.dataset.font=f;}catch(e){}",
-    ],
   ],
 
   lastUpdated: true,

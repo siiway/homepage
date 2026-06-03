@@ -13,8 +13,6 @@
   "homepage": "https://siiway.org",
   "dependencies": {
     "@vueuse/core": "12.8.2",
-    "lxgw-wenkai-screen-web": "^1.522.0",
-    "noto-sans-sc": "^37.0.0",
     "vitepress": "^1.6.4"
   },
   "scripts": {
