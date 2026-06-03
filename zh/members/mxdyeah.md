@@ -6,7 +6,7 @@ I focus on systems and low-level engineering, connecting theory with real-world 
 
 I have a background in operating systems, networks, and architecture, with hands-on experience in linuxlike-based systems, TCP/IP services, and Websever (epoll, load balancing, keepalive).
 
-I’m interested in understanding system behavior across layers, including networking, I/O, and performance under concurrency.
+I'm interested in understanding system behavior across layers, including networking, I/O, and performance under concurrency.
 
 I have basic exposure to security, streaming systems, and open-source contribution (e.t.c Debian, FreeBSD), and aim to grow in systems and infrastructure engineering.
 
@@ -16,6 +16,6 @@ I have basic exposure to security, streaming systems, and open-source contributi
 
 ## Contact
 
-Website: [mxd's Planet](https://www.mxdyeah.com/)
+Blog: [mxd's Blog](https://blog.mxdyeah.com/?utm_source=siiway.org)
 
 Email: [Click Here!](mailto:contact@mail.mxdyeah.top)
