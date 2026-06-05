@@ -6,3 +6,4 @@ node_modules
 .vitepress/cache
 # 就很奇怪 (npm install 生成的)
 '~/
+opencode.json
