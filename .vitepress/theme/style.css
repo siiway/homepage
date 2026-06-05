@@ -12,6 +12,10 @@
   --site-nav-screen-bg: #fcfcfc;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-synthesis: none;
   -webkit-font-synthesis: none;
@@ -71,9 +75,81 @@ body {
   padding-top: var(--vp-nav-height) !important;
 }
 
-.VPNavBar .container {
-  max-width: 1320px !important;
-  margin: 0 auto !important;
+/* .VPNavBar .container override removed */
+
+/* ===== 顶栏右侧布局重排 =====
+ * 目标顺序: Nav | Search | Language | Social | Dark Mode
+ * 通过 CSS order 实现，同时清理因 DOM 顺序变化导致的原有分隔线
+ */
+@media (min-width: 1280px) {
+  .VPNavBar .content-body > .search {
+    order: 1;
+  }
+  .VPNavBar .content-body > .menu {
+    order: 0;
+  }
+  .VPNavBar .content-body > .translations {
+    order: 2;
+  }
+  .VPNavBar .content-body > .appearance {
+    order: 4;
+  }
+
+  .VPNavBar .content-body .menu + .translations::before,
+  .VPNavBar .content-body .menu + .appearance::before,
+  .VPNavBar .content-body .menu + .social-links::before,
+  .VPNavBar .content-body .translations + .appearance::before,
+  .VPNavBar .content-body .appearance + .social-links::before {
+    display: none;
+  }
+
+  .VPNavBar .content-body > .search::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: var(--vp-c-divider);
+    margin-right: 16px;
+  }
+
+  .VPNavBar .content-body > .translations::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: var(--vp-c-divider);
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .VPNavBar .content-body > .appearance::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: var(--vp-c-divider);
+    margin-right: 16px;
+  }
+
+  .VPNavBar .content-body > .nav-social-links {
+    order: 3;
+    padding-right: 12px;
+  }
+
+  .VPNavBar .content-body > .nav-social-links::before {
+    display: none;
+  }
+
+  .VPNavBar .content-body > .social-links {
+    display: none;
+  }
+
+  .VPNavBar .VPNavBarTranslations .menu {
+    transform: translateY(-4px) !important;
+  }
+  .VPNavBar .VPNavBarTranslations:hover .menu {
+    transform: translateY(0) !important;
+  }
 }
 
 /* 修复搜索按钮在有/无侧边栏页面间位置漂移 */
@@ -84,7 +160,6 @@ body {
     margin-right: 8px;
   }
 }
-
 .VPNavBarMenu .VPNavBarMenuLink {
   height: auto !important;
   align-self: center !important;
@@ -105,6 +180,34 @@ body {
   background-color: var(--vp-c-brand-soft) !important;
   color: var(--vp-c-brand-1) !important;
   font-weight: 600 !important;
+}
+
+/* NavSocialLinks in mobile nav screen */
+.VPNavScreen .nav-social-links {
+  margin-top: 24px;
+}
+
+.VPNavScreen .nav-social-links .trigger {
+  display: none;
+}
+
+.VPNavScreen .nav-social-links .dropdown-panel {
+  position: static;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  min-width: 0;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.VPNavScreen .nav-social-links .social-item {
+  padding: 8px 0;
+  border-radius: 0;
 }
 
 .VPSidebarItem.level-0.is-active > .item .link > .text {
