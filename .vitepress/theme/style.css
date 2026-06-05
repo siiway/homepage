@@ -1,4 +1,11 @@
+@import 'lxgw-wenkai-screen-web/lxgwwenkaiscreen/result.css';
+@import 'noto-sans-sc/noto_sans_sc_regular/css.css';
+@import 'noto-sans-sc/noto_sans_sc_medium/css.css';
+@import 'noto-sans-sc/noto_sans_sc_bold/css.css';
+
 :root {
+  --vp-font-family-base: 'LXGW WenKai Screen', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+
   --siiway-primary: #109595;
   --siiway-primary-hover: #0c7a7a;
   --siiway-indigo: #24047b;
@@ -19,6 +26,15 @@ html {
 body {
   font-synthesis: none;
   -webkit-font-synthesis: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+strong, b, th,
+.VPNavBarMenuLink.active,
+.home-title,
+.home-subtitle,
+.home-btn {
+  font-family: 'Noto Sans SC', 'LXGW WenKai Screen', system-ui, -apple-system, sans-serif;
 }
 
 .dark {
@@ -537,6 +553,7 @@ body {
 .member-name {
   font-weight: 600;
   font-size: 16px;
+  font-family: 'Noto Sans SC', 'LXGW WenKai Screen', system-ui, sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

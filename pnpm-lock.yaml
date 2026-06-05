@@ -11,6 +11,12 @@ importers:
       '@vueuse/core':
         specifier: 12.8.2
         version: 12.8.2
+      lxgw-wenkai-screen-web:
+        specifier: ^1.522.0
+        version: 1.522.0
+      noto-sans-sc:
+        specifier: ^37.0.0
+        version: 37.0.0
       vitepress:
         specifier: ^1.6.4
         version: 1.6.4(@algolia/client-search@5.53.0)(@types/node@25.9.1)(postcss@8.5.15)(search-insights@2.17.3)
@@ -643,6 +649,9 @@ packages:
     resolution: {integrity: sha512-oG7cgbmg5kLYae2N5IVd3jm2s+vldjxJzK1pcu9LfpGuQ93MQSzo0okvRna+7y5ifrD+20FE8FvjusyGaz14fw==}
     engines: {node: '>=18'}
 
+  lxgw-wenkai-screen-web@1.522.0:
+    resolution: {integrity: sha512-LH1nDJz9prHgMYNKErg8XpDEIhs9+1bf6hPVKviy29be1r6Z4AXXbo9uuwmOH2hAzKMbe3kZ5+rzJ9zb/58+jw==}
+
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -677,6 +686,9 @@ packages:
     resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  noto-sans-sc@37.0.0:
+    resolution: {integrity: sha512-1gPL5phDXMTIWsjwxk9674DVIyf+ANIk4UKlWEKGIDYPQqBJpDZ0Y2gfAkXr0j/+5S1EcJ7FgLz7f5uSQsVnaw==}
 
   oniguruma-to-es@3.1.1:
     resolution: {integrity: sha512-bUH8SDvPkH3ho3dvwJwfonjlQ4R80vjyvrU8YpxuROddv55vAEJrTuCuCVUhhsHbtlD9tGGbaNApGQckXhS8iQ==}
@@ -1400,6 +1412,8 @@ snapshots:
 
   is-what@5.5.0: {}
 
+  lxgw-wenkai-screen-web@1.522.0: {}
+
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -1440,6 +1454,8 @@ snapshots:
   mitt@3.0.1: {}
 
   nanoid@3.3.12: {}
+
+  noto-sans-sc@37.0.0: {}
 
   oniguruma-to-es@3.1.1:
     dependencies:
