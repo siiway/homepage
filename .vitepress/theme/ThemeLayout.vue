@@ -50,6 +50,9 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-bar-title-before>
       <slot name="nav-bar-title-before" />
     </template>
+    <template #nav-bar-content-before>
+      <slot name="nav-bar-content-before" />
+    </template>
     <template #nav-bar-content-after>
       <slot name="nav-bar-content-after" />
     </template>

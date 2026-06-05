@@ -3,6 +3,7 @@ layout: home
 ---
 
 <script setup>
+import Typewriter from "../.vitepress/theme/Typewriter.vue"
 // 这里是英文版的时间轴数据，如果需要修改文案请在这里改
 // const timelineData = [
 //   { year: '2024', title: 'SiiWay Cloud 2.0', content: 'Logged into wrong account...', tag: 'Latest' },
@@ -23,7 +24,7 @@ layout: home
     <!-- Hero 内容 -->
     <div class="hero-content">
       <h1 class="hero-name"><span class="hero-word-siiway">SiiWay</span> <span class="hero-word-team">Team</span></h1>
-      <p class="hero-tagline">Welcome to SiiWay Team's Official Homepage!</p>
+      <Typewriter />
       <!-- 按钮区域 -->
       <div class="hero-actions">
         <!-- 按钮1: GitHub -->

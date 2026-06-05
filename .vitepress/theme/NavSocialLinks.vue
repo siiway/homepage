@@ -7,7 +7,7 @@ const { lang } = useData();
 const open = ref(false);
 const el = ref<HTMLElement>();
 
-const label = computed(() => (lang.value === "zh" ? "社交链接" : "Social"));
+const label = computed(() => (lang.value === "zh" ? "社交链接" : "Social Links"));
 
 const links = computed(() => socialLinksData[lang.value] ?? []);
 
