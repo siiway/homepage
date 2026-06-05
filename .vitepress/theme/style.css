@@ -144,8 +144,11 @@ body {
     display: none;
   }
 
-  .VPNavBar .VPFlyout .button[aria-expanded="false"] + .menu {
+  .VPNavBar .VPNavBarTranslations .menu {
     transform: translateY(-4px) !important;
+  }
+  .VPNavBar .VPNavBarTranslations:hover .menu {
+    transform: translateY(0) !important;
   }
 }
 

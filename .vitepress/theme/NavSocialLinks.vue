@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
-import { computed, nextTick, onMounted, ref } from "vue";
+import { computed, nextTick, onMounted, onUnmounted, ref } from "vue";
 import socialLinksData from "../data/social-links";
 
 const { lang } = useData();
@@ -13,19 +13,15 @@ const links = computed(() => socialLinksData[lang.value] ?? []);
 
 function renderIcon(icon: string | { svg: string }): string {
   if (typeof icon === "object") return icon.svg;
-  return `<span class="vpi-social-${icon}"></span>`;
+  return `<span class="vpi-social-${icon}" data-icon="${icon}"></span>`;
 }
 
 onMounted(async () => {
   await nextTick();
   if (!el.value) return;
-  const spans = el.value.querySelectorAll<HTMLElement>(
-    "[class^='vpi-social-']",
-  );
+  const spans = el.value.querySelectorAll<HTMLElement>("[data-icon]");
   spans.forEach((span) => {
-    const classes = span.className.match(/vpi-social-(\S+)/);
-    if (!classes) return;
-    const icon = classes[1];
+    const icon = span.dataset.icon!;
     const style = getComputedStyle(span);
     if ((style.maskImage || (style as any).webkitMaskImage) === "none") {
       span.style.setProperty(
@@ -40,12 +36,18 @@ function onBlur() {
   open.value = false;
 }
 
+function clickOutside(e: MouseEvent) {
+  if (el.value && !el.value.contains(e.target as Node)) {
+    open.value = false;
+  }
+}
+
 onMounted(() => {
-  document.addEventListener("click", (e: MouseEvent) => {
-    if (el.value && !el.value.contains(e.target as Node)) {
-      open.value = false;
-    }
-  });
+  document.addEventListener("click", clickOutside);
+});
+
+onUnmounted(() => {
+  document.removeEventListener("click", clickOutside);
 });
 </script>
 
