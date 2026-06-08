@@ -423,10 +423,18 @@ body {
     border-color 0.2s ease !important;
 }
 
-.VPButton svg {
+.VPButton svg,
+.VPButton .svg-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+}
+
+.VPButton .svg-icon {
+  display: inline-block;
+  background-color: currentColor;
+  mask: var(--svg-icon) center / contain no-repeat;
+  -webkit-mask: var(--svg-icon) center / contain no-repeat;
 }
 
 .VPButton,
