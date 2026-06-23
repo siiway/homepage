@@ -3,6 +3,7 @@ layout: home
 ---
 
 <script setup>
+import Typewriter from "../.vitepress/theme/Typewriter.vue"
 // 这里是英文版的时间轴数据，如果需要修改文案请在这里改
 // const timelineData = [
 //   { year: '2024', title: 'SiiWay Cloud 2.0', content: 'Logged into wrong account...', tag: 'Latest' },

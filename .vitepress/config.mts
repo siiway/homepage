@@ -49,6 +49,12 @@ export default defineConfig({
     hostname: "https://siiway.org",
   },
 
+  vite: {
+    ssr: {
+      noExternal: ["naive-ui", "vueuc"],
+    },
+  },
+
   themeConfig: {
     // 左侧侧边栏上方的图标
     logo: "/favicon.svg",

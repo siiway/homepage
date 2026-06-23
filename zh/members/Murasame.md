@@ -10,6 +10,20 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 
 # Member - Murasame✨
 
+<NCard title="🏠主页" link="https://shirayukinoa.top/">
+我已经下了决心，要与深爱的少女一起在这片土地生活下去。我对此无比自豪。
+</NCard>
+<NCardRow>
+
+<NCard title="📚我的博客" link="https://blog.shirayukinoa.top/">
+Ciallo～(∠・ω< )⌒★
+</NCard>
+<NCard title="GitHub" icon="vpi-social-github" right-icon="vpi-chevron-right" link="https://github.com/LeiSureLyYrsc">
+ムラサメ
+</NCard>
+
+</NCardRow>
+
 ### 一名大一学生，柚子厨一枚(∠・ω< )⌒★
 
 本命角色：

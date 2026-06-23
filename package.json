@@ -13,6 +13,7 @@
   "homepage": "https://siiway.org",
   "dependencies": {
     "@vueuse/core": "12.8.2",
+    "naive-ui": "^2.44.1",
     "vitepress": "^1.6.4"
   },
   "scripts": {

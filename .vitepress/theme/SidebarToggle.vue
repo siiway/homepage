@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { useMediaQuery } from "@vueuse/core";
+import { useSidebar } from "vitepress/theme";
 
 const isBelow960 = useMediaQuery("(max-width: 959px)");
+const { hasSidebar } = useSidebar();
 
 function toggleSidebar() {
   const btn = document.querySelector<HTMLElement>(".VPLocalNav .menu");
@@ -20,10 +22,10 @@ function toggleSidebar() {
 
 <template>
   <button
-    v-if="isBelow960"
+    v-if="isBelow960 && hasSidebar"
     class="sidebar-toggle-btn"
     aria-label="Toggle sidebar"
-    @click="toggleSidebar"
+    @click.prevent.stop="toggleSidebar"
   >
     <span class="vpi-align-left sidebar-toggle-icon" />
   </button>
@@ -34,8 +36,8 @@ function toggleSidebar() {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: var(--vp-nav-height);
   margin-right: 4px;
   border: none;
   background: transparent;

@@ -1,11 +1,14 @@
 <!-- 官方的外观切换组件： https://vitepress.dev/zh/guide/extending-default-theme#on-appearance-toggle -->
 <script setup lang="ts">
+import { NConfigProvider } from "naive-ui/es/config-provider";
+import { darkTheme } from "naive-ui/es/themes";
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { nextTick, provide } from "vue";
+import { computed, nextTick, provide } from "vue";
 
 const { isDark } = useData();
 const { Layout } = DefaultTheme;
+const naiveTheme = computed(() => (isDark.value ? darkTheme : null));
 const isBrowser =
   typeof window !== "undefined" && typeof document !== "undefined";
 
@@ -46,20 +49,25 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <Layout>
-    <template #nav-bar-title-before>
-      <slot name="nav-bar-title-before" />
-    </template>
-    <template #nav-bar-content-after>
-      <slot name="nav-bar-content-after" />
-    </template>
-    <template #nav-screen-content-after>
-      <slot name="nav-screen-content-after" />
-    </template>
-    <template #layout-bottom>
-      <slot name="layout-bottom" />
-    </template>
-  </Layout>
+  <NConfigProvider :theme="naiveTheme">
+    <Layout>
+      <template #nav-bar-title-before>
+        <slot name="nav-bar-title-before" />
+      </template>
+      <template #nav-bar-content-before>
+        <slot name="nav-bar-content-before" />
+      </template>
+      <template #nav-bar-content-after>
+        <slot name="nav-bar-content-after" />
+      </template>
+      <template #nav-screen-content-after>
+        <slot name="nav-screen-content-after" />
+      </template>
+      <template #layout-bottom>
+        <slot name="layout-bottom" />
+      </template>
+    </Layout>
+  </NConfigProvider>
 </template>
 
 <style>
