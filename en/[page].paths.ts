@@ -16,11 +16,11 @@ async function getAllFiles(dir: string, ignoreDirs: string[] = ['node_modules', 
             const en = fullPath.replace('zh/', 'en/');
             try {
                 if ((await fs.stat(en)).isFile()) {
-                    console.log(`- already exists: ${fullPath}`)
+                    // console.log(`- already exists: ${fullPath}`)
                 } else throw '';
             } catch {
                 files.push(fullPath)
-                console.log(`- added: ${fullPath}`)
+                // console.log(`- added: ${fullPath}`)
             }
         }
     }

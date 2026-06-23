@@ -2,6 +2,7 @@
 import DefaultTheme from "vitepress/theme";
 import AprilFools from "./AprilFools.vue";
 import EasterEgg from "./EasterEgg.vue";
+import LangRedirect from "./LangRedirect.vue";
 import NavSocialLinks from "./NavSocialLinks.vue";
 import RouteEnhancements from "./RouteEnhancements.vue";
 import SidebarToggle from "./SidebarToggle.vue";
@@ -20,6 +21,9 @@ const { Layout } = DefaultTheme;
     </template>
     <template #nav-screen-content-after>
       <NavSocialLinks />
+    </template>
+    <template #not-found>
+      <LangRedirect />
     </template>
     <template #layout-bottom>
       <RouteEnhancements />

@@ -39,10 +39,7 @@ export default defineConfig({
   description: "SiiWay Team's Homepage and Official Site",
 
   cleanUrls: true,
-  head: [
-    ["link", { rel: "icon", href: "/favicon.svg" }],
-    ["script", { src: "/lang-redirect.js" }],
-  ],
+  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
 
   lastUpdated: true,
   sitemap: {

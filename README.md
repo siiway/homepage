@@ -84,6 +84,7 @@ pnpm preview
 │   │   ├── CustomLayout.vue     # 自定义布局
 │   │   ├── ThemeLayout.vue      # 主题布局（含切换动画）
 │   │   ├── RouteEnhancements.vue # 路由进度条与图片骨架屏
+│   │   ├── LangRedirect.vue     # 无语言前缀路径的客户端语言重定向（404 槽）
 │   │   ├── EasterEgg.vue        # 标题彩蛋
 │   │   └── AprilFools.vue       # 愚人节彩蛋
 │   └── config.mts               # 站点配置
@@ -101,7 +102,6 @@ pnpm preview
 │   └── index.md                 # English home
 ├── public/                      # 静态资源
 │   ├── favicon.svg              # 网站图标
-│   ├── lang-redirect.js         # 语言重定向
 │   └── robots.txt               # 爬虫配置
 ├── index.md                     # 根首页（自动跳转 /zh/）
 ├── package.json

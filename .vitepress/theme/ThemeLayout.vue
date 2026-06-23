@@ -63,6 +63,9 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
       <template #nav-screen-content-after>
         <slot name="nav-screen-content-after" />
       </template>
+      <template #not-found>
+        <slot name="not-found" />
+      </template>
       <template #layout-bottom>
         <slot name="layout-bottom" />
       </template>
