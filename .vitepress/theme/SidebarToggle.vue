@@ -26,7 +26,6 @@ function toggleSidebar() {
     class="sidebar-toggle-btn"
     aria-label="Toggle sidebar"
     @click.prevent.stop="toggleSidebar"
-    @touchend.prevent.stop="toggleSidebar"
   >
     <span class="vpi-align-left sidebar-toggle-icon" />
   </button>

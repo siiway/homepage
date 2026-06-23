@@ -19,12 +19,8 @@ const href = computed(() => {
   return isExternal.value ? props.link : withBase(props.link);
 });
 
-function isSvgIcon(icon?: string): icon is string {
-  return !!icon && /^(?:https?:\/\/|\/|\.\.?\/).+\.svg(?:[?#].*)?$/.test(icon);
-}
-
-function svgIconStyle(icon: string) {
-  return { "--icon": `url('${icon}')` };
+function isRawSvg(icon?: string): icon is string {
+  return !!icon && /^\s*<svg[\s>]/i.test(icon);
 }
 </script>
 
@@ -41,9 +37,9 @@ function svgIconStyle(icon: string) {
       <template v-if="title || leadingIcon || rightIcon" #header>
         <span class="siiway-n-card-title">
           <span
-            v-if="isSvgIcon(leadingIcon)"
-            class="siiway-n-card-icon is-svg"
-            :style="svgIconStyle(leadingIcon)"
+            v-if="isRawSvg(leadingIcon)"
+            class="siiway-n-card-icon is-raw-svg"
+            v-html="leadingIcon"
             aria-hidden="true"
           />
           <span
@@ -54,9 +50,9 @@ function svgIconStyle(icon: string) {
           />
           <span class="siiway-n-card-title-text">{{ title }}</span>
           <span
-            v-if="isSvgIcon(rightIcon)"
-            class="siiway-n-card-icon is-right is-svg"
-            :style="svgIconStyle(rightIcon)"
+            v-if="isRawSvg(rightIcon)"
+            class="siiway-n-card-icon is-right is-raw-svg"
+            v-html="rightIcon"
             aria-hidden="true"
           />
           <span
@@ -116,12 +112,15 @@ function svgIconStyle(icon: string) {
   height: 1.1em;
   flex: 0 0 auto;
   color: var(--vp-c-brand-1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.siiway-n-card-icon.is-svg {
-  background-color: currentColor;
-  mask: var(--icon) center / contain no-repeat;
-  -webkit-mask: var(--icon) center / contain no-repeat;
+.siiway-n-card-icon.is-raw-svg :deep(svg) {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .siiway-n-card-icon.is-right {

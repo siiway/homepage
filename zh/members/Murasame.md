@@ -18,7 +18,7 @@ These adorable Murasame-chan are from <a href="https://x.com/uoouchan">@uoouchan
 <NCard title="📚我的博客" link="https://blog.shirayukinoa.top/">
 Ciallo～(∠・ω< )⌒★
 </NCard>
-<NCard title="Github" icon="/svg/github.svg" right-icon="/svg/github.svg" link="https://github.com/LeiSureLyYrsc">
+<NCard title="GitHub" icon="vpi-social-github" right-icon="vpi-chevron-right" link="https://github.com/LeiSureLyYrsc">
 ムラサメ
 </NCard>
 

@@ -12,4 +12,4 @@ Null stack developer.
 
 GitHub: [chun-awa](https://github.com/chun-awa)
 
-Email: [Email Protected](https://wss.moe/m64/Y2h1bi1hd2FAbGluZ21vLm9yZwo=)
+Email: [Email Protected](https://wss.moe/m64/Y2h1bi1hd2FAc2lpd2F5Lm9yZw==)

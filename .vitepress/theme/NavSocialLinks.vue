@@ -2,22 +2,18 @@
 import { useData } from "vitepress";
 import { computed, nextTick, onMounted, onUnmounted, ref } from "vue";
 import socialLinksData from "../data/social-links";
-import type { SocialIcon } from "../data/social-links";
 
 const { lang } = useData();
 const open = ref(false);
 const el = ref<HTMLElement>();
 
-const label = computed(() => (lang.value === "zh" ? "社交链接" : "Social Links"));
+const label = computed(() => (lang.value === "zh" ? "社交链接" : "Social"));
 
 const links = computed(() => socialLinksData[lang.value] ?? []);
 
-function isFileIcon(icon: SocialIcon): icon is { src: string } {
-  return typeof icon === "object";
-}
-
-function fileIconStyle(icon: { src: string }) {
-  return { "--icon": `url('${icon.src}')` };
+function renderIcon(icon: string | { svg: string }): string {
+  if (typeof icon === "object") return icon.svg;
+  return `<span class="vpi-social-${icon}" data-icon="${icon}"></span>`;
 }
 
 onMounted(async () => {
@@ -72,7 +68,7 @@ onUnmounted(() => {
       @click="open = !open"
       @blur="onBlur"
     >
-      <span class="link-icon file-icon" aria-hidden="true" />
+      <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
       <span class="trigger-label">{{ label }}</span>
       <span class="vpi-chevron-down chevron" :class="{ rotated: open }" />
     </button>
@@ -88,20 +84,7 @@ onUnmounted(() => {
           rel="noopener"
           :aria-label="link.label"
         >
-          <span class="item-icon">
-            <span
-              v-if="isFileIcon(link.icon)"
-              class="file-icon"
-              :style="fileIconStyle(link.icon)"
-              aria-hidden="true"
-            />
-            <span
-              v-else
-              :class="`vpi-social-${link.icon}`"
-              :data-icon="link.icon"
-              aria-hidden="true"
-            />
-          </span>
+          <span class="item-icon" v-html="renderIcon(link.icon)" />
           <span class="item-label">{{ link.label }}</span>
         </a>
       </div>
@@ -142,7 +125,6 @@ onUnmounted(() => {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
-  --icon: url("/svg/share.svg");
 }
 
 .chevron {
@@ -198,22 +180,11 @@ onUnmounted(() => {
   color: inherit;
 }
 
-.file-icon,
+.item-icon :deep(svg),
 .item-icon :deep([class^="vpi-social-"]) {
   width: 20px;
   height: 20px;
-  background-color: currentColor;
-}
-
-.file-icon {
-  display: inline-block;
-  mask: var(--icon) center / contain no-repeat;
-  -webkit-mask: var(--icon) center / contain no-repeat;
-}
-
-.link-icon.file-icon {
-  width: 16px;
-  height: 16px;
+  fill: currentColor;
 }
 
 .item-label {
