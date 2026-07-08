@@ -2,17 +2,19 @@
 
 ## Introduction
 
-I focus on systems and low-level engineering, connecting theory with real-world behavior.
+Throughout my journey, I've designed and built several small websites and worked on a variety of personal projects, each helping me grow as a developer.
 
-I have a background in operating systems, networks, and architecture, with hands-on experience in linuxlike-based systems, TCP/IP services, and Websever (epoll, load balancing, keepalive).
+Collaboration and open dialogue are at the heart of what I do. I actively contribute to open-source projects — not only to refine my coding skills, but because this path has connected me with an amazing community of like-minded people, which I find incredibly rewarding.
 
-I'm interested in understanding system behavior across layers, including networking, I/O, and performance under concurrency.
+I genuinely enjoy helping others. Whether it's answering questions, reviewing code, or offering troubleshooting guidance, I try to give back whenever I can. I'm also active in various forums and online communities. On the open-source side, I've contributed to projects such as FreeBSD and Debian.
 
-I have basic exposure to security, streaming systems, and open-source contribution (e.t.c Debian, FreeBSD), and aim to grow in systems and infrastructure engineering.
+I love pushing myself with new challenges and staying curious about emerging technologies and tools. When I inevitably hit roadblocks, I document my solutions and lessons learned so others can benefit from my experience.
+
+To me, continuous learning and knowledge sharing are vital for personal growth. I regularly write blog posts to share technical insights and reflections from my journey. I look forward to keeping advancing in computer science and one day making a meaningful contribution to the field.
 
 ## Projects
 
-*Hidden.*
+See: [Here](https://www.mxdyeah.com/projects/?utm_source=siiway.org)
 
 ## Contact
 

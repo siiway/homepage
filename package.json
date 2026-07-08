@@ -22,6 +22,6 @@
     "preview": "vitepress preview --port 5189"
   },
   "devDependencies": {
-    "@types/node": "^25.6.2"
+    "@types/node": "^25.9.4"
   }
 }
