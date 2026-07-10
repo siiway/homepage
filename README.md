@@ -20,7 +20,7 @@ SiiWay 团队官方主页源代码仓库。
 ## 环境要求
 
 - **Node.js**: v20.0.0 或更高版本
-- **包管理器**: pnpm
+- **包管理器**: bun
 
 ## 开发指南
 
@@ -34,13 +34,13 @@ cd homepage
 ### 2. 安装依赖
 
 ```bash
-pnpm i
+bun i
 ```
 
 ### 3. 启动开发服务器
 
 ```bash
-pnpm dev
+bun dev
 ```
 
 默认监听 `localhost:5179`，支持热重载。
@@ -48,7 +48,7 @@ pnpm dev
 ### 4. 构建生产版本
 
 ```bash
-pnpm build
+bun build
 ```
 
 产物输出至 `.vitepress/dist` 目录。构建启用 `cleanUrls`，所有 URL 不带 `.html` 后缀。
@@ -56,7 +56,7 @@ pnpm build
 ### 5. 预览构建产物
 
 ```bash
-pnpm preview
+bun preview
 ```
 
 默认监听 `localhost:5189`。
@@ -105,7 +105,7 @@ pnpm preview
 │   └── robots.txt               # 爬虫配置
 ├── index.md                     # 根首页（自动跳转 /zh/）
 ├── package.json
-├── pnpm-lock.yaml
+├── bun-lock.yaml
 ├── LICENSE
 └── README.md
 ```
@@ -130,7 +130,7 @@ pnpm preview
 
 - 正文：**LXGW WenKai Screen**（霞鹭文楷屏幕版）
 - 标题/粗体：**Noto Sans SC**（思源黑体简体）
-- 安装方式：pnpm 依赖（`lxgw-wenkai-screen-web` + `noto-sans-sc`）
+- 安装方式：bun 依赖（`lxgw-wenkai-screen-web` + `noto-sans-sc`）
 
 ## 参与贡献
 

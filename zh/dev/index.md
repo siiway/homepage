@@ -4,6 +4,7 @@
 
 - [Git 提交规范](./git)
 - [命名规范](./naming)
+- [标点符号使用规范](./punctuation)
 - [Python 代码规范](./python-style)
 - [TypeScript 代码规范](./ts-style)
 - [Go 代码规范](./go-style)
