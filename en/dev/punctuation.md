@@ -15,24 +15,29 @@ Use a period to end complete sentences in documentation and comments.
 
 ```markdown
 // bad - period after heading
+
 ## Overview.
 
 // good
+
 ## Overview
 ```
 
 ```markdown
 // bad - inconsistent list
+
 - Checks input validity.
 - Runs the test suite
 - Outputs a report.
 
 // good - all fragments, no periods
+
 - Check input validity
 - Run the test suite
 - Output a report
 
 // good - all full sentences, with periods
+
 - This step checks input validity.
 - This step runs the test suite.
 - This step outputs a report.
@@ -86,6 +91,7 @@ Use a colon to introduce a list, explanation, or example. The text before the co
 ```markdown
 // bad
 The supported formats are:
+
 - JSON
 - YAML
 
@@ -93,6 +99,7 @@ The function requires: a name and a type.
 
 // good
 The following formats are supported:
+
 - JSON
 - YAML
 
@@ -296,9 +303,40 @@ function foo() {
 
 ---
 
-## 9. Technical Writing Conventions
+## 9. Full-Width and Half-Width Punctuation
 
-### 9.1 Code in Prose
+### 9.1 Full-Width Punctuation
+
+Use full-width punctuation in Chinese prose:
+
+| Symbol            | Full-width  | Half-width  |
+| ----------------- | ----------- | ----------- |
+| Period            | 。          | .           |
+| Comma             | ，          | ,           |
+| Ideographic comma | 、          | ,           |
+| Colon             | ：          | :           |
+| Semicolon         | ；          | ;           |
+| Exclamation mark  | ！          | !           |
+| Question mark     | ？          | ?           |
+| Quotation marks   | "..." '...' | "..." '...' |
+| Parentheses       | （）        | ()          |
+| Em dash           | ——          | —           |
+| Ellipsis          | ……          | ...         |
+
+### 9.2 Half-Width Punctuation
+
+Use half-width punctuation in the following cases:
+
+- English sentences
+- Code, commands, and file paths
+- Numbers and units
+- Markdown syntax, such as links (`[text](url)`) and code blocks
+
+---
+
+## 10. Technical Writing Conventions
+
+### 10.1 Code in Prose
 
 Always wrap inline code references (function names, variable names, file names, commands, values) in backticks:
 
@@ -312,7 +350,7 @@ Call the `render` function after mounting.
 Set `debug` to `true` in the config file.
 ```
 
-### 9.2 Units and Numbers
+### 10.2 Units and Numbers
 
 Write out numbers one through nine; use digits for 10 and above. Always use digits with units:
 
@@ -330,17 +368,24 @@ Use a space between the number and the unit, except for percentages:
 16 MB, 100 ms, 80%
 ```
 
-### 9.3 Slashes
+### 10.3 Mixed Chinese and English Text
 
-Do not use a slash as shorthand for "and" or "or" in prose. Write out the word:
+Add one half-width space between Chinese text and English words or numbers:
 
 ```markdown
 // bad
-The input/output pipeline
+Use Node.js运行脚本，版本需≥18。
 
 // good
-The input and output pipeline
-The input or output pipeline
+Use Node.js 运行脚本，版本需 ≥ 18。
 ```
 
-Slashes are acceptable in technical syntax notation and file paths.
+Do not add spaces around Chinese punctuation:
+
+```markdown
+// bad
+请求成功 ，响应体包含用户对象 。
+
+// good
+请求成功，响应体包含用户对象。
+```
