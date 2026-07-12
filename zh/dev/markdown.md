@@ -189,21 +189,19 @@ bun install
 ---
 ```
 
-## 10. 内联 HTML 与 VitePress
+## 10. 内联 HTML 与 GitHub 扩展语法
 
 - 允许在必要时使用内联 HTML 与 Vue 组件（VitePress 特性），markdownlint 已放行（`MD033` 关闭）。
 - Markdown 示例中的说明性注释使用 HTML 注释（`<!-- -->`），避免渲染到页面正文。
-- 优先使用 VitePress 自定义容器表达提示，而非手写 HTML：
+- 优先使用 GitHub Alerts 表达提示，而非 VitePress 自定义容器或手写 HTML：
 
 ```markdown
 <!-- good -->
-::: tip 提示
-推荐使用 bun 作为包管理器。
-:::
+> [!NOTE]
+> 推荐使用 bun 作为包管理器。
 
-::: warning 注意
-force push main 分支被禁止。
-:::
+> [!WARNING]
+> force push main 分支被禁止。
 ```
 
 - Frontmatter 置于文件最顶部，使用 `---` 成对包裹：

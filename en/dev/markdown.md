@@ -187,21 +187,19 @@ Columns do not need to be aligned to equal character widths; markdownlint does n
 ---
 ```
 
-## 10. Inline HTML and VitePress
+## 10. Inline HTML and GitHub Extensions
 
 - Inline HTML and Vue components are allowed where necessary (a VitePress feature); markdownlint permits them (`MD033` is disabled).
 - Use HTML comments (`<!-- -->`) for explanatory comments in Markdown examples so they do not render as page content.
-- Prefer VitePress custom containers over hand-written HTML for callouts:
+- Prefer GitHub Alerts over VitePress custom containers or hand-written HTML for callouts:
 
 ```markdown
 <!-- good -->
-::: tip
-Prefer bun as the package manager.
-:::
+> [!NOTE]
+> Prefer bun as the package manager.
 
-::: warning
-Force-pushing the main branch is forbidden.
-:::
+> [!WARNING]
+> Force-pushing the main branch is forbidden.
 ```
 
 - Place frontmatter at the very top of the file, wrapped in a pair of `---`:
