@@ -18,7 +18,7 @@ import Typewriter from "../.vitepress/theme/Typewriter.vue"
 <div class="ribbon ribbon-br"></div>
 
 <div class="custom-layout">
-  
+
   <!-- 左侧主区域 -->
   <div class="left-main-section">
     <!-- Hero 内容 -->
@@ -71,4 +71,3 @@ import Typewriter from "../.vitepress/theme/Typewriter.vue"
   </div>
 
 </div>
-

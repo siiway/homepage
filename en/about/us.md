@@ -24,7 +24,7 @@ TypeScript / Python / Go / Rust / Cloudflare Workers / Vue
 - **GitHub** — [github.com/siiway](https://github.com/siiway)
 - **Discord** — [wss.moe/dc](https://wss.moe/dc)
 - **Telegram** — [wss.moe/tg](https://wss.moe/tg)
-- **Email** — contact@siiway.org
+- **Email** — <contact@siiway.org>
 
 ## Join Us
 

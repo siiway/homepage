@@ -19,9 +19,14 @@
   "scripts": {
     "dev": "vitepress dev --port 5179",
     "build": "vitepress build",
-    "preview": "vitepress preview --port 5189"
+    "preview": "vitepress preview --port 5189",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:md": "markdownlint \"**/*.md\""
   },
   "devDependencies": {
-    "@types/node": "^25.9.4"
+    "@types/node": "^25.9.4",
+    "markdownlint-cli": "^0.49.0",
+    "prettier": "^3.9.5"
   }
 }

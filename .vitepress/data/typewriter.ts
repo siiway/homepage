@@ -12,7 +12,7 @@ const data: Record<string, TypewriterConfig> = {
     texts: [
       "欢迎来到 SiiWay 团队的官方主页！",
       "在 AI 时代中构建开源软件",
-      "Ciallo～(∠・ω< )⌒★"
+      "Ciallo～(∠・ω< )⌒★",
     ],
     cursor: "_",
     typeSpeed: 80,
@@ -24,7 +24,7 @@ const data: Record<string, TypewriterConfig> = {
     texts: [
       "Welcome to SiiWay Team's Official Homepage!",
       "Build open-source software in the AI era",
-      "Ciallo～(∠・ω< )⌒★"
+      "Ciallo～(∠・ω< )⌒★",
     ],
     cursor: "_",
     typeSpeed: 60,

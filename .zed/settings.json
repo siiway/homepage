@@ -1,0 +1,54 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#settings-files
+{
+  "lsp": {
+    "markdownlint": {
+      "settings": {
+        // MD003 标题使用 ATX 风格（# 号），不使用 Setext（下划线）风格 —— 与 Prettier 一致
+        "MD003": { "style": "atx" },
+
+        // MD004 无序列表统一使用连字符 `-` —— 与 Prettier 一致
+        "MD004": { "style": "dash" },
+
+        // MD007 列表缩进交由 Prettier 处理（有序列表下的嵌套项 Prettier 会缩进 3 空格，
+        //        与固定 2 空格冲突），故关闭本规则
+        "MD007": false,
+
+        // MD013 关闭行长度限制（中文散文与表格无需硬换行；Prettier proseWrap=preserve）
+        "MD013": false,
+
+        // MD024 仅当标题为同级兄弟节点时才禁止重复（允许不同小节下同名标题）
+        "MD024": { "siblings_only": true },
+
+        // MD026 标题末尾禁止出现的标点（含中文全角标点；Prettier 不改动此项，无冲突）
+        "MD026": { "punctuation": ".,;:!。，、；：！？" },
+
+        // MD029 有序列表编号：允许全为 `1.` 或递增序号，避免与 Prettier 的重新编号冲突
+        "MD029": { "style": "one_or_ordered" },
+
+        // MD033 允许内联 HTML 与 Vue 组件（VitePress 特性需要；Prettier 会保留 HTML）
+        "MD033": false,
+
+        // MD035 分隔线统一使用三个连字符 `---` —— 与 Prettier 一致
+        "MD035": { "style": "---" },
+
+        // MD041 关闭“首行必须为一级标题”（页面可能以 frontmatter 或 <script setup> 开头）
+        "MD041": false,
+
+        // MD046 代码块统一使用围栏（fenced）风格 —— 与 Prettier 一致
+        "MD046": { "style": "fenced" },
+
+        // MD048 代码围栏统一使用反引号 ``` —— 与 Prettier 一致
+        "MD048": { "style": "backtick" },
+
+        // MD049 斜体统一使用下划线 `_` —— 对齐 Prettier（Prettier 将斜体格式化为 `_..._`）
+        "MD049": { "style": "underscore" },
+
+        // MD050 加粗统一使用星号 `**` —— 与 Prettier 一致
+        "MD050": { "style": "asterisk" }
+      }
+    }
+  }
+}

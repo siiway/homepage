@@ -8,11 +8,11 @@
 
 所有命名遵循三级体系，按标识符的单词数量和语义角色选择对应格式：
 
-| 类别 | 格式 | 示例 |
-|------|------|------|
-| 单一单词（文件/文件夹/模块名） | 全小写 | `utils`、`types`、`index` |
-| 多单词函数/方法/变量 | 小驼峰 camelCase | `getPackageInfo`、`handleClick` |
-| 多单词类/组件/类型/接口 | 大驼峰 PascalCase | `UserProfile`、`ApiResponse` |
+| 类别                           | 格式              | 示例                            |
+| ------------------------------ | ----------------- | ------------------------------- |
+| 单一单词（文件/文件夹/模块名） | 全小写            | `utils`、`types`、`index`       |
+| 多单词函数/方法/变量           | 小驼峰 camelCase  | `getPackageInfo`、`handleClick` |
+| 多单词类/组件/类型/接口        | 大驼峰 PascalCase | `UserProfile`、`ApiResponse`    |
 
 ### 1.1 单一单词规则
 
@@ -31,15 +31,15 @@
 
 ### 2.1 通用约定
 
-| 文件类型 | 格式 | 示例 |
-|----------|------|------|
-| 单一单词目录/模块 | 全小写 | `utils/`、`types/`、`index.ts` |
-| 多单词非组件文件 | kebab-case | `date-utils.ts`、`http-request.ts` |
-| 组件文件（Vue/React） | PascalCase | `UserList.vue`、`OrderDetail.vue` |
-| 类型文件 | kebab-case | `user-types.ts`、`order-types.ts` |
-| Store 文件 | kebab-case | `user-store.ts`、`cart-store.ts` |
-| 组合式函数文件 | kebab-case | `use-user-list.ts` |
-| 样式文件 | kebab-case | `user-card.scss` |
+| 文件类型              | 格式       | 示例                               |
+| --------------------- | ---------- | ---------------------------------- |
+| 单一单词目录/模块     | 全小写     | `utils/`、`types/`、`index.ts`     |
+| 多单词非组件文件      | kebab-case | `date-utils.ts`、`http-request.ts` |
+| 组件文件（Vue/React） | PascalCase | `UserList.vue`、`OrderDetail.vue`  |
+| 类型文件              | kebab-case | `user-types.ts`、`order-types.ts`  |
+| Store 文件            | kebab-case | `user-store.ts`、`cart-store.ts`   |
+| 组合式函数文件        | kebab-case | `use-user-list.ts`                 |
+| 样式文件              | kebab-case | `user-card.scss`                   |
 
 ### 2.2 约束规则
 
@@ -123,16 +123,16 @@ enum OrderStatus {
 - 以动词或动词短语开头
 - 推荐动词前缀：
 
-| 前缀 | 含义 | 示例 |
-|------|------|------|
-| `get` / `fetch` | 获取数据 | `getUserInfo`、`fetchUserList` |
-| `set` / `update` | 设置/更新 | `setUserName`、`updateProfile` |
-| `create` / `add` | 创建/添加 | `createOrder`、`addItem` |
-| `delete` / `remove` | 删除/移除 | `deleteUser`、`removeItem` |
-| `handle` | 事件处理 | `handleSubmit`、`handleCancel` |
-| `validate` / `check` | 校验/检查 | `validateForm`、`checkPermission` |
-| `format` / `parse` | 格式化/解析 | `formatDate`、`parseJson` |
-| `compute` / `calculate` | 计算 | `computeTotal`、`calculateAge` |
+| 前缀                    | 含义        | 示例                              |
+| ----------------------- | ----------- | --------------------------------- |
+| `get` / `fetch`         | 获取数据    | `getUserInfo`、`fetchUserList`    |
+| `set` / `update`        | 设置/更新   | `setUserName`、`updateProfile`    |
+| `create` / `add`        | 创建/添加   | `createOrder`、`addItem`          |
+| `delete` / `remove`     | 删除/移除   | `deleteUser`、`removeItem`        |
+| `handle`                | 事件处理    | `handleSubmit`、`handleCancel`    |
+| `validate` / `check`    | 校验/检查   | `validateForm`、`checkPermission` |
+| `format` / `parse`      | 格式化/解析 | `formatDate`、`parseJson`         |
+| `compute` / `calculate` | 计算        | `computeTotal`、`calculateAge`    |
 
 ### 5.2 事件处理函数
 
@@ -245,14 +245,14 @@ type SortDirectionType = 'asc' | 'desc'
 
 ### 7.3 专用类型后缀
 
-| 类型用途 | 后缀 | 示例 |
-|----------|------|------|
-| 组件 Props | Props | `UserCardProps`、`SearchBarProps` |
-| 组件 Emits | Emits | `UserFormEmits`、`ModalEmits` |
-| 数据传输对象 | DTO | `UserCreateDTO`、`OrderUpdateDTO` |
-| 视图对象 | VO | `UserDetailVO`、`OrderSummaryVO` |
-| 请求参数 | Query / Params | `UserQuery`、`SearchParams` |
-| 响应类型 | Response / Result | `UserListResponse`、`LoginResult` |
+| 类型用途     | 后缀              | 示例                              |
+| ------------ | ----------------- | --------------------------------- |
+| 组件 Props   | Props             | `UserCardProps`、`SearchBarProps` |
+| 组件 Emits   | Emits             | `UserFormEmits`、`ModalEmits`     |
+| 数据传输对象 | DTO               | `UserCreateDTO`、`OrderUpdateDTO` |
+| 视图对象     | VO                | `UserDetailVO`、`OrderSummaryVO`  |
+| 请求参数     | Query / Params    | `UserQuery`、`SearchParams`       |
+| 响应类型     | Response / Result | `UserListResponse`、`LoginResult` |
 
 ### 7.4 泛型参数
 

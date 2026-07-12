@@ -629,7 +629,7 @@ declare module Foo {}
 declare namespace Foo {}
 ```
 
-### 3.5 interface 成员分隔符统一用分号 ;
+### 3.5 interface 成员分隔符统一用分号
 
 ```ts
 // bad: comma style(JSON style)

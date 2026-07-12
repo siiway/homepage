@@ -114,6 +114,8 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: "命名规范", link: "/zh/dev/naming" },
+              { text: "标点符号使用规范", link: "/zh/dev/punctuation" },
+              { text: "Markdown 格式规范", link: "/zh/dev/markdown" },
               { text: "贡献指南", link: "/zh/dev/contributing" },
               { text: "Go 代码规范", link: "/zh/dev/go-style" },
               { text: "Git 提交规范", link: "/zh/dev/git" },
@@ -210,6 +212,8 @@ export default defineConfig({
             items: [
               { text: "Git Commit Convention", link: "/en/dev/git" },
               { text: "Naming Convention", link: "/en/dev/naming" },
+              { text: "Punctuation Conventions", link: "/en/dev/punctuation" },
+              { text: "Markdown Style Guide", link: "/en/dev/markdown" },
               { text: "Python Style Guide", link: "/en/dev/python-style" },
               { text: "TypeScript Style Guide", link: "/en/dev/ts-style" },
               { text: "Go Style Guide", link: "/en/dev/go-style" },
