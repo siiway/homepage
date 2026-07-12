@@ -17,13 +17,13 @@
 Each document has exactly one top-level heading (`#`) as its title. Increase heading levels one at a time; do not skip levels:
 
 ```markdown
-// bad - jumps from H2 to H4
+<!-- bad - jumps from H2 to H4 -->
 
 ## Overview
 
 #### Details
 
-// good
+<!-- good -->
 
 ## Overview
 
@@ -35,11 +35,11 @@ Each document has exactly one top-level heading (`#`) as its title. Increase hea
 Put one space between `#` and the heading text, surround headings with a blank line, and do not end them with punctuation:
 
 ```markdown
-// bad - missing space, trailing punctuation
+<!-- bad - missing space, trailing punctuation -->
 
 ##Overview:
 
-// good
+<!-- good -->
 
 ## Overview
 ```
@@ -49,11 +49,11 @@ Put one space between `#` and the heading text, surround headings with a blank l
 Separate paragraphs with a single blank line. Avoid trailing-space hard breaks; start a new paragraph or use a list instead:
 
 ```markdown
-// bad - trailing-space break (invisible, easily lost)
+<!-- bad - trailing-space break (invisible, easily lost) -->
 First line␠␠
 Second line
 
-// good
+<!-- good -->
 First line
 
 Second line
@@ -66,11 +66,11 @@ Second line
 Use the hyphen `-` as the bullet marker; do not mix `*` or `+`:
 
 ```markdown
-// bad
+<!-- bad -->
 * First item
 + Second item
 
-// good
+<!-- good -->
 - First item
 - Second item
 ```
@@ -80,7 +80,7 @@ Use the hyphen `-` as the bullet marker; do not mix `*` or `+`:
 Prefer incrementing numbers `1.`, `2.`, `3.`. Numbering is normalized automatically by Prettier, so you do not need to maintain it by hand:
 
 ```markdown
-// good
+<!-- good -->
 
 1. First step
 2. Second step
@@ -92,7 +92,7 @@ Prefer incrementing numbers `1.`, `2.`, `3.`. Numbering is normalized automatica
 Nested-list indentation is handled by Prettier (two spaces under an unordered parent, three under an ordered parent), so markdownlint no longer enforces indent width (`MD007` is disabled). Leave one blank line between a list and surrounding prose:
 
 ```markdown
-// good
+<!-- good -->
 
 - First item
   - Sub-item A
@@ -105,13 +105,13 @@ Nested-list indentation is handled by Prettier (two spaces under an unordered pa
 Use `**` for bold and `_` for italics (matching Prettier's output). Do not use emphasis in place of a heading:
 
 ```markdown
-// bad - bold used as a heading
+<!-- bad - bold used as a heading -->
 **Configuration**
 
-// bad - asterisk italics, underscore bold
+<!-- bad - asterisk italics, underscore bold -->
 This is *italic* and __bold__.
 
-// good
+<!-- good -->
 This is _italic_ and **bold**.
 ```
 
@@ -122,7 +122,7 @@ This is _italic_ and **bold**.
 Wrap function names, variable names, file names, commands, and values in backticks:
 
 ```markdown
-// good
+<!-- good -->
 Run `bun dev` to start the dev server, and set `debug` to `true`.
 ```
 
@@ -131,13 +131,13 @@ Run `bun dev` to start the dev server, and set `debug` to `true`.
 Use backtick fences (```), not tildes (`~~~`). Always specify a language; use `text` when none applies:
 
 ````markdown
-// bad - no language
+<!-- bad - no language -->
 
 ```
 bun install
 ```
 
-// good
+<!-- good -->
 
 ```bash
 bun install
@@ -150,11 +150,11 @@ bun install
 - Always provide meaningful alt text for images.
 
 ```markdown
-// bad - internal link with .md, image without alt
+<!-- bad - internal link with .md, image without alt -->
 See the [naming guide](./naming.md).
 ![](/logo.svg)
 
-// good
+<!-- good -->
 See the [naming guide](./naming).
 ![SiiWay logo](/logo.svg)
 ```
@@ -164,7 +164,7 @@ See the [naming guide](./naming).
 Use pipe tables with a header separator row, and pad cell content with one space on each side:
 
 ```markdown
-// good
+<!-- good -->
 
 | Branch  | Purpose        |
 | ------- | -------------- |
@@ -180,7 +180,7 @@ Columns do not need to be aligned to equal character widths; markdownlint does n
 - Use three hyphens `---` for thematic breaks, surrounded by blank lines.
 
 ```markdown
-// good
+<!-- good -->
 
 > Note: this step requires administrator privileges.
 
@@ -190,10 +190,11 @@ Columns do not need to be aligned to equal character widths; markdownlint does n
 ## 10. Inline HTML and VitePress
 
 - Inline HTML and Vue components are allowed where necessary (a VitePress feature); markdownlint permits them (`MD033` is disabled).
+- Use HTML comments (`<!-- -->`) for explanatory comments in Markdown examples so they do not render as page content.
 - Prefer VitePress custom containers over hand-written HTML for callouts:
 
 ```markdown
-// good
+<!-- good -->
 ::: tip
 Prefer bun as the package manager.
 :::

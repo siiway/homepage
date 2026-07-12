@@ -14,29 +14,29 @@ Use a period to end complete sentences in documentation and comments.
 - A single sentence that forms a complete list item ends with a period if it is a full sentence; omit it if the item is a short phrase.
 
 ```markdown
-// bad - period after heading
+<!-- bad - period after heading -->
 
 ## Overview.
 
-// good
+<!-- good -->
 
 ## Overview
 ```
 
 ```markdown
-// bad - inconsistent list
+<!-- bad - inconsistent list -->
 
 - Checks input validity.
 - Runs the test suite
 - Outputs a report.
 
-// good - all fragments, no periods
+<!-- good - all fragments, no periods -->
 
 - Check input validity
 - Run the test suite
 - Output a report
 
-// good - all full sentences, with periods
+<!-- good - all full sentences, with periods -->
 
 - This step checks input validity.
 - This step runs the test suite.
@@ -58,10 +58,10 @@ Use question marks only in FAQ sections or explicit questions.
 Always use the serial comma before the last item in a list of three or more:
 
 ```markdown
-// bad
+<!-- bad -->
 The function accepts a name, type and value.
 
-// good
+<!-- good -->
 The function accepts a name, type, and value.
 ```
 
@@ -70,13 +70,13 @@ The function accepts a name, type, and value.
 Do not join two independent clauses with only a comma. Use a period, semicolon, or conjunction:
 
 ```markdown
-// bad
+<!-- bad -->
 The request succeeds, the response contains the user object.
 
-// good
+<!-- good -->
 The request succeeds. The response contains the user object.
 
-// good
+<!-- good -->
 The request succeeds, and the response contains the user object.
 ```
 
@@ -89,7 +89,7 @@ The request succeeds, and the response contains the user object.
 Use a colon to introduce a list, explanation, or example. The text before the colon must be a complete clause:
 
 ```markdown
-// bad
+<!-- bad -->
 The supported formats are:
 
 - JSON
@@ -97,7 +97,7 @@ The supported formats are:
 
 The function requires: a name and a type.
 
-// good
+<!-- good -->
 The following formats are supported:
 
 - JSON
@@ -111,10 +111,10 @@ The function requires two arguments: a name and a type.
 Use a semicolon to separate two closely related independent clauses without a conjunction. Prefer a period when in doubt:
 
 ```markdown
-// acceptable
+<!-- acceptable -->
 The first pass parses the AST; the second pass performs type checking.
 
-// also good
+<!-- also good -->
 The first pass parses the AST. The second pass performs type checking.
 ```
 
@@ -129,17 +129,17 @@ Do not use semicolons to separate list items in documentation. Use bullet points
 Use double quotation marks `"..."` for quoting text, terms, or direct speech in documentation:
 
 ```markdown
-// good
+<!-- good -->
 The term "idempotent" means that repeated calls produce the same result.
 ```
 
 Do not use quotation marks to highlight technical terms; use backticks instead:
 
 ```markdown
-// bad
+<!-- bad -->
 Set the "timeout" field to 0 to disable the limit.
 
-// good
+<!-- good -->
 Set the `timeout` field to `0` to disable the limit.
 ```
 
@@ -148,11 +148,11 @@ Set the `timeout` field to `0` to disable the limit.
 Place punctuation inside the closing quotation mark only if it is part of the quoted content. Otherwise, place it outside:
 
 ```markdown
-// punctuation is NOT part of the quote
+<!-- punctuation is NOT part of the quote -->
 The error message reads "connection refused".
 Click "Save", then close the dialog.
 
-// punctuation IS part of the quote
+<!-- punctuation IS part of the quote -->
 She said, "Please restart the service."
 ```
 
@@ -165,14 +165,14 @@ She said, "Please restart the service."
 Use parentheses for supplementary information that could be removed without changing the meaning of the sentence. Keep parenthetical content concise:
 
 ```markdown
-// good
+<!-- good -->
 The endpoint returns a 404 status code (resource not found) when the ID is invalid.
 ```
 
 If the parenthetical forms a complete sentence on its own, place the period inside the closing parenthesis:
 
 ```markdown
-// good
+<!-- good -->
 See the configuration reference for details. (A full list of options is available in Appendix A.)
 ```
 
@@ -181,7 +181,7 @@ See the configuration reference for details. (A full list of options is availabl
 Use square brackets for optional placeholders in command syntax, not for general prose:
 
 ```markdown
-// good
+<!-- good -->
 git commit -m "<message>" [--no-verify]
 ```
 
@@ -194,7 +194,7 @@ git commit -m "<message>" [--no-verify]
 Use hyphens to form compound modifiers before a noun:
 
 ```markdown
-// good
+<!-- good -->
 A read-only field
 An open-source library
 A well-known issue
@@ -203,7 +203,7 @@ A well-known issue
 Do not hyphenate compound modifiers that follow a noun:
 
 ```markdown
-// good
+<!-- good -->
 The field is read only.
 The library is open source.
 ```
@@ -211,7 +211,7 @@ The library is open source.
 Hyphenate number-unit compounds used as modifiers:
 
 ```markdown
-// good
+<!-- good -->
 A 100-character limit
 A 2-second timeout
 ```
@@ -221,7 +221,7 @@ A 2-second timeout
 Use an em dash (—) to set off a strong parenthetical or abrupt change in thought. Do not add spaces around the em dash:
 
 ```markdown
-// good
+<!-- good -->
 The function returns null—not undefined—when the value is missing.
 ```
 
@@ -232,7 +232,7 @@ Do not use two hyphens (`--`) as a substitute for an em dash in documentation.
 Use an en dash (–) for ranges of numbers, dates, or other values:
 
 ```markdown
-// good
+<!-- good -->
 Lines 10–25
 2023–2024
 ```
@@ -246,17 +246,17 @@ Use apostrophes only for contractions and possessives.
 Do not use contractions in formal documentation:
 
 ```markdown
-// bad (formal docs)
+<!-- bad (formal docs) -->
 Don't call this function directly.
 
-// good
+<!-- good -->
 Do not call this function directly.
 ```
 
 For possessives of singular nouns (including those ending in s), add `'s`:
 
 ```markdown
-// good
+<!-- good -->
 The module's exports
 The process's lifecycle
 ```
@@ -264,17 +264,17 @@ The process's lifecycle
 For plural possessives ending in s, add only an apostrophe:
 
 ```markdown
-// good
+<!-- good -->
 The components' props
 ```
 
 Do not use an apostrophe to pluralize acronyms or numbers:
 
 ```markdown
-// bad
+<!-- bad -->
 URL's, ID's, 1990's
 
-// good
+<!-- good -->
 URLs, IDs, 1990s
 ```
 
@@ -285,10 +285,10 @@ URLs, IDs, 1990s
 Use an ellipsis (`...`) only to indicate omitted content in a quotation or a trailing continuation. Do not use it to suggest vagueness:
 
 ```markdown
-// bad
+<!-- bad -->
 You can configure various options...
 
-// good
+<!-- good -->
 The signature is: fn(name, type, ...args)
 ```
 
@@ -341,11 +341,11 @@ Use half-width punctuation in the following cases:
 Always wrap inline code references (function names, variable names, file names, commands, values) in backticks:
 
 ```markdown
-// bad
+<!-- bad -->
 Call the render function after mounting.
 Set debug to true in the config file.
 
-// good
+<!-- good -->
 Call the `render` function after mounting.
 Set `debug` to `true` in the config file.
 ```
@@ -355,7 +355,7 @@ Set `debug` to `true` in the config file.
 Write out numbers one through nine; use digits for 10 and above. Always use digits with units:
 
 ```markdown
-// good
+<!-- good -->
 There are three retry attempts.
 The timeout is 30 seconds.
 The buffer holds 4 KB.
@@ -364,7 +364,7 @@ The buffer holds 4 KB.
 Use a space between the number and the unit, except for percentages:
 
 ```markdown
-// good
+<!-- good -->
 16 MB, 100 ms, 80%
 ```
 
@@ -373,19 +373,19 @@ Use a space between the number and the unit, except for percentages:
 Add one half-width space between Chinese text and English words or numbers:
 
 ```markdown
-// bad
+<!-- bad -->
 Use Node.js运行脚本，版本需≥18。
 
-// good
+<!-- good -->
 Use Node.js 运行脚本，版本需 ≥ 18。
 ```
 
 Do not add spaces around Chinese punctuation:
 
 ```markdown
-// bad
+<!-- bad -->
 请求成功 ，响应体包含用户对象 。
 
-// good
+<!-- good -->
 请求成功，响应体包含用户对象。
 ```
