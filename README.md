@@ -51,7 +51,7 @@ bun dev
 bun build
 ```
 
-产物输出至 `.vitepress/dist` 目录。构建启用 `cleanUrls`，所有 URL 不带 `.html` 后缀。
+产物输出至 `src/.vitepress/dist` 目录。构建启用 `cleanUrls`，所有 URL 不带 `.html` 后缀。
 
 ### 5. 预览构建产物
 
@@ -71,48 +71,49 @@ bun preview
 
 ```text
 .
-├── .vitepress/                  # VitePress 核心配置
-│   ├── data/                    # 数据文件
-│   │   ├── coc-en.data.ts       # 英文版行为准则
-│   │   ├── coc-zh.data.ts       # 中文版行为准则
-│   │   ├── members-en.data.ts   # 英文版成员卡片生成
-│   │   ├── members-zh.data.ts   # 中文版成员卡片生成
-│   │   └── members.json         # 成员数据（名称/头像/座右铭）
-│   ├── theme/                   # 自定义主题
-│   │   ├── index.ts             # 主题入口
-│   │   ├── style.css            # 全局样式、字体、成员卡片
-│   │   ├── CustomLayout.vue     # 自定义布局
-│   │   ├── ThemeLayout.vue      # 主题布局（含切换动画）
-│   │   ├── RouteEnhancements.vue # 路由进度条与图片骨架屏
-│   │   ├── LangRedirect.vue     # 无语言前缀路径的客户端语言重定向（404 槽）
-│   │   ├── EasterEgg.vue        # 标题彩蛋
-│   │   └── AprilFools.vue       # 愚人节彩蛋
-│   └── config.mts               # 站点配置
-├── zh/                          # 中文内容
-│   ├── about/                   # 关于（团队介绍/联系/招新/规则）
-│   ├── dev/                     # 开发规范（Git/命名/Python/TS/Go/贡献）
-│   ├── members/                 # 成员个人页面
-│   ├── misc/                    # 杂项（状态码列表）
-│   └── index.md                 # 中文首页
-├── en/                          # 英文内容
-│   ├── about/                   # About (team/contact/recruitment/CoC)
-│   ├── dev/                     # Dev guides (all 7 pages)
-│   ├── members/                 # Members list
-│   ├── misc/                    # Misc
-│   └── index.md                 # English home
-├── public/                      # 静态资源
-│   ├── favicon.svg              # 网站图标
-│   └── robots.txt               # 爬虫配置
-├── index.md                     # 根首页（自动跳转 /zh/）
+├── src/                         # VitePress 源目录
+│   ├── .vitepress/              # VitePress 核心配置
+│   │   ├── data/                # 数据文件
+│   │   │   ├── coc-en.data.ts   # 英文版行为准则
+│   │   │   ├── coc-zh.data.ts   # 中文版行为准则
+│   │   │   ├── members-en.data.ts # 英文版成员卡片生成
+│   │   │   ├── members-zh.data.ts # 中文版成员卡片生成
+│   │   │   └── members.json     # 成员数据（名称/头像/座右铭）
+│   │   ├── theme/               # 自定义主题
+│   │   │   ├── index.ts         # 主题入口
+│   │   │   ├── style.css        # 全局样式、字体、成员卡片
+│   │   │   ├── CustomLayout.vue # 自定义布局
+│   │   │   ├── ThemeLayout.vue  # 主题布局（含切换动画）
+│   │   │   ├── RouteEnhancements.vue # 路由进度条与图片骨架屏
+│   │   │   ├── LangRedirect.vue # 无语言前缀路径的客户端语言重定向（404 槽）
+│   │   │   ├── EasterEgg.vue    # 标题彩蛋
+│   │   │   └── AprilFools.vue   # 愚人节彩蛋
+│   │   └── config.mts           # 站点配置
+│   ├── zh/                      # 中文内容
+│   │   ├── about/               # 关于（团队介绍/联系/招新/规则）
+│   │   ├── dev/                 # 开发规范（Git/命名/Python/TS/Go/贡献）
+│   │   ├── members/             # 成员个人页面
+│   │   ├── misc/                # 杂项（状态码列表）
+│   │   └── index.md             # 中文首页
+│   ├── en/                      # 英文内容
+│   │   ├── about/               # About (team/contact/recruitment/CoC)
+│   │   ├── dev/                 # Dev guides
+│   │   ├── members/             # Members list
+│   │   ├── misc/                # Misc
+│   │   └── index.md             # English home
+│   ├── public/                  # 静态资源
+│   │   ├── favicon.svg          # 网站图标
+│   │   └── robots.txt           # 爬虫配置
+│   └── index.md                 # 根首页（自动跳转 /zh/）
 ├── package.json
-├── bun-lock.yaml
+├── bun.lock
 ├── LICENSE
 └── README.md
 ```
 
 ## 成员系统
 
-成员数据存储在 `.vitepress/data/members.json` 中，每个成员包含三个字段：
+成员数据存储在 `src/.vitepress/data/members.json` 中，每个成员包含三个字段：
 
 ```json
 {
@@ -121,7 +122,7 @@ bun preview
 ```
 
 - **name** — 显示名称（必填）
-- **avatar** — 头像路径，图片放 `public/members/` 目录下
+- **avatar** — 头像路径，图片放 `src/public/members/` 目录下
 - **motto** — 座右铭（选填，默认"暂无座右铭"）
 
 成员页以 3 列卡片网格展示。卡片设计参考 [vitepress-theme-curve](https://github.com/imsyy/vitepress-theme-curve) 的友链卡片。

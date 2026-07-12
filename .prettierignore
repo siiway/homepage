@@ -1,7 +1,7 @@
 node_modules/
-.vitepress/dist/
-.vitepress/cache/
+src/.vitepress/dist/
+src/.vitepress/cache/
 bun.lock
 LICENSE
-zh/members/
-en/members/
+src/zh/members/
+src/en/members/

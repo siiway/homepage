@@ -54,7 +54,7 @@ Nothing here... or is there?
 
 Who knows, maybe you can look around?
 
-Or see what's different about this page compared to others? Like what's <a href="https://github.com/siiway/homepage/blob/main/zh/about/join.md?plain=1#L63-L69" target="_blank" style="color: var(--vp-c-text-1); text-decoration: none;"><span style="font-size: 1.1em;">missing</span></a>?
+Or see what's different about this page compared to others? Like what's <a href="https://github.com/siiway/homepage/blob/main/src/zh/about/join.md?plain=1#L63-L69" target="_blank" style="color: var(--vp-c-text-1); text-decoration: none;"><span style="font-size: 1.1em;">missing</span></a>?
 
 <!--
 
