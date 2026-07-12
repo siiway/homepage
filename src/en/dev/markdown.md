@@ -225,8 +225,8 @@ The team uses two tools with clearly separated, non-conflicting responsibilities
 
 Related configuration files:
 
-- [`.markdownlint.jsonc`](../../.markdownlint.jsonc): Markdown rule configuration.
-- [`.prettierrc`](../../.prettierrc): Prettier formatting configuration.
+- [`.markdownlint.jsonc`](https://github.com/siiway/homepage/blob/main/.markdownlint.jsonc): Markdown rule configuration.
+- [`.prettierrc`](https://github.com/siiway/homepage/blob/main/.prettierrc): Prettier formatting configuration.
 
 ### 12.1 Avoiding Conflicts
 

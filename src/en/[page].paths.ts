@@ -1,5 +1,15 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const sourceRoot = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "..",
+);
+
+function toPosix(filePath: string): string {
+  return filePath.split(path.sep).join("/");
+}
 
 async function getAllFiles(
   dir: string,
@@ -16,13 +26,14 @@ async function getAllFiles(
         files.push(...(await getAllFiles(fullPath, ignoreDirs)));
       }
     } else if (entry.isFile() && entry.name.endsWith(".md")) {
-      const en = fullPath.replace("zh/", "en/");
+      const zh = toPosix(path.relative(sourceRoot, fullPath));
+      const en = zh.replace(/^zh\//, "en/");
       try {
-        if ((await fs.stat(en)).isFile()) {
+        if ((await fs.stat(path.join(sourceRoot, en))).isFile()) {
           // console.log(`- already exists: ${fullPath}`)
         } else throw "";
       } catch {
-        files.push(fullPath);
+        files.push(zh);
         // console.log(`- added: ${fullPath}`)
       }
     }
@@ -33,7 +44,7 @@ async function getAllFiles(
 
 export default {
   async paths() {
-    const zhlist = await getAllFiles("zh/");
+    const zhlist = await getAllFiles(path.join(sourceRoot, "zh"));
     const routes = zhlist.map((zh) => {
       const en = zh.replace("zh/", "en/");
       const page = en.replace("en/", "").replace(".md", "");

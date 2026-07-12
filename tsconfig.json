@@ -9,6 +9,6 @@
     "types": ["node"],
     "lib": ["ESNext", "DOM"]
   },
-  "include": ["**/*.ts", "**/*.mts", ".vitepress/**/*.ts"],
-  "exclude": ["node_modules", "dist", ".vitepress/cache"]
+  "include": ["src/**/*.ts", "src/**/*.mts"],
+  "exclude": ["node_modules", "src/.vitepress/dist", "src/.vitepress/cache"]
 }

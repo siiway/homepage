@@ -141,7 +141,7 @@ export default defineConfig({
         ],
         socialLinks: [],
         editLink: {
-          pattern: "https://github.com/siiway/homepage/edit/main/:path",
+          pattern: "https://github.com/siiway/homepage/edit/main/src/:path",
           text: "在 GitHub 上编辑本页",
         },
         lastUpdated: {
@@ -234,7 +234,7 @@ export default defineConfig({
         ],
         socialLinks: [],
         editLink: {
-          pattern: "https://github.com/siiway/homepage/edit/main/:path",
+          pattern: "https://github.com/siiway/homepage/edit/main/src/:path",
           text: "Edit this page on GitHub",
         },
         lastUpdated: {

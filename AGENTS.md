@@ -1,3 +1,3 @@
 Use `bun` as package manager.
 
-@en/dev/contributing.md
+@src/en/dev/contributing.md

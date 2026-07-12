@@ -58,7 +58,7 @@ editLink: false
 
 不知道，但你或许可以到处找找？
 
-或者看看这个页面和其他地方有什么不同之处？比如少了<a href="https://github.com/siiway/homepage/blob/main/zh/about/join.md?plain=1#L63-L69" target="_blank" style="color: var(--vp-c-text-1); text-decoration: none;"><span style="font-size: 1.1em;">什么</span></a>？
+或者看看这个页面和其他地方有什么不同之处？比如少了<a href="https://github.com/siiway/homepage/blob/main/src/zh/about/join.md?plain=1#L63-L69" target="_blank" style="color: var(--vp-c-text-1); text-decoration: none;"><span style="font-size: 1.1em;">什么</span></a>？
 
 <!--
 
