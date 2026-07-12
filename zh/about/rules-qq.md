@@ -5,6 +5,7 @@
 ## TL; DR (Too Long; Didn't Read)
 
 **严禁（红线，一碰就处理）**：
+
 1. 违法内容
 2. 未证实的高风险信息（政治、民族、宗教、灾情等）
 3. 严重不适内容（自杀、自残、血腥、暴力、药物滥用等，包括隐喻描述）
@@ -67,19 +68,20 @@
 
 一般处罚以 **教育与恢复秩序** 为主，管理员会 综合考虑 违规意图、影响范围、成员反馈 及 过往记录。
 
-如果对上述内容 / 处置措施 有异议，请 私聊 **群主 / 管理**（或访问 https://wss.moe/report），禁止因对处置措施不满而占用公共资源。
+如果对上述内容 / 处置措施 有异议，请 私聊 **群主 / 管理**（或访问 <https://wss.moe/report），禁止因对处置措施不满而占用公共资源。>
 
-中度违规及以上处置将会公布在 https://wss.moe/record *(SiiWay GitHub 组织 Discussions 的 `处理记录` 类别)*。
+中度违规及以上处置将会公布在 <https://wss.moe/record> _(SiiWay GitHub 组织 Discussions 的 `处理记录` 类别)_。
 
-SiiWay 团队对 本群规 拥有 最终解释权，**同时适用于 本群规** *(SiiWay Core -> SiiWay Member -> Group Admin -> Group Member)*。
+SiiWay 团队对 本群规 拥有 最终解释权，**同时适用于 本群规** _(SiiWay Core -> SiiWay Member -> Group Admin -> Group Member)_。
 
-> *空格起强调作用*
+> _空格起强调作用_
 
 **Signed-Off-By**:
- - wyf9, 2026-03-03（v9）
- - bbdqz, 2025-12-27（v6）
- - ntkrnl32, 2025-12-27（v6）
- - mifeng, 2025-12-27（v6）
+
+- wyf9, 2026-03-03（v9）
+- bbdqz, 2025-12-27（v6）
+- ntkrnl32, 2025-12-27（v6）
+- mifeng, 2025-12-27（v6）
 
 **最后更新**：2026-03-03（v9）
 
@@ -96,11 +98,13 @@ SiiWay 团队对 本群规 拥有 最终解释权，**同时适用于 本群规*
 - 2025-11-29（v1）：Created
 
 ---
+
 ---
 
 <center>请同时阅读 <b>SiiWay 行为准则</b></center>
 
 ---
+
 ---
 
 <!-- @include: ./code-of-conduct.md -->

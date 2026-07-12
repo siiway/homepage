@@ -3,3 +3,5 @@ node_modules/
 .vitepress/cache/
 bun.lock
 LICENSE
+zh/members/
+en/members/

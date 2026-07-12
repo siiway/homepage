@@ -17,7 +17,7 @@ import Typewriter from "../.vitepress/theme/Typewriter.vue"
 <div class="ribbon ribbon-br"></div>
 
 <div class="custom-layout">
-  
+
   <!-- 左侧主区域：包含 Hero 文字 + 按钮 + 横向时间轴 -->
   <div class="left-main-section">
     <!-- 上半部分：文字 & 按钮 -->
@@ -69,4 +69,3 @@ import Typewriter from "../.vitepress/theme/Typewriter.vue"
   </div>
 
 </div>
-

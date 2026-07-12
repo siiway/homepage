@@ -47,8 +47,8 @@
         "MD049": { "style": "underscore" },
 
         // MD050 加粗统一使用星号 `**` —— 与 Prettier 一致
-        "MD050": { "style": "asterisk" },
-      },
-    },
-  },
+        "MD050": { "style": "asterisk" }
+      }
+    }
+  }
 }

@@ -34,14 +34,18 @@ const data: Record<string, SocialLink[]> = {
       },
       link: "https://wss.moe/wx",
     },
-    { label: "Discord",     icon: "discord",  link: "https://wss.moe/dc" },
-    { label: "GitHub",      icon: "github",   link: "https://wss.moe/gh" },
+    { label: "Discord", icon: "discord", link: "https://wss.moe/dc" },
+    { label: "GitHub", icon: "github", link: "https://wss.moe/gh" },
     { label: "Telegram 频道", icon: "telegram", link: "https://wss.moe/tgc" },
   ],
   en: [
-    { label: "Discord",          icon: "discord",  link: "https://wss.moe/dc" },
-    { label: "GitHub",           icon: "github",   link: "https://wss.moe/gh" },
-    { label: "Telegram Channel", icon: "telegram", link: "https://wss.moe/tgc" },
+    { label: "Discord", icon: "discord", link: "https://wss.moe/dc" },
+    { label: "GitHub", icon: "github", link: "https://wss.moe/gh" },
+    {
+      label: "Telegram Channel",
+      icon: "telegram",
+      link: "https://wss.moe/tgc",
+    },
   ],
 };
 

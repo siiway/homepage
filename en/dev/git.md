@@ -4,13 +4,13 @@
 
 Adopt the Trunk-Based Development model.
 
-| Branch  | Purpose        | Naming Rule                    | Lifespan              |
-|---------|----------------|--------------------------------|-----------------------|
-| main    | Only long-lived branch | `main`                         | Permanent             |
-| feature | Feature branch | `feature/[ticket]-short-description` | No more than 2 days |
-| bugfix  | Bug fix        | `bugfix/[ticket]-short-description` | No more than 1 day   |
-| hotfix  | Hot fix        | `hotfix/[ticket]-short-description` | Within hours         |
-| release | Release preparation | `release/v[version]`       | Deleted after release |
+| Branch  | Purpose                | Naming Rule                          | Lifespan              |
+| ------- | ---------------------- | ------------------------------------ | --------------------- |
+| main    | Only long-lived branch | `main`                               | Permanent             |
+| feature | Feature branch         | `feature/[ticket]-short-description` | No more than 2 days   |
+| bugfix  | Bug fix                | `bugfix/[ticket]-short-description`  | No more than 1 day    |
+| hotfix  | Hot fix                | `hotfix/[ticket]-short-description`  | Within hours          |
+| release | Release preparation    | `release/v[version]`                 | Deleted after release |
 
 Rules: Feature branches are created from main, no more than 2 days. Use Feature Flags for large features. Force push on main is forbidden. CI and review must pass before merging.
 

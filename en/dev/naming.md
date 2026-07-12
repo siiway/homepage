@@ -8,11 +8,11 @@
 
 All naming follows a three-tier system, with the format chosen based on the number of words and semantic role of the identifier:
 
-| Category | Format | Example |
-|----------|--------|---------|
-| Single word (file/folder/module name) | all lowercase | `utils`, `types`, `index` |
-| Multi-word function/method/variable | camelCase | `getPackageInfo`, `handleClick` |
-| Multi-word class/component/type/interface | PascalCase | `UserProfile`, `ApiResponse` |
+| Category                                  | Format        | Example                         |
+| ----------------------------------------- | ------------- | ------------------------------- |
+| Single word (file/folder/module name)     | all lowercase | `utils`, `types`, `index`       |
+| Multi-word function/method/variable       | camelCase     | `getPackageInfo`, `handleClick` |
+| Multi-word class/component/type/interface | PascalCase    | `UserProfile`, `ApiResponse`    |
 
 ### 1.1 Single Word Rules
 
@@ -31,15 +31,15 @@ All naming follows a three-tier system, with the format chosen based on the numb
 
 ### 2.1 General Conventions
 
-| File Type | Format | Example |
-|-----------|--------|---------|
-| Single-word directory/module | all lowercase | `utils/`, `types/`, `index.ts` |
-| Multi-word non-component file | kebab-case | `date-utils.ts`, `http-request.ts` |
-| Component file (Vue/React) | PascalCase | `UserList.vue`, `OrderDetail.vue` |
-| Type file | kebab-case | `user-types.ts`, `order-types.ts` |
-| Store file | kebab-case | `user-store.ts`, `cart-store.ts` |
-| Composable function file | kebab-case | `use-user-list.ts` |
-| Style file | kebab-case | `user-card.scss` |
+| File Type                     | Format        | Example                            |
+| ----------------------------- | ------------- | ---------------------------------- |
+| Single-word directory/module  | all lowercase | `utils/`, `types/`, `index.ts`     |
+| Multi-word non-component file | kebab-case    | `date-utils.ts`, `http-request.ts` |
+| Component file (Vue/React)    | PascalCase    | `UserList.vue`, `OrderDetail.vue`  |
+| Type file                     | kebab-case    | `user-types.ts`, `order-types.ts`  |
+| Store file                    | kebab-case    | `user-store.ts`, `cart-store.ts`   |
+| Composable function file      | kebab-case    | `use-user-list.ts`                 |
+| Style file                    | kebab-case    | `user-card.scss`                   |
 
 ### 2.2 Constraints
 
@@ -123,16 +123,16 @@ enum OrderStatus {
 - Start with a verb or verb phrase
 - Recommended verb prefixes:
 
-| Prefix | Meaning | Example |
-|--------|---------|---------|
-| `get` / `fetch` | Retrieve data | `getUserInfo`, `fetchUserList` |
-| `set` / `update` | Set/update | `setUserName`, `updateProfile` |
-| `create` / `add` | Create/add | `createOrder`, `addItem` |
-| `delete` / `remove` | Delete/remove | `deleteUser`, `removeItem` |
-| `handle` | Event handler | `handleSubmit`, `handleCancel` |
-| `validate` / `check` | Validate/check | `validateForm`, `checkPermission` |
-| `format` / `parse` | Format/parse | `formatDate`, `parseJson` |
-| `compute` / `calculate` | Compute | `computeTotal`, `calculateAge` |
+| Prefix                  | Meaning        | Example                           |
+| ----------------------- | -------------- | --------------------------------- |
+| `get` / `fetch`         | Retrieve data  | `getUserInfo`, `fetchUserList`    |
+| `set` / `update`        | Set/update     | `setUserName`, `updateProfile`    |
+| `create` / `add`        | Create/add     | `createOrder`, `addItem`          |
+| `delete` / `remove`     | Delete/remove  | `deleteUser`, `removeItem`        |
+| `handle`                | Event handler  | `handleSubmit`, `handleCancel`    |
+| `validate` / `check`    | Validate/check | `validateForm`, `checkPermission` |
+| `format` / `parse`      | Format/parse   | `formatDate`, `parseJson`         |
+| `compute` / `calculate` | Compute        | `computeTotal`, `calculateAge`    |
 
 ### 5.2 Event Handler Functions
 
@@ -245,14 +245,14 @@ type SortDirectionType = 'asc' | 'desc'
 
 ### 7.3 Specialized Type Suffixes
 
-| Type Usage | Suffix | Example |
-|------------|--------|---------|
-| Component Props | Props | `UserCardProps`, `SearchBarProps` |
-| Component Emits | Emits | `UserFormEmits`, `ModalEmits` |
-| Data Transfer Object | DTO | `UserCreateDTO`, `OrderUpdateDTO` |
-| View Object | VO | `UserDetailVO`, `OrderSummaryVO` |
-| Request Parameters | Query / Params | `UserQuery`, `SearchParams` |
-| Response Type | Response / Result | `UserListResponse`, `LoginResult` |
+| Type Usage           | Suffix            | Example                           |
+| -------------------- | ----------------- | --------------------------------- |
+| Component Props      | Props             | `UserCardProps`, `SearchBarProps` |
+| Component Emits      | Emits             | `UserFormEmits`, `ModalEmits`     |
+| Data Transfer Object | DTO               | `UserCreateDTO`, `OrderUpdateDTO` |
+| View Object          | VO                | `UserDetailVO`, `OrderSummaryVO`  |
+| Request Parameters   | Query / Params    | `UserQuery`, `SearchParams`       |
+| Response Type        | Response / Result | `UserListResponse`, `LoginResult` |
 
 ### 7.4 Generic Parameters
 

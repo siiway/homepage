@@ -7,13 +7,16 @@
 This document standardizes code style, toolchain, and commit workflows for Python projects, reducing collaboration overhead and improving maintainability.
 
 ## 1. Code Organization
+
 ### 1.1 Module Design
+
 - Each module has a single responsibility; avoid cramming too many features into one file
 - Split packages by functionality; avoid catch-all packages like util/common/misc
 - Types and functions with similar functionality go in the same module
 - Avoid circular imports; mark internal implementations as private with a `_` prefix
 
 ### 1.2 File Organization
+
 - Order within a file: shebang → encoding declaration → module docstring → import → constants → variables → functions → classes
 - One file focuses on one core class or feature group
 
@@ -46,17 +49,21 @@ def get_user(user_id: int) -> User | None:
 ```
 
 ## 2. Naming Conventions
+
 ### 2.1 Basic Rules
+
 - Modules/packages: short lowercase names, may use underscores as separators (`user_service.py`)
 - Classes: PascalCase (`UserService`, `OrderProcessor`)
 - Functions/methods/variables: snake_case (`get_user`, `item_count`)
 - Constants: UPPER_SNAKE_CASE (`MAX_RETRY_COUNT`, `API_BASE_URL`)
 
 ### 2.2 Private Members
+
 - Non-public attributes use a single underscore prefix (`_internal_method`, `_cache`)
 - Avoid double underscore prefixes unless name mangling is genuinely needed to prevent subclass conflicts
 
 ### 2.3 Boolean Variables
+
 - Use `is_` / `has_` / `can_` prefixes to indicate boolean meaning
 
 ```python
@@ -66,13 +73,16 @@ can_edit: bool
 ```
 
 ## 3. Type Annotations
+
 ### 3.1 Basic Requirements
+
 - All new code must include type annotations
 - Public interfaces must provide complete function signature annotations
 - Python 3.10+ use `X | None` instead of `Optional[X]`
 - Python 3.9+ use built-in generics `list[X]`, `dict[K, V]`; deprecate `typing.List`, `typing.Dict`
 
 ### 3.2 Complex Types
+
 - Prefer `TypedDict`, `Protocol`, `dataclass` for complex structures
 - Avoid excessive `dict[str, Any]`; use structured types instead
 
@@ -100,6 +110,7 @@ def find_user_name(users: list[User], user_id: int) -> str | None:
 ```
 
 ### 3.3 Type Checking
+
 - Recommend using mypy `--strict` mode
 
 ```bash
@@ -107,7 +118,9 @@ mypy --strict src/
 ```
 
 ## 4. Import Conventions
+
 ### 4.1 Import Order
+
 - Standard library → third-party libraries → local modules, separated by blank lines
 - Each import on its own line
 
@@ -124,12 +137,15 @@ from .service import UserService
 ```
 
 ### 4.2 Prohibited Actions
+
 - No `from module import *` (except for modules with explicitly declared `__all__`)
 - No circular imports
 - No relative imports using `..` that cross package boundaries
 
 ## 5. Strings and Formatting
+
 ### 5.1 String Usage
+
 - Prefer f-strings (Python 3.6+)
 - Triple-quoted strings for multi-line strings
 - Avoid string concatenation in loops; use `"".join()` or `StringIO`
@@ -146,6 +162,7 @@ query = """
 ```
 
 ### 5.2 Docstring
+
 - Modules, classes, and public functions must have docstrings
 - Use triple quotes; first line is a brief description, followed by a blank line and detailed explanation
 - Recommend Google or NumPy style
@@ -169,7 +186,9 @@ def get_user(user_id: int) -> User | None:
 ```
 
 ## 6. Error Handling
+
 ### 6.1 Basic Principles
+
 - Catch specific exceptions; no bare `except:` or `except Exception:`
 - Custom exceptions inherit from `Exception` and provide meaningful error messages
 - Never silently swallow exceptions in except blocks
@@ -191,6 +210,7 @@ class ValidationError(Exception):
 ```
 
 ### 6.3 Resource Management
+
 - Use context managers (`with`) for managing file, connection, and other resources
 - Custom resources implement `__enter__` and `__exit__`
 
@@ -200,12 +220,15 @@ with open("data.txt") as f:
 ```
 
 ## 7. Functions and Methods
+
 ### 7.1 Function Design
+
 - Keep functions as small as possible; recommend no more than 50 lines
 - One function does one thing
 - When there are too many parameters, consider encapsulating them with dataclass or TypedDict
 
 ### 7.2 Default Parameters
+
 - Default parameter values must be immutable; never `def f(x=[])` or `def f(x={})`
 
 ```python
@@ -223,6 +246,7 @@ def append_item(item: str, items: list[str] = []) -> list[str]:
 ```
 
 ### 7.3 Function Style
+
 - Use keyword arguments to improve readability
 - Prefer `def` for defining functions; never assign a lambda to a variable
 
@@ -236,13 +260,16 @@ is_active = lambda user: user.status == "active"
 ```
 
 ## 8. Class Design
+
 ### 8.1 Design Principles
+
 - Use `@property` instead of Java-style getters/setters
 - Use `@dataclass` to simplify data classes
 - Prefer composition over inheritance
 - Ensure MRO is clear and understandable when using multiple inheritance
 
 ### 8.2 Special Methods
+
 - `__str__` is user-facing, returning a highly readable description
 - `__repr__` is developer-facing, ideally returning an expression that can reconstruct the object
 
@@ -268,7 +295,9 @@ class User:
 ```
 
 ## 9. Concurrency and Async
+
 ### 9.1 Async Programming
+
 - IO-intensive tasks should prefer `async` / `await`
 - Use `asyncio.gather` for concurrent execution of multiple coroutines
 - Use `asyncio.to_thread` to wrap synchronous blocking calls
@@ -286,18 +315,22 @@ async def fetch_all(urls: list[str]) -> list[str]:
 ```
 
 ### 9.2 Thread Safety
+
 - Use `threading.Lock` to protect shared state in multi-threaded scenarios
 - Use `queue.Queue` for inter-thread communication
 - Never use `time.sleep` in async code; use `await asyncio.sleep`
 
 ## 10. Testing Conventions
+
 ### 10.1 Framework and Organization
+
 - Use `pytest` as the testing framework
 - Test file naming: `test_*.py`; test functions prefixed with `test_`
 - One test verifies one primary behavior
 - Bug fixes must include test cases
 
 ### 10.2 Testing Practices
+
 - Use fixtures instead of setUp/tearDown
 - Use `pytest.mark.parametrize` for parameterized tests
 - Mock external dependencies using `unittest.mock` or `pytest-mock`
@@ -329,7 +362,9 @@ def test_valid_user_id(user_id: int, expected: bool) -> None:
 ```
 
 ## 11. Toolchain and Formatting
+
 ### 11.1 Recommended Toolchain
+
 - Python: `3.13+`
 - Package management: `uv`
 - Formatting and linting: `ruff`
@@ -353,6 +388,7 @@ pytest
 - All checks must pass in CI
 
 ## 12. Prohibited Actions
+
 - No bare `except:` or `except Exception:`
 - No mutable default parameters (`def f(x=[])`)
 - No modifying global variables inside functions
