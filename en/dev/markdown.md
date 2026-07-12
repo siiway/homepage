@@ -223,6 +223,11 @@ The team uses two tools with clearly separated, non-conflicting responsibilities
 - **Prettier** handles _formatting_: list markers, italic/bold characters, indentation, table alignment, blank lines, and trailing newlines. Configured in `.prettierrc`.
 - **markdownlint** handles _rule checking_: heading levels, fenced-code languages, duplicate headings, and other semantic rules. Configured in `.markdownlint.jsonc`.
 
+Related configuration files:
+
+- [`.markdownlint.jsonc`](../../.markdownlint.jsonc): Markdown rule configuration.
+- [`.prettierrc`](../../.prettierrc): Prettier formatting configuration.
+
 ### 12.1 Avoiding Conflicts
 
 Because Prettier rewrites some formatting, every markdownlint rule that could conflict with it is aligned to Prettier's default output or disabled:
