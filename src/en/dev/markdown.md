@@ -225,7 +225,8 @@ The team uses two tools with clearly separated, non-conflicting responsibilities
 
 Related configuration files:
 
-- [`.markdownlint.jsonc`](https://github.com/siiway/homepage/blob/main/.markdownlint.jsonc): Markdown rule configuration.
+- [`.markdownlint.jsonc`](https://github.com/siiway/homepage/blob/main/.markdownlint.jsonc): markdownlint rule configuration.
+- [`.pymarkdown.yaml`](https://github.com/siiway/homepage/blob/main/.pymarkdown.yaml): PyMarkdown (Python markdownlint) equivalent rule configuration.
 - [`.prettierrc`](https://github.com/siiway/homepage/blob/main/.prettierrc): Prettier formatting configuration.
 
 ### 12.1 Avoiding Conflicts
@@ -251,7 +252,19 @@ Because Prettier rewrites some formatting, every markdownlint rule that could co
 
 Both `.markdownlintignore` and `.prettierignore` exclude `node_modules`, build output, and similar directories.
 
-### 12.2 Formatting and Checking Locally
+### 12.2 Python Alternative: PyMarkdown
+
+Members on a Python toolchain can use [PyMarkdown](https://github.com/jackdewinter/pymarkdown) (`pip install pymarkdownlnt` or `uv tool install pymarkdownlnt`) instead of the Node markdownlint. The equivalent configuration lives at [`.pymarkdown.yaml`](https://github.com/siiway/homepage/blob/main/.pymarkdown.yaml) in the repo root and is loaded automatically when you run `pymarkdown scan .`.
+
+> [!NOTE]
+> PyMarkdown's rules are largely the same as markdownlint's, but due to implementation limits **the following rules cannot be checked by the Python version** (they still rely on Prettier):
+>
+> - **MD049** (italics unified to `_`) — not implemented in PyMarkdown.
+> - **MD050** (bold unified to `**`) — not implemented in PyMarkdown.
+>
+> Additionally, PyMarkdown does not read `.markdownlintignore`, so pass explicit scan paths to exclude `node_modules` and similar directories; VitePress frontmatter is recognized via the `front-matter` extension in `.pymarkdown.yaml` (enabled by default).
+
+### 12.3 Formatting and Checking Locally
 
 Format first, then lint:
 

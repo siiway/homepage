@@ -1,0 +1,72 @@
+# SiiWay Markdown 格式规范对应的 PyMarkdown 配置（Python 版 markdownlint）
+# 规范文档：https://siiway.org/zh/dev/markdown
+# 规则说明：https://pymarkdown.readthedocs.io/en/latest/plugins/
+#
+# 本文件是 `.markdownlint.jsonc` 的 PyMarkdown 等价配置，供使用 Python 工具链
+# （`pip install pymarkdownlnt` 或 `uv tool install pymarkdownlnt`）的成员使用。
+# PyMarkdown 会自动读取当前目录下的 `.pymarkdown.yaml`。运行：`pymarkdown scan .`
+#
+# 与 markdownlint 一样，本配置与 Prettier 协同：Prettier 负责“格式化排版”，
+# 校验规则尽量对齐 Prettier 默认输出或关闭。
+#
+# 无法对齐的差异（PyMarkdown 未实现以下规则，Python 版不做校验）：
+#   - MD049（斜体风格 `_`）
+#   - MD050（加粗风格 `**`）
+# 这两项请继续依赖 Prettier 统一（斜体 `_`、加粗 `**`）。
+
+extensions:
+  # 识别 VitePress frontmatter（`---` 成对包裹），避免其被当作正文规则校验
+  # （markdownlint 原生识别 frontmatter；PyMarkdown 需显式开启此扩展）
+  front-matter:
+    enabled: true
+
+plugins:
+  # MD003 标题使用 ATX 风格（# 号），不使用 Setext（下划线）风格
+  md003:
+    style: atx
+
+  # MD004 无序列表统一使用连字符 `-`
+  md004:
+    style: dash
+
+  # MD007 列表缩进交由 Prettier 处理，关闭本规则
+  md007:
+    enabled: false
+
+  # MD013 关闭行长度限制（中文散文与表格无需硬换行）
+  md013:
+    enabled: false
+
+  # MD024 仅当标题为同级兄弟节点时才禁止重复
+  md024:
+    siblings_only: true
+
+  # MD026 标题末尾禁止出现的标点（含中文全角标点）
+  md026:
+    punctuation: ".,;:!。，、；：！？"
+
+  # MD029 有序列表编号：允许全为 `1.` 或递增序号
+  md029:
+    style: one_or_ordered
+
+  # MD033 允许内联 HTML 与 Vue 组件（VitePress 特性需要）
+  md033:
+    enabled: false
+
+  # MD035 分隔线统一使用三个连字符 `---`
+  md035:
+    style: "---"
+
+  # MD041 关闭“首行必须为一级标题”（页面可能以 frontmatter / 组件开头）
+  md041:
+    enabled: false
+
+  # MD046 代码块统一使用围栏（fenced）风格
+  md046:
+    style: fenced
+
+  # MD048 代码围栏统一使用反引号 ```
+  md048:
+    style: backtick
+
+  # MD049（斜体 `_`）与 MD050（加粗 `**`）：PyMarkdown 未实现，无法配置。
