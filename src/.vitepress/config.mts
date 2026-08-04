@@ -99,7 +99,6 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: "举报", link: "/zh/about/report" },
-              { text: "关于我们", link: "/zh/about/us" },
               { text: "联系我们", link: "/zh/about/contact" },
               { text: "QQ 群规则", link: "/zh/about/rules-qq" },
               { text: "关于此网站", link: "/zh/about/website" },
@@ -195,7 +194,6 @@ export default defineConfig({
             collapsible: true,
             collapsed: false,
             items: [
-              { text: "About Us", link: "/en/about/us" },
               { text: "Contact", link: "/en/about/contact" },
               { text: "About Website", link: "/en/about/website" },
               { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
