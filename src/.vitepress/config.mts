@@ -101,7 +101,6 @@ export default defineConfig({
               { text: "举报", link: "/zh/about/report" },
               { text: "关于我们", link: "/zh/about/us" },
               { text: "联系我们", link: "/zh/about/contact" },
-              { text: "招新公告", link: "/zh/about/join" },
               { text: "QQ 群规则", link: "/zh/about/rules-qq" },
               { text: "关于此网站", link: "/zh/about/website" },
               { text: "SiiWay 行为准则", link: "/zh/about/code-of-conduct" },
@@ -201,7 +200,6 @@ export default defineConfig({
               { text: "About Website", link: "/en/about/website" },
               { text: "Code of Conduct", link: "/en/about/code-of-conduct" },
               { text: "Report", link: "/en/about/report" },
-              { text: "Join", link: "/en/about/join" },
             ],
           },
           {
