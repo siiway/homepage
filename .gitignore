@@ -4,6 +4,8 @@ node_modules
 src/.vitepress/dist
 # VitePress Cache
 src/.vitepress/cache
+# 构建时从 GitHub 拉取的成员头像（由 scripts/fetch-avatars.mjs 生成）
+src/public/members
 # 就很奇怪 (npm install 生成的)
 '~/
 # Obsidian

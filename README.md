@@ -117,13 +117,19 @@ bun preview
 
 ```json
 {
-  "key": { "name": "显示名称", "avatar": "/favicon.svg", "motto": "座右铭" }
+  "key": {
+    "name": "显示名称",
+    "avatar": "https://avatars.githubusercontent.com/u/<github-id>",
+    "motto": "座右铭"
+  }
 }
 ```
 
 - **name** — 显示名称（必填）
-- **avatar** — 头像路径，图片放 `src/public/members/` 目录下
+- **avatar** — GitHub 头像源地址（必填）。构建前由 `scripts/fetch-avatars.mjs` 拉取到 `src/public/members/<key>.<ext>`（该目录已 gitignore），页面引用本地文件；拉取失败时回退到 `/favicon.svg`
 - **motto** — 座右铭（选填，默认"暂无座右铭"）
+
+头像拉取已接入 `predev` / `prebuild`，执行 `bun run dev` 或 `bun run build` 时自动完成。也可单独运行 `bun scripts/fetch-avatars.mjs`。
 
 成员页以 3 列卡片网格展示。卡片设计参考 [vitepress-theme-curve](https://github.com/imsyy/vitepress-theme-curve) 的友链卡片。
 

@@ -1,17 +1,16 @@
 import rawMembers from "./members.json";
+import { loadAvatarPaths } from "./avatars";
 
 const subIdentities = new Set(["nt-copy", "l5z12"]);
 
 export default {
   load() {
+    const avatarPaths = loadAvatarPaths();
     const entries = Object.entries(rawMembers);
     const cards = entries
       .map(([key, value]) => {
         const name = typeof value === "string" ? value : value.name;
-        const avatar =
-          typeof value === "string"
-            ? "/favicon.svg"
-            : value.avatar || "/favicon.svg";
+        const avatar = avatarPaths[key] || "/favicon.svg";
         const motto =
           typeof value === "string"
             ? "暂无座右铭"

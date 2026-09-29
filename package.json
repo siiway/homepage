@@ -17,7 +17,9 @@
     "vitepress": "^1.6.4"
   },
   "scripts": {
+    "predev": "bun scripts/fetch-avatars.mjs",
     "dev": "vitepress dev src --port 5179",
+    "prebuild": "bun scripts/fetch-avatars.mjs",
     "build": "vitepress build src",
     "preview": "vitepress preview src --port 5189",
     "format": "prettier --write .",
